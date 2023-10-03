@@ -1,0 +1,195 @@
+
+section {
+
+  div {
+
+    &.inner {
+
+      &.wysiwyg {
+
+        &.expanding-content {
+          height: auto;
+        }
+      }
+    }
+
+    &.wysiwyg {
+      display: block!important;
+      //border: 1px solid red;
+
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 17px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          width: 50%;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding-left:25px;
+
+        li {
+          position: relative;
+          @include font-size(18);
+          font-weight: $light;
+
+          &:before{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left:-25px;
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-image: url('#{$pathToImages}/blue-bullet.png');
+            background-size: 10px 10px;
+          }
+        }
+      }
+
+      ol {
+        list-style: none;
+        padding-left:60px;
+        counter-reset: list-counter;
+
+        li {
+          position: relative;
+          @include font-size(18);
+          font-weight: $light;
+          margin-bottom: 10px;
+
+          &:before {
+            content: counter(list-counter);
+            counter-increment: list-counter;
+            position: absolute;
+            top: 5px;
+            left:-60px;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+            color: $white;
+            background-color: $brandBlue;
+            font-family: $MostraNova-font;
+            @include font-size(24);
+            font-weight: $regular;
+            text-align: center;
+            line-height: 36px;
+          }
+        }
+      }
+
+      h2 {
+        text-transform: uppercase;
+        color: $brandBlue;
+
+        &:nth-child(1) {
+          margin-top: -3px;
+        }
+      }
+
+      h3 {
+        text-transform: uppercase;
+        color: $brandBlue;
+      }
+
+      h4 {
+        font-family: $montserrat-font;
+        @include font-size(18);
+        font-weight: $semiBold;
+      }
+
+      p {
+        font-family: $montserrat-font;
+        @include font-size(18);
+        font-weight: $light;
+      }
+
+      &.blue-back,
+      &.text-over-image {
+        color: $white;
+
+        ul {
+
+          li {
+
+            &:before{
+              background-image: url('#{$pathToImages}/white-bullet.png');
+            }
+          }
+        }
+        ol {
+
+          li {
+
+            &:before {
+              color: $brandBlue;
+              background-color: $white;
+            }
+          }
+        }
+
+        h2,
+        h3 {
+          color: $white;
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
+
+@include mobile-only {
+
+  section {
+
+    div {
+
+      &.wysiwyg {
+
+        div {
+          flex-direction: column;
+          justify-content: center;
+          margin-bottom: 30px;
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet-portrait-and-below {
+
+  section {
+
+    div {
+
+      &.wysiwyg {
+
+        div {
+          //flex-direction: column;
+          //justify-content: center;
+          margin-bottom: 30px;
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

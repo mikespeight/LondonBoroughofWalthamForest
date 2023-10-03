@@ -1,0 +1,68 @@
+/****************************************
+*
+* Admin styles and overrides
+*
+*****************************************/
+
+body {
+
+  &.user-logged-in {
+
+    &.toolbar-tray-open {
+
+      #toolbar-administration {
+
+        #toolbar-bar {
+          margin:0;
+
+          .toolbar-tab {
+
+            .toolbar-tray {
+
+              nav {
+
+                &.toolbar-lining {
+                  margin:0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      /*header {
+        margin-top: 79px;
+      }*/
+    }
+
+  }
+
+ &.toolbar-fixed {
+
+   &.page-node-type-homepage {
+
+     .hero {
+       margin-top:57px;
+     }
+   }
+
+   header {
+     top:75px;
+   }
+
+   .toolbar-oriented {
+
+     .toolbar-bar {
+       z-index: 1100;
+     }
+   }
+ }
+
+  #toolbar-administration {
+
+    nav {
+      margin-top: 0;
+    }
+  }
+}
+

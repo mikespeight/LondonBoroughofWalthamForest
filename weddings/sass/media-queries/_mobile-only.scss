@@ -1,0 +1,535 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for mobile down i.e. < 480px
+*
+*
+*
+*******************************************************************************************/
+
+h3 {
+  @include font-size(36);
+}
+
+.page-node-type-homepage {
+
+  header {
+    height: 667px;
+
+    .hero {
+      height: 667px;
+
+      .hero-caroulel-wrapper {
+
+        .flexslider {
+
+          .flex-direction-nav {
+            display: none;
+          }
+        }
+
+        .slides {
+
+          & > li {
+
+            &.slide1 {
+
+              h2 {
+                top:260px;
+                width:78%;
+              }
+            }
+
+            &.slide2 {
+
+              .slide-content {
+                left:0;
+                width:100%;
+
+                h2 {
+                  width:96%;
+                  top:34%;
+                }
+
+                .deco-box {
+                  top:525px;
+                }
+              }
+            }
+
+            &.slide3 {
+
+              h2 {
+                top: 41%;
+                width: 80%;
+              }
+            }
+
+            &.slide4 {
+
+              h2 {
+                top: 34%;
+                width: 81%;
+              }
+
+              .deco-box {
+                top: 470px;
+              }
+            }
+
+            .slide-content {
+
+              h2 {
+                @include font-size(45);
+              }
+
+              .deco-box {
+                top:470px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*.main-content .row .inner.full-width-content-box .content-wrapper.left-spacing h3*/
+
+  .main-content {
+
+    .offers {
+      height: 633px;
+
+      .offers-content {
+
+        .offers-wrapper {
+
+          .flexslider {
+            height: 220px;
+
+            .slides {
+
+              & > li {
+                height:219px;
+
+                a {
+                  width: 278px;
+                  height: 177px;
+
+                  .ro {
+                    height: 100%;
+                    background-color: rgba(193, 163, 56, 0.92);
+
+                    .line,
+                    p {
+                      display: block;
+                    }
+
+
+                    h4 {
+                      margin-top: 55px;
+                    }
+                  }
+                }
+              }
+            }
+
+            .flex-viewport {
+
+              width: 320px;
+              margin: 0 auto;
+            }
+
+            .flex-direction-nav {
+
+              li {
+
+                a {
+                  top:142%;
+
+                  &.flex-prev {
+                    left:25%;
+                  }
+
+                  &.flex-next {
+                    right:25%;
+                  }
+                }
+              }
+            }
+          }
+
+          p {
+
+            &.more-offers {
+              margin-top: 66px;
+            }
+          }
+        }
+      }
+    }
+
+    .culture {
+      height: 1400px;
+      background-color: $brandBlueGrey;
+
+      img {
+
+        &.section-bg {
+          display: none;
+        }
+      }
+
+      .culture-content {
+
+        h3 {
+          margin-bottom: 70px;
+        }
+
+        .our-culture-content {
+          flex-direction: column;
+          padding:0 10px;
+
+          .content-column {
+            padding:0 15px;
+            width: 100%;
+            text-align: center;
+
+            p {
+              margin: 0 5px 30px;
+
+            }
+          }
+        }
+      }
+    }
+
+    .stories {
+
+      .stories-content {
+
+        .stories-wrapper {
+
+          .flexslider {
+
+            .slides {
+
+              li {
+
+                a {
+                  width:344px;
+
+                  h4 {
+                    display: none;
+                  }
+
+                  .ro {
+                    background-color: rgba(90, 135, 158, 0.89);
+                    opacity: 1;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 3;
+
+                    h4 {
+                      @include centerer;
+                      display: block;
+                    }
+
+                    p {
+                      display: block;
+                      @include centerH;
+                      top: calc(50% + 30px);
+                      width: 100%;
+                      text-align: center;
+
+                      span {
+                        position: static !important;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .flex-direction-nav {
+
+              li {
+
+                a {
+
+                  &.flex-prev {
+                    left:25%;
+                  }
+
+                  &.flex-next {
+                    right:25%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+header {
+
+  .hero {
+
+  }
+}
+
+.main-content {
+
+  .hero {
+
+    img {
+      width:100vw;
+    }
+
+    h2 {
+
+      &.page-title {
+        width:90%;
+        text-align: center;
+        @include centerer;
+      }
+    }
+  }
+
+  .coming-soon {
+    height:200px;
+  }
+
+  .row {
+
+    .inner {
+
+      &.full-width-content-box {
+
+        img {
+          object-fit: none;
+          object-position: 100% 0;
+        }
+
+        .content-wrapper {
+
+          &.left-spacing {
+
+            h3 {
+              width: 100%;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      &.content-wrapper {
+        height: auto;
+      }
+
+      &.blue-back {
+
+        form {
+
+          div {
+
+            &.col-xs-12 {
+
+              &:nth-child(2) {
+                margin-bottom: 0;
+              }
+            }
+
+
+            &.inner {
+              height:auto;
+              margin-bottom: 0;
+
+              &.left-spacing {
+                padding-right: 0!important;
+                padding-left:30px;
+              }
+
+              &.right-spacing {
+                padding-right: 0!important;
+                padding-left:30px;
+              }
+            }
+          }
+        }
+
+        div {
+
+          &.inner {
+
+            &.left-spacing {
+              padding-right: 0!important;
+              //padding-left:35px;
+            }
+
+            &.right-spacing {
+              padding-right: 0!important;
+              //padding-left:35px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-section {
+
+    form {
+
+      .col-xs-12 {
+
+        &:first-child {
+          margin: 0;
+        }
+      }
+
+      .form-item {
+        flex-direction: column;
+
+        &.terms {
+          flex-direction: row;
+          input {
+            margin-left: 0;
+          }
+        }
+
+        label {
+
+          &:nth-child(1) {
+            width: 90%;
+          }
+        }
+
+        input {
+
+          &:nth-child(2) {
+            width: 90%;
+          }
+        }
+
+        textarea {
+          width: 90%;
+        }
+      }
+
+      .form-actions {
+        flex-direction: column;
+
+        input[type=submit] {
+          width: 90%;
+          margin: 0;
+        }
+
+      }
+    }
+  }
+
+  .map-wrapper {
+    height:998px;
+    margin-bottom: 30px;
+
+    #map-info {
+      position: static;
+      display: block;
+      height: 431px;
+      width: 100%;
+      margin-bottom: 30px;
+
+      .view-map {
+        display: none;
+      }
+    }
+
+    #map {
+      position: static;
+      display: block;
+      margin-left: 0;
+      height:567px;
+    }
+
+    & + .row {
+      margin-top: 60px;
+    }
+  }
+
+  .content-1 {
+
+    &.type-6-6 {
+
+      .col-xs-12 {
+
+        .inner {
+          height: auto;
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 35px;
+
+          .inner {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  min-height: 640px;
+
+  .footer-inner {
+
+    .footer-header {
+      position: relative;
+
+      .footer-content {
+        @include centerH;
+
+        .cut-out-btn {
+          top:132px;
+        }
+
+        &.left {
+          width:85%;
+          top:200px;
+          padding: 0;
+        }
+
+        &.right {
+          width:85%;
+          top:50px;
+          padding: 0;
+        }
+      }
+    }
+
+    .footer-footer {
+      position: absolute;
+      top: 500px;
+      bottom: 0;
+
+      .social-icons {
+        margin-top: -50px;
+      }
+
+      .waltham-forest-logo {
+        right:15px;
+      }
+    }
+  }
+}

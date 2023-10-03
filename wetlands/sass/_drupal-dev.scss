@@ -1,0 +1,21 @@
+
+//admin menu
+body {
+
+  &.user-logged-in {
+    margin-top: 40px;
+
+    &.toolbar-tray-open {
+      //margin-top: 80px!important;
+
+      header {
+        //top: 40px;
+      }
+    }
+  }
+}
+
+// Login form
+#user-login-form {
+  margin-top:150px;
+}

@@ -1,0 +1,96 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $dinAlternateRegular;
+  color: $primaryBrand;
+  background-color: $offWhite;
+  @include font-size(16);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+
+  &.btn {
+    padding:10px 30px;
+    border: 2px solid $medGrey;
+    color: $medGrey;
+
+    &.cta-btn {
+      @include border-radius(8px);
+      color: $primaryBrand;
+      border-color: $primaryBrand;
+      font-family: $dinAlternateMedium;
+      @include font-size(20);
+
+      &:hover {
+        background-color: $primaryBrand;
+        color: $white;
+      }
+    }
+  }
+
+  &.goto {
+    border: none;
+    padding: 0;
+    display: block;
+    height: 42px;
+    width: 42px;
+    background: transparent url("#{$pathToImages}/down-link-bg.png") 0 0 no-repeat;
+    background-size: 42px 42px;
+    @include centerH;
+
+    &:hover {
+      background-image: url("#{$pathToImages}/down-link-hover-bg.png");
+    }
+
+    &.white {
+      background: transparent url("#{$pathToImages}/down-link-white-bg.png") 0 0 no-repeat;      
+      background-size: 42px 42px;
+
+      &:hover {
+        background-image: url("#{$pathToImages}/down-link-hover-bg.png");
+      }
+    }
+  }
+}
+
+
+// utility classes
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.no-float {
+  float: none!important;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-centre {
+  text-align: center;
+}

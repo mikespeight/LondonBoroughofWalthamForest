@@ -1,0 +1,64 @@
+.subpage {
+
+  &.path-user {
+
+    .login-form {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    form {
+
+      &.user-login-form {
+        @include flex-container(column, space-around);
+        align-items: center;
+        min-height: 500px;
+        padding: 50px;
+
+        .form-item,
+        .form-actions {
+          width:80%;
+          @include flex-container(column, space-between);
+
+          input[type=text],
+          input[type=password] {
+            width:60%;
+            height: 54px;
+            padding:0 20px;
+            background-color: transparent;
+            color: $text-color;
+            outline: none;
+            @include font-size(20);
+            line-height: 54px;
+            @include border-radius(6px);
+            border:2px solid $buttonGrey;
+          }
+
+          input[type=submit] {
+            width: 33%;
+            padding: 0 30px;
+            border-color: $buttonGrey;
+            background-color: $buttonGrey;
+            @include font-size(20);
+            line-height: 54px;
+            @include border-radius(6px);
+            font-weight: $regular;
+            color: $white;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+              background-color: $buttonVDkGrey;
+              border-color: $buttonVDkGrey;
+              border:2px solid $buttonVDkGrey;
+            }
+          }
+
+          label {
+            @include font-size(20);
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+}

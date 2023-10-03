@@ -1,0 +1,543 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for mobile down i.e. < 480px
+*
+*
+*
+*******************************************************************************************/
+
+.page-node-type-homepage {
+
+  header {
+
+    .brand {
+
+      a {
+        top:80px;
+        left: 16px;
+        width:62px;
+        height: 62px;
+        @include border-radius(31px);
+        //border: 1px solid $brandDkBlue;
+
+        h1 {
+          position: relative;
+          top:14px;
+          left: 7px;
+          width: 49px;
+          height: 33px;
+          background-position:0 50%;
+          background-size: 49px 32.5px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .hero {
+    //display: none;
+
+    .hero-section-content {
+
+      .hero-content {
+        top:50px;
+      }
+    }
+
+  }
+
+  .request {
+    max-height: 750px;
+
+    .request-content {
+
+      .form-container {
+
+        form {
+          flex-direction: column;
+          justify-content: center;
+
+          .form-item,
+          .form-actions {
+            width: 100%;
+          }
+
+          input,
+          select,
+          textarea {
+            width:348px;
+          }
+        }
+
+        a {
+
+          &.privacy-policy {
+            top: 524px;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+
+  .areas {
+
+    .areas-content {
+
+      .areas-container {
+        flex-direction: column;
+        justify-content: center;
+
+        .area {
+          height: 340px;
+        }
+
+      }
+    }
+  }
+
+  .team {
+
+    .team-content {
+
+      .team-container {
+        width: 93.5%;
+      }
+    }
+  }
+
+  .actions {
+
+    div.actions-content {
+
+      &.link-box-container {
+        @include flex-container();
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 65px;
+
+        div.link-box-outer {
+          position: relative;
+          //@include square(360px);
+          width: 97%;
+          margin:15px 0;
+          overflow: hidden;
+          height: 344px;
+
+          a {
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 86%;;
+            height:100%;
+
+            &.link-box {
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.subpage {
+
+  header {
+
+    .brand {
+
+      a {
+        top:80px;
+        left: 16px;
+        width:62px;
+        height: 62px;
+        @include border-radius(31px);
+        //border: 1px solid $brandDkBlue;
+
+        p.h1 {
+          position: relative;
+          top:14px;
+          left: 7px;
+          width: 49px;
+          height: 33px;
+          background-position:0 50%;
+          background-size: 49px 32.5px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .main-content {
+
+  }
+
+  .hero {
+
+    .hero-content {
+
+      h1 {
+        @include centerer;
+        text-align: center;
+      }
+    }
+  }
+
+  .intro {
+    height: auto;
+
+    .intro-content {
+      padding-top: 30px;
+
+      .inner {
+        padding: 0;
+        text-align: center;
+
+        p {
+          margin:20px 0;
+        }
+      }
+    }
+  }
+
+  .request {
+    max-height: 700px;
+
+    .request-content {
+
+      .form-container {
+
+        form {
+          flex-direction: column;
+          justify-content: center;
+
+          .form-item,
+          .form-actions {
+            width: 100%;
+          }
+
+          input,
+          select,
+          textarea {
+            width:348px;
+          }
+        }
+
+        a {
+
+          &.privacy-policy {
+            top:540px;
+            width:63%;
+          }
+        }
+      }
+    }
+  }
+
+  .information {
+    height: auto;
+  }
+
+  .comercial {
+    height:770px;
+
+    .comercial-content {
+
+      .left-col {
+        height: 210px;
+
+        .inner {
+          justify-content: space-between;
+        }
+      }
+
+      .area-content {
+        padding: 30px;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .family {
+    height:690px;
+
+    .family-content {
+
+      .left-col {
+        height: 210px;
+
+        .inner {
+          justify-content: space-between;
+        }
+      }
+
+      .area-content {
+        padding: 30px;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .litigation {
+    height:1000px;
+
+    .litigation-content {
+
+      .left-col {
+        height: 210px;
+
+        .inner {
+          justify-content: space-between;
+        }
+      }
+
+      .area-content {
+        padding: 30px;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .section-content {
+
+    .left-col {
+
+      .inner {
+
+        h3 {
+
+          &.area-heading {
+            position: static;
+          }
+        }
+      }
+    }
+
+    .right-col {
+
+      .area-content {
+        text-align: center;
+
+        p {
+        }
+
+        a {
+
+          &.btn {
+            padding: 0 20px;
+
+            &.link-btn {
+              width:290px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .image-strapline {
+
+    .image-strapline-content {
+
+      .pull-quotes {
+        width: 70%;
+
+        h3 {
+          width:100%;
+        }
+      }
+    }
+  }
+
+  .search-form {
+    height: 590px;
+
+    .search-form-content {
+
+      form {
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        .form-items {
+          width:90%;
+          margin-bottom: 90px;
+
+          label {
+            display: block;
+            font-family: $Roboto-font;
+            @include font-size(20);
+            font-weight: $regular;
+            color: $white;
+            margin-bottom: 10px;
+          }
+
+          select,
+          input {
+            width:100%;
+          }
+        }
+
+        .form-actions {
+          width: 600px;
+          input[type=submit] {
+            width:340px;
+          }
+        }
+      }
+    }
+  }
+
+  .staff-group {
+
+    .staff-group-members {
+
+      .staff-member {
+        width: 100%;
+        padding:30px 15px;
+
+        .header {
+          @include flex-container(column,flex-start);
+          justify-content: center;
+          flex-wrap: wrap;
+
+          img {
+
+          }
+
+          .details {
+            padding-top: 10px;
+          }
+        }
+
+        .contact-details {
+          padding-top: 10px;
+          margin-top: 0;
+
+          .email {
+            @include font-size(16)
+          }
+        }
+      }
+    }
+  }
+
+  .contiguous-strapline {
+
+    .contiguous-strapline-content {
+
+      h3 {
+        width: 90%;
+      }
+    }
+  }
+
+  .contact-us {
+
+    .flex-container {
+
+      .form-section {
+
+        form {
+
+          .form-item,
+          .form-actions {
+            input,
+            select,
+            textarea {
+              width:330px;
+            }
+          }
+        }
+      }
+
+      .info-section {
+        height: 575px;
+        padding: 60px 32px 32px;
+      }
+    }
+  }
+
+  .actions {
+
+    div.actions-content {
+
+      &.link-box-container {
+        @include flex-container();
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 65px;
+
+        div.link-box-outer {
+          position: relative;
+          //@include square(360px);
+          width: 97%;
+          margin:15px 0;
+          overflow: hidden;
+
+          a {
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 86%;;
+            height:100%;
+
+            &.link-box {
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height:auto;
+  .footer-content {
+
+    & > div {
+
+      &:nth-child(1) {
+        height: 235px;
+      }
+    }
+
+    .lexcel-logo {
+      left:30px;
+    }
+  }
+}
+
+#search {
+
+  .modal-dialog {
+
+    .modal-content {
+
+      form {
+        width: 90%;
+
+        .form-item {
+          width:100%;
+
+          label {
+            width:17%;
+          }
+        }
+      }
+    }
+  }
+}

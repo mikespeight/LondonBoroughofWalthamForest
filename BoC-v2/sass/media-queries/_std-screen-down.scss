@@ -1,0 +1,641 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for std screen down i.e. < 1200px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  /*&:before {
+    content: '1200 to 992';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
+  .fixed-width-content {
+    width: 100vw;
+  }
+
+  .page-wrapper {
+
+    header {
+
+      &.page-header {
+
+        .header-content {
+
+          .logo {
+            margin: 35px 3vw;
+          }
+
+          .page-search-wrapper {
+            width:40%;
+            margin: 0 2.5vw;
+          }
+
+          .social {
+            margin: 40px 3vw;
+          }
+        }
+      }
+    }
+
+    .main-navigation {
+
+      nav {
+
+        &.navbar {
+
+          ul {
+
+            li {
+
+              a {
+                //color: red!important;
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-wrapper {
+
+      .dynamic-row {
+
+        .block {
+
+          &.image-block {
+
+            &.size2of3 {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 5.833vw;
+                  line-height: 6vw;
+                }
+
+                p {
+                  font-size: 2vw;
+                  margin-top: 1.666vw;
+                }
+              }
+
+              &.event-block {
+
+                .block-inner-content {
+
+                  h2 {
+                    font-size: 5.833vw;
+                  }
+
+                  p {
+                    font-size: 1.5vw;
+                  }
+                }
+              }
+            }
+
+            &.social-block {
+
+              .block-inner-content {
+                padding-top: 7.5vw;
+
+                .instagram-icon {
+
+                  &.fa {
+                    font-size: 2.5vw;
+                  }
+                }
+              }
+            }
+
+            &.news-block {
+
+              .block-inner-content {
+                padding-top: 21.666vw;
+
+                h2 {
+                  font-size: 3.333vw;
+                }
+              }
+            }
+
+            &.event-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 2.5vw;
+                }
+
+                p {
+                  font-size: 1.5vw;
+                }
+              }
+            }
+          }
+
+          &.hero-block {
+
+            .block-inner-content {
+              padding-top: 14.583vw;
+
+              h1 {
+                font-size: 5.833vw;
+              }
+
+              p {
+                font-size: 2vw;
+              }
+            }
+          }
+
+          &.hero-block-left {
+
+            .block-inner-content {
+              padding: 3vw 36px;
+
+              h1 {
+                font-size: 4.166vw;
+                line-height: 5vw;
+              }
+
+              p {
+                font-size: 1.5833vw;
+                line-height: 2.333vw;
+                margin-top: 0.833vw;
+              }
+            }
+
+            .btn-wrapper {
+              bottom: 3vw;
+
+              h4 {
+                font-size: 2.333vw;
+              }
+            }
+          }
+
+          &.bg-block {
+
+            .block-inner-content {
+              padding-top: 21.666vw;
+
+              h2 {
+                font-size: 3.75vw;
+              }
+            }
+
+            &.event-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 2.5vw;
+                }
+
+                p {
+                  font-size: 1.5vw;
+                }
+              }
+            }
+
+            &.counter-block {
+
+              .block-inner-content {
+
+                #count {
+                  margin-top: 6.25vw;
+                  font-size: 15vw;
+                  line-height: 16.666vw;
+                }
+
+                .to-go {
+                  font-size: 2.166vw;
+                }
+              }
+            }
+
+            &.feature-block {
+
+              .non-link-block {
+
+                .block-inner-content {
+                  padding: 3vw;
+                  padding-bottom: 10.833vw;
+
+                  h2 {
+                    margin-bottom: 2.083vw;
+
+                    &.light {
+                      font-size: 3.333vw;
+                      margin-bottom: 1.5vw;
+                    }
+                  }
+
+                  p {
+                    font-size: 1.666vw;
+                    line-height: 3vw;
+
+                    &.sml-body {
+                      font-size:1.333vw;
+                      line-height: 2.333vw;
+                    }
+
+                    &.leader {
+                      font-size: 2vw;
+                      line-height: 2.666vw;
+                    }
+                  }
+                }
+              }
+
+              .bg-link-block {
+
+                .block-inner-content {
+                  padding-top: 21.666vw;
+
+                  h2 {
+                    font-size: 3.333vw;
+                  }
+                }
+              }
+
+              &.how-to-get-there-block {
+
+                h2 {
+                  font-size: 3.5vw;
+                  margin: 3vw 0 -70px 36px;
+                }
+
+                .wysiwyg {
+
+                  &.inner {
+                    padding: 5.416vw 36px 3vw;
+                  }
+
+                  p {
+                    font-size: 1.666vw;
+                    margin:0.833vw 0;
+                  }
+                }
+
+                .btn-wrapper {
+                  bottom:3vw;
+                }
+              }
+
+              &.whos-involved-block {
+
+                h2 {
+                  font-size: 3.5vw;
+                }
+
+                h6 {
+                  font-size: 1.583vw;
+                }
+
+                p {
+                  font-size: 1.333vw;
+                }
+              }
+            }
+
+            &.faq-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 5vw;
+                }
+              }
+            }
+          }
+
+          &.headline-block {
+
+            .block-inner-content {
+              padding-top: 11.666vw!important;
+
+              h2 {
+                font-size: 5.833vw!important;
+              }
+            }
+          }
+
+          .image-link-block {
+
+            .block-inner-content {
+              padding-top: 4.166vw;
+
+              h2 {
+                font-size: 2.5vw;
+              }
+
+              p {
+                font-size: 1.5vw;
+              }
+            }
+          }
+
+        }
+      }
+
+      .slider {
+
+        .flexslider {
+
+          .slides {
+
+            .slide {
+
+              a {
+
+                &.image-link-block {
+
+                  .block-inner-content {
+                    padding: 12.5vw 16.666vw 2.5vw 16.666vw;
+
+                    h2 {
+                      font-size: 5vw;
+                    }
+
+                    p {
+                      font-size: 2.666vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .event-search {
+        min-height: 220px;
+        height: auto;
+
+        .register-content {
+          //padding: 5.833vw 20%;
+          padding: 0 10%;
+        }
+      }
+
+      .register {
+        min-height: 220px;
+        height: auto;
+
+        .register-content {
+          padding: 70px 10%;
+        }
+      }
+
+      .form-block {
+
+        .heading-panel {
+
+          h2 {
+            font-size: 2.166vw;
+            line-height: 8.333vw;
+          }
+        }
+
+        .search-form {
+          margin-top: 0;
+          width: 21.666vw;
+
+          .form-item {
+
+            input {
+              height: 2.5vw;
+              font-size: 1.666vw;
+            }
+          }
+
+          .form-actions {
+            margin-bottom: 2.5vw;
+
+            input {
+              //height: 2.5vw;
+              //font-size: 1.666vw;
+            }
+          }
+        }
+
+        .btn-wrapper {
+          width: 21.666vw;
+
+          a {
+            //height: 2.5vw;
+            //font-size: 1.666vw!important;
+          }
+        }
+      }
+
+      .blog-heading {
+        height:auto;
+
+        h1 {
+          @include font-size(40);
+        }
+      }
+    }
+
+    footer {
+      height:33.333vw;
+
+      .footer-content {
+        width: 100vw;
+        padding: 50px 3vw 100px;
+
+        .footer-grid {
+          grid-template-columns: 35.416vw 23.166vw 35.416vw;
+          grid-template-rows: 1.666vw 4.583vw 2.916vw 4.583vw 7.083vw;
+
+          .head-1 {
+
+            h4 {
+              width:18.75vw;
+            }
+          }
+
+          .head-2 {
+          }
+
+          .wf-logo {
+
+            span, a {
+              width: 21.25vw;
+              height: 4vw;
+              background-size: 21.25vw 4vw;
+            }
+          }
+
+          .headline-partners-top {
+            width:18.75vw;
+
+            a {
+
+              &.headline-1 {
+                width: 3.166vw;
+                margin-left: 2.833vw;
+                height:4vw;
+                background-size: 3.166vw 4vw;
+              }
+
+              &.headline-2 {
+                margin-right: 1.25vw;
+                width: 3.583vw;
+                height:2.666vw;
+                background-size: 3.583vw 2.666vw;
+              }
+            }
+          }
+
+          .funding-partners {
+
+            a {
+
+              &.funding-1 {
+                width: 13.083vw;
+                height:2.916vw;
+                background-size: 13.083vw 2.916vw;
+              }
+
+              &.funding-2 {
+                width: 7.583vw;
+                height:2.916vw;
+                background-size: 7.583vw 2.916vw;
+              }
+
+              &.funding-3 {
+                width: 9.5vw;
+                height:2.333vw;
+                background-size: 9.5vw 2.333vw;
+              }
+            }
+          }
+
+          .head-3 {
+
+            h4 {
+
+              &:nth-child(1) {
+                width:23.333vw;
+              }
+
+              &:last-child {
+                width:10vw;
+              }
+            }
+          }
+
+          .social {
+
+          }
+
+          .headline-partners-bottom {
+            width:18.75vw;
+
+            a {
+
+              &.headline-3 {
+                width: 9vw;
+                height:2.833vw;
+                background-size: 9vw 2.833vw;
+              }
+
+              &.headline-4 {
+                width: 5.833vw;
+                height:2.75vw;
+                background-size: 5.833vw 2.75vw;
+              }
+            }
+          }
+
+          .mol-partners {
+
+            div {
+
+              &:nth-child(1) {
+                width:23.333vw;
+              }
+
+              &:last-child {
+                width:10vw;
+              }
+            }
+
+            a {
+
+              &.mol-1 {
+                width: 13.083vw;
+                height:1.041vw;
+                background-size: 13.083vw 1.041vw;
+              }
+
+              &.mol-2 {
+                width: 2.666vw;
+                height:3.541vw;
+                background-size: 2.666vw 3.541vw;
+              }
+
+              &.mol-3 {
+                width: 2.666vw;
+                height:2.625vw;
+                background-size: 2.666vw 2.625vw;
+              }
+
+              &.winner {
+                width: 6.083vw;
+                height:3.375vw;
+                background-size: 6.083vw 3.375vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//wysieyg styles
+
+section {
+
+  div {
+
+    &.wysiwyg {
+
+      h2 {
+        //font-size: 2.666vw;
+      }
+
+      h3 {
+        //font-size: 2vw;
+      }
+
+      p, li {
+        //font-size: 1.33vw;
+      }
+
+      ol, ul {
+
+        li {
+
+          //font-size: 1.33vw;
+        }
+      }
+    }
+  }
+}

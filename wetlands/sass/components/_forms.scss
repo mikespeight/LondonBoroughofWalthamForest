@@ -1,0 +1,204 @@
+
+// How can we help form
+.how-can-we-help-frm {
+  height:770px;
+  max-width: 570px;
+  background: $primaryOrange;
+  margin:15px;
+  margin-bottom: 0;
+
+  h3 {
+    text-align: center;
+    @include font-size(40);
+    font-weight: $light;
+    color: $white;
+    margin: -11px 0 -13px 0;
+    padding: 30px 0;
+  }
+
+  .form-item {
+    min-height: 87px;
+
+    label {
+      color: $white;
+      font-family: $montserrat-font;
+      @include font-size(21);
+      font-weight: $light;
+
+      &.form-required {
+
+        &:after {
+          content: '*';
+        }
+      }
+    }
+
+    input {
+      height:34px;
+    }
+
+    input,
+    textarea {
+      border: none;
+      padding: 0 10px;
+    }
+
+    textarea {
+      min-height: 220px;
+      padding:10px;
+    }
+
+    input[type=checkbox] {
+      margin: 10px;
+      background-color: $white;
+
+      & + label {
+        display: inline-block;
+        width: 421px;
+        line-height: 20px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .form-actions {
+
+    input[type="submit"]{
+      color: $white;
+      background: $primaryBlueGrey;
+      display: inline-block;
+      height:38px;
+      font-family: $montserrat-font;
+      @include font-size(21);
+      font-weight: $light;
+      padding:0 40px;
+      line-height:38px;
+      @include border-radius(4px);
+      border: none;
+      outline: none;
+      margin: -20px 0 0 0;
+
+    }
+  }
+}
+
+//footer form
+
+footer {
+
+  .footer-row {
+
+    .webform-submission-form {
+      margin:20px 0 0 13px;
+      position: relative;
+
+      .form-item {
+
+        label {
+          font-family: $montserrat-font;
+          @include font-size(20);
+          font-weight: $light;
+
+          &.visually-hidden {
+            display: block!important;
+            height: 30px;
+            clip: auto;
+            position: static!important;
+            width: auto;
+            content: 'Sign up for our newsletter'!important;
+          }
+        }
+
+        input {
+          border: none;
+          outline: none;
+          width: 340px;
+          height: 38px;
+          padding: 0 20px;
+          line-height: 38px;
+          @include font-size(21);
+          font-weight: $light;
+        }
+      }
+
+      .form-actions {
+
+        input[type="submit"]{
+          color: $white;
+          background: $primaryBlueGrey;
+          display: inline-block;
+          height:38px;
+          font-family: $montserrat-font;
+          @include font-size(21);
+          font-weight: $light;
+          padding:0 20px;
+          line-height:38px;
+          border: none;
+          outline: none;
+          margin: 0;
+          position: absolute;
+          top:35px;
+          left: 340px;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+//login form
+.user-login-form {
+  background: $offWhiteBg;
+  padding: 50px 15px;
+
+  .description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: $light;
+    padding: 0 0 15px;
+  }
+
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: $light;
+    display: inline-block;
+    width:80px;
+
+    &:after {
+      content: '*';
+    }
+  }
+
+  input {
+    border:none;
+    outline: none;
+    height:34px;
+    line-height: 34px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: $light;
+  }
+
+  input[type="text"],
+  input[type="password"]{
+    width:280px;
+    padding:0 10px;
+  }
+
+  input[type="submit"] {
+    border:none;
+    color: $white;
+    background-color: $primaryBlueGrey;
+    padding: 0 20px;
+    margin-left: 280px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+}

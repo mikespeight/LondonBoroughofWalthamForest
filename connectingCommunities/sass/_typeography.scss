@@ -1,0 +1,183 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700');
+
+/*@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_aZA3gTD_u50.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}*/
+
+@font-face {
+  font-family: 'Prismaset-Solid';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$pathToFonts}/prismaset/Prismaset_Solid.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Prismaset-Stencil';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$pathToFonts}/prismaset/Prismaset_Stencil.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Prismaset-One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$pathToFonts}/prismaset/Prismaset_One.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Prismaset-Two';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$pathToFonts}/prismaset/Prismaset_Two.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Prismaset-Three';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$pathToFonts}/prismaset/Prismaset_Three.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Prismaset-Five';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$pathToFonts}/prismaset/Prismaset_Five.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$pathToFonts}/Helvetica Neue/HelveticaNeue Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$pathToFonts}/Helvetica Neue/HelveticaNeue Bold.woff2') format('woff2');
+}
+
+
+$Prismaset-solid: 'Prismaset-Solid', sans-serif;
+.prismaset-solid {font-family: $Prismaset-solid}
+
+$Prismaset-stencil: 'Prismaset-Stencil', sans-serif;
+.prismaset-stencil {font-family: $Prismaset-stencil}
+
+$Prismaset-one: 'Prismaset-One', sans-serif;
+.prismaset-one {font-family: $Prismaset-one}
+
+$Prismaset-two: 'Prismaset-Two', sans-serif;
+.prismaset-two {font-family: $Prismaset-two}
+
+$Prismaset-three: 'Prismaset-Three', sans-serif;
+.prismaset-three {font-family: $Prismaset-three}
+
+$Prismaset-five: 'Prismaset-Five', sans-serif;
+.prismaset-five {font-family: $Prismaset-five}
+
+$HelveticaNeueRegular: 'Helvetica Neue Regular', sans-serif;
+.HelveticaNeueRegular { font-family: $HelveticaNeueRegular}
+
+$HelveticaNeueBold: 'Helvetica Neue Bold', sans-serif;
+.HelveticaNeueBold { font-family: $HelveticaNeueBold}
+
+$Montserrat-font: 'Montserrat', sans-serif;
+.montserrat-font {font-family: $Montserrat-font};
+
+$brandFont: $Montserrat-font;
+//$brandFont: $HelveticaNeueRegular;
+
+//font weights
+$extraLight:200;
+$light:     300;
+$regular:   400;
+$medium:    500;
+$semiBold:  600;
+$bold:      700;
+$black:     900;
+
+
+.extra-light      {font-weight: $extraLight;}
+.light            {font-weight: $light}
+.regular          {font-weight: $regular;}
+.semi-bold        {font-weight: $semiBold;}
+.medium           {font-weight: $medium;}
+.bold             {font-weight: $bold;}
+
+.left {text-align: left}
+.centre {text-align: center}
+.right {text-align: right}
+
+
+h1 {
+  margin: 70px 0 61px;
+  font-family: $Prismaset-five;
+  font-weight: $regular;
+  @include font-size(77);
+  text-align: center;
+}
+
+h2 {
+  margin: 80px 0;
+  font-family: $Prismaset-solid;
+  font-weight: $regular;
+  @include font-size(46);
+  text-align: center;
+
+  &.section-heading {
+    text-align: center!important;
+  }
+
+  &.heading-row {
+    margin:30px 0;
+  }
+
+  &.underlined-heading {
+    position: relative;
+    margin-top: 40px;
+    color: $white;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 72px;
+      height: 2px;
+      background-color: $white;
+      @include centerH;
+      bottom: -20px;
+    }
+  }
+}
+
+h3 {
+  font-family: $Prismaset-solid;
+  font-weight: $regular;
+  @include font-size(97);
+  margin-left: -3px;
+  line-height: 80px;
+}
+
+
+h4 {
+  margin-bottom: 15px;
+  font-family: $Montserrat-font;
+  font-weight: $regular;
+  @include font-size(14);
+  text-transform: uppercase;
+}

@@ -1,0 +1,459 @@
+/****************************************
+*
+* Global stylesheet
+*
+*****************************************/
+.border {
+  border:1px solid red;
+}
+
+header,
+.main-content,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 140px;
+  color: $white;
+  background-color: $primaryBrand;
+
+  .brand-bar {
+    position: relative;
+
+    .col-md-6 {
+    }
+
+    h1 {
+      position: absolute;
+      display: block;
+      top:33px;
+      left:37px;
+      width:328px;
+      height: 75px;
+      text-indent: -10000px;
+      background: transparent url("#{$pathToImages}/ps-procure-logo.png") 0 0 no-repeat;
+      margin:0;
+    }
+
+    .strap-line {
+      @include font-size(17);
+      text-align: right;
+      margin:30px 32px 0 0;
+    }
+  }
+}
+
+.main-content {
+  min-height: 500px;
+  background-color: $white;
+
+  section {
+
+    header {
+      background-color: transparent;
+
+      h3 {
+        color: $primaryBrand;
+        text-align: center;
+      }
+    }
+
+    footer {
+      border-top: none;
+    }
+  }
+  
+  .hero {
+    min-height: 646px;
+    background: transparent url("#{$pathToImages}/ps-procure-hero-bg.jpg") 0 0 no-repeat ;
+
+    .hero-content {
+      width: calc(50% - 160px);
+      float: right;
+      margin:227px 60px 0 0;
+
+      h2 {
+        font-family: $dinAlternateMedium;
+        @include font-size(30);
+        color: $primaryBrand;
+
+        &+ .cta-btn {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+
+  .services {
+
+    header {
+      min-height: 0;
+      height: auto;
+      background-color: $white;
+
+      h3 {
+        @include font-size(32);
+        margin: 74px 0 123px;
+      }
+    }
+
+    .services-inner {
+      justify-content: space-around;
+
+      .service {
+        width: 200px;
+        //border:1px solid gold;
+
+        .service-img {
+          display: block;
+          width: 188px;
+          height: 188px;
+        }
+
+        .service-title {
+          margin: 40px 0 18px;
+          font-family: $dinAlternateMedium;
+          color: $primaryBrand;
+          @include font-size(25);
+        }
+
+        .service-desc {
+          color: $black;
+          font-family: $dinAlternateRegular;
+          @include font-size(18);
+        }
+      }
+    }
+
+    footer {
+      border:none;
+      height: 130px;
+
+    }
+  }
+  
+  .about-us {
+    background: transparent url("#{$pathToImages}/about-us-bg.jpg") 0 0 no-repeat;
+    height:787px;
+
+    header {
+      background-color: transparent;
+      overflow: hidden;
+      height:345px;
+
+      h3 {
+        color: $white;
+        @include font-size(32);
+        margin: 269px 0 123px;
+
+        &.underline {
+
+          span {
+
+            &::after {
+             // border-color: $white;
+              content: '';
+              position: absolute;
+              display: block;
+              bottom:-43px;
+              left: calc(50% - 25px);
+              width:50px;
+              height:3px;
+              border-top: 3px solid $white;
+            }
+          }
+        }
+      }
+    }
+
+    .about-us-content {
+      max-width: 705px;
+      margin: 40px auto 125px;
+
+
+      p {
+        text-align: center;
+        color: $white;
+        @include font-size(18);
+      }
+    }
+
+    footer {
+      background-color: transparent;
+      border:none;
+      height: 130px;
+    }
+  }
+
+  .meet-the-team {
+
+    header {
+      min-height: 0;
+      height: auto;
+      background-color: $white;
+
+      h3 {
+        @include font-size(32);
+        margin: 74px 0 123px;
+      }
+    }
+
+    .meet-the-team-inner {
+      justify-content: space-around;
+
+
+      .team {
+        width: 200px;
+
+        .team-img {
+          display: block;
+          width: 188px;
+          height: 188px;
+        }
+
+        .team-title {
+          margin: 40px 0 18px;
+          font-family: $dinAlternateMedium;
+          color: $primaryBrand;
+          @include font-size(25);
+
+          &+ .job-dec {
+            margin: -17px 0 18px;
+            font-family: $dinAlternateMedium;
+            line-height: 1;
+            color: $primaryBrand;
+            @include font-size(20);
+          }
+        }
+
+
+
+        .team-desc {
+          color: $primaryBrand;
+          font-family: $dinAlternateRegular;
+          @include font-size(18);
+        }
+      }
+    }
+
+    footer {
+      border:none;
+      height: 130px;
+
+    }
+  }
+
+  .past-projects {
+    height: 788px;
+    background: transparent url("#{$pathToImages}/past-projects-bg.jpg") 0 0 no-repeat;
+
+    header {
+      overflow: hidden;
+      min-height: 162px;
+
+      h3 {
+        margin-top: 80px;
+
+      }
+    }
+    
+    .past-projects-inner {
+      padding-top: 45px;
+
+      .flexslider {
+        background-color: transparent;
+        border:none;
+      }
+
+      .slides {
+
+        .slide {
+          min-height: 400px;
+
+          &.project {
+            max-width: 1060px;
+            margin:0 auto;
+
+            .project-image {
+              margin-top: 52px;
+            }
+
+            .project-description {
+
+              h4 {
+                text-align: left;
+                font-family: $dinAlternateMedium;
+                @include font-size(25);
+              }
+
+              p {
+                color: $black;
+                font-family: $dinAlternateRegular;
+                @include font-size(18);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: transparent;
+      padding-top:0;
+      height: auto;
+    }
+  }
+
+  .contact-us {
+    height: 788px;
+    margin: -21px 0 -22px;
+    background: transparent url("#{$pathToImages}/contact-us-bg.jpg");
+
+    header {
+      overflow: hidden;
+      height: 169px;
+
+      h3 {
+        margin-top: 86px;
+        color: $white;
+
+        &.underline {
+
+          span {
+
+            &:after {
+              border-color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-us-inner {
+      width: 995px;
+      margin:0 auto;
+      padding:40px 0 0;
+
+      .contact-us-form {
+
+        form {
+
+          .form-item {
+            min-height:83px;
+
+            input[type=text] {
+              display: block;
+              width: 446px;
+              height: 42px;
+              padding: 0 5px;
+              font-family: $dinAlternateBold;
+              color: $black;
+
+            }
+
+            select {
+              width: 446px;
+              height: 42px;
+              font-family: $dinAlternateBold;
+              color: $black;
+              padding:5px;
+              border:0;
+              outline: none;
+
+              option {
+                padding:5px;
+                border:0;
+                outline: none;
+              }
+            }
+          }
+
+          .form-actions {
+
+            input[type=submit] {
+              display: inline-block;
+              width: 168px;
+              height: 48px;
+              text-align: center;
+              font-family: $dinAlternateMedium;
+              @include font-size(20);
+              @include border-radius(8px);
+              color: $white;
+              //background-color: $tertiaryBrand;
+              background-color: transparent;
+              border: 2px solid $white;
+
+              margin-top: 30px;
+
+              &:hover {
+                background-color: $tertiaryBrand;
+                border: 0;
+              }
+            }
+          }
+
+          label {
+            font-family: $dinAlternateRegular;
+            color: $white;
+            @include font-size(18);
+            font-weight: normal;
+            display: block;
+          }
+        }
+      }
+
+      .contact-us-details {
+
+        div {
+          margin-top: 34px;
+          padding: 0 15px;
+
+          &:first-child {
+            margin-top: 27px;
+          }
+
+          p {
+            line-height: 1;
+            margin-bottom: 5px;
+            color: $white;
+            font-family: $dinAlternateRegular;
+            @include font-size(24);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+footer {
+  height:200px;
+  color: $primaryBrand;
+  background-color: $white;
+  padding-top: 56px;
+  border-top: 1px solid $primaryBrand;
+
+  .ps-procure-footer-logo {
+    margin-left: 32px;
+  }
+
+  .strap-line {
+    text-align: center;
+    @include font-size(22);
+    color: $primaryBrand;
+    font-family: $dinAlternateMedium;
+  }
+
+  .lbwf-footer-logo {
+    margin-right: 32px;
+  }
+
+  .copyright {
+    color: $primaryBrand;
+    font-family: $dinAlternateRegular;
+    padding-left: 32px;
+    margin: 50px 0 10px;
+  }
+}

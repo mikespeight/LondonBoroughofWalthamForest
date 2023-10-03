@@ -1,0 +1,277 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for medium screen down i.e. < 992px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  &/*:before {
+    content: 'Medium screen down i.e. 992 to 768';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    @include font-size(24);
+    color: red;
+  }*/
+
+  .page-wrapper {
+
+    .content-wrapper {
+      margin-top: 118px;
+
+      .dynamic-tiles-section {
+
+        & > div {
+          width: 50%
+        }
+      }
+
+      .cta-row {
+
+        .cta-row-content {
+
+          .cta {
+            margin:1.666vw 0;
+
+            a {
+
+              i {
+
+                &.icon {
+                  height:17.083vw;
+                  width:14vw;
+                  background-size: 42vw 17.083vw;
+
+                  &.keys {
+                    background-position: 0 0;
+                  }
+
+                  &.building{
+                    background-position: -14vw 0;
+                  }
+
+                  &.train {
+                    background-position: -28vw 0;
+                  }
+                }
+              }
+
+              p {
+                margin-top: 17.083vw;
+                padding: 0 5vw;
+              }
+            }
+          }
+        }
+      }
+
+      .get-in-touch {
+
+        .get-in-touch-content {
+
+          form {
+
+            &.get-in-touch-form {
+              justify-content: flex-start;
+              flex-wrap: nowrap;
+              height: auto;
+
+              & > div {
+                width: 100%;
+                margin:  20px !important;
+                height: 50px;
+
+                &.form-item {
+                  width: calc(100% - 30px);
+
+                  &:nth-child(4) {
+                    height:140px;
+                  }
+                }
+
+                &.form-actions {
+
+                  input {
+
+                    &[type=submit] {
+                      width:100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .slider-section {
+
+        .slider-section-content {
+
+          .slider-wrapper {
+
+            .flexslider {
+
+              .slides {
+
+                .slide {
+                  width: 39.062vw;
+                  height:31.25vw;
+
+                  a {
+
+                    .slide-img {
+                      margin:0 2.083vw;
+                      width: 20.833vw;
+                      height: 18.333vw;
+                    }
+
+                    .slide-info {
+                      width:25vw;
+                      height: 10.416vw;
+                      padding-left: 3.333vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .latest-news-section {
+
+        .latest-news-section-content {
+
+          h2 {
+
+          }
+
+          .latest-news-wrapper {
+
+            .news-item {
+              width: 25vw;
+              height: 4.083vw;
+
+              .news-img {
+                width: 20.833vw;
+                height: 18.333vw;
+                margin: 0 2.083vw;
+              }
+            }
+          }
+        }
+      }
+
+      .bio-section {
+        height: auto;
+
+        .bio-imgage {
+          @include centerV;
+        }
+
+        .bio-content {
+          flex-direction: column;
+
+          & > div {
+            width: 95%;
+          }
+
+          .contact-info {
+            padding: 30px  0 10px;
+          }
+
+          .bio-text {
+            padding: 10px 0 30px;
+
+          }
+        }
+      }
+
+      .map-section {
+
+        header {
+          height: auto;
+        }
+
+        .map-section-content {
+          flex-direction: column-reverse;
+
+          div {
+
+            &.map-wrapper,
+            &.legend {
+              width: 100%;
+            }
+
+            &.legend {
+              flex-direction: row;
+              padding: 0 50px 30px;
+
+              .key {
+                padding-left: 20px;
+                display: inline-flex;
+
+                span {
+                  padding-left: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+
+      .footer-grid {
+
+        &.footer-content {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 167px 1fr 100px;
+          grid-template-areas: ". logos"
+          "social ."
+          "footer-nav copyright";
+          height: inherit;
+        }
+      }
+
+      .social {
+
+        a {
+          display: inline-block;
+          color: $white;
+          margin-right: 16px;
+
+          .fa {
+            @include font-size(30);
+          }
+
+          &:nth-child(4){
+            margin-right: 0;
+          }
+        }
+      }
+
+      .copyright {
+        text-align: right;
+        padding-right: 30px;
+      }
+
+      .logos {
+
+        a {
+          bottom:70px!important;
+        }
+      }
+    }
+
+  }
+}

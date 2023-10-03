@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+@font-face {
+  font-family: 'Gotham-Book-Regular';
+  src: url('../includes/fonts/gotham/gotham-book-webfont.woff2') format('woff2'),
+  url('../includes/fonts/gotham/gotham-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../includes/fonts/gotham/gotham-medium-webfont.woff2') format('woff2'),
+  url('../includes/fonts/gotham/gotham-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+$fontFamily: 'Montserrat', sans-serif;
+$montserrat-font: 'Montserrat', sans-serif;
+$GothamBookRegular: 'Gotham-Book-Regular', sans-serif;
+$GothamMedium: 'Gotham-Medium', sans-serif;
+
+//font weights
+
+$light: 300;
+$regular: 400;
+$bold:  700;
+
+$body-text: 16px;
+$sub-text:  14px;
+
+p {
+  font-size: 1.6rem;
+}

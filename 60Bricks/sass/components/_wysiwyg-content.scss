@@ -1,0 +1,145 @@
+section {
+
+
+
+  div {
+
+    &.wysiwyg {
+      display: block!important;
+      font-family: $Myriad-Pro-font;
+      font-weight: $light;
+
+      a {
+        display: inline;
+      }
+
+      &.inner {
+        //margin: 30px 0;
+      }
+
+      p {
+        @include font-size(18);
+        margin: 5px 0 25px;
+        padding-right: 20px;
+        line-height: 28px;
+        font-weight: $light;
+
+        &:last-child {
+          margin-bottom:00;
+        }
+
+        &.small-text {
+          @include font-size(14);
+          line-height: 19px;
+        }
+      }
+
+      h3 {
+        color: $coreGold;
+        @include font-size(18);
+        font-weight: $bold;
+        margin-bottom: 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        @include font-size(18);
+        padding-left: 10px;
+        line-height: 31px;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 10;
+          left:0;
+          top:12px;
+          display: block;
+          width: 4px;
+          height: 4px;
+          background-color: $black;
+          @include border-radius(2px);
+        }
+      }
+
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 17px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          width: 50%;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      ul {
+        padding-left:2px;
+        margin-bottom: 25px;
+
+        &:nth-child(1) {
+          margin-top: 13px;
+        }
+        
+        li {
+          position: relative;
+          margin-bottom: 0;
+          @include font-size(18);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+
+    div {
+
+      &.wysiwyg {
+
+        div {
+          flex-direction: column;
+          justify-content: center;
+          margin-bottom: 30px;
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  section {
+
+    div {
+
+      &.wysiwyg {
+
+        div {
+          margin-bottom: 30px;
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

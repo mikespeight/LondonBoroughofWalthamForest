@@ -1,0 +1,76 @@
+/****************************************
+*
+* About us page stylesheet
+*
+*****************************************/
+
+.introduction {
+  position: relative;
+
+  .introduction-wrapper {
+    padding: 0 15px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.our-teams {
+  position: relative;
+  height:500px;
+
+  .our-teams-wrapper {
+    padding: 0 15px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.accreditations {
+
+  .accreditations-wrapper {
+    padding: 0 15px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.our-services {
+  background-color: $greyBg;
+  position: relative;
+  padding-top: 55px;
+
+  h3 {
+    text-align: center;
+  }
+
+  .our-services-wrapper {
+    padding: 0 15px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .our-services-grid {
+      padding:0 135px;
+      margin-bottom:100px;
+      @include flex-container();
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-between;
+
+      a {
+        margin: 15px 0;
+
+        &.service {
+          display: block;
+          width:200px;
+          height:185px;
+        }
+
+        p {
+          text-align: center;
+          color: $brandGreen;
+
+        }
+      }
+    }
+  }
+}

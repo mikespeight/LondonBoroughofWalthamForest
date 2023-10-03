@@ -1,0 +1,100 @@
+//hero carousel
+
+.hero {
+
+  .hero-caroulel-wrapper,
+  .flexslider .slides,
+  .flex-viewport {
+    height: 100%;
+  }
+
+  .flexslider {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: none;
+
+    .slides {
+
+      & > li {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .flex-direction-nav {
+      display: none;
+    }
+
+    .flex-control-nav {
+      bottom:0;
+      z-index: 2;
+
+      &.flex-control-paging {
+        text-align: right;
+        padding-right: 20px;
+        li {
+
+          a {
+            background-color: rgba(255,255,255,0.5);
+            color: transparent;
+
+            &.flex-active {
+              background-color: rgba(255,255,255,0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) and (max-width : 1200px) {
+
+  .main-content {
+
+    .offers {
+
+      .offers-content {
+
+        .offers-wrapper {
+
+          .flexslider {
+
+            .slides {
+
+              & > li {
+                width: 46.35vw!important;
+                margin-right: 2.5vw!important;
+
+                div {
+
+                  a {
+                    width:42vw;
+                    overflow: hidden!important;
+
+                    img {
+                      object-fit: cover!important;
+                      height: 100%!important;
+                    }
+                  }
+                }
+              }
+            }
+
+            .flex-viewport {
+              width: calc(95vw + 17px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

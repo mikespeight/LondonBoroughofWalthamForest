@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicestore - About us page - layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+
+    <script src="assets/js/modernizr-latest-development.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/js/lib/jQuery/jquery-3.2.1.min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="bootstrap/assets/javascripts/bootstrap.min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/components/flexslider-scss/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/js/page-body-class.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/js/jquery.matchHeight.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/js/servicestore.js" type="text/javascript" language="JavaScript"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+</head>
+<body class="not-front">
+<header>
+    <div class="social side-by-side">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/walthamforestcouncil" class="facebook social-btn"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/wfcouncil" class="twitter social-btn"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="brand side-by-side">
+        <a href="/" class="logo">
+            <h1>Servicestore</h1>
+        </a>
+    </div>
+    <nav role="navigation"  class="navbar navbar-default">
+
+        <div class="content ">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="clearfix nav navbar-nav navbar-center">
+                    <li class="item--active-trail"><a href="">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">All the services</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="handyman.html">Handyman</a>
+                            </li>
+                            <!--<li>
+                                <a href="#">How to get here</a>
+                            </li>-->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about-us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Book now</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="main-content">
+
+    <section class="servicestore-form">
+
+        <div class="form-wrapper row fixed-width-content">
+
+            <div class="form-inner">
+
+                <h3 class="form-heading secure"><span>Payment details</span></h3>
+
+                <form action="" class="payment-form">
+
+                    <div class="tab-section ">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+
+                            <li role="presentation" class="active">
+                                <a href="#pay-by-card" class="card" aria-controls="pay-by-card" role="tab" data-toggle="tab">
+                                    <span>Pay by card <i class="fa fa-credit-card"></i></span>
+
+                                </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#pay-by-paypal" class="paypal" aria-controls="pay-by-paypal" role="tab" data-toggle="tab">
+                                    <span>Pay by PayPal <i class="paypal"></i></span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="pay-by-card">
+                                <div class="payment-logos clearfix"></div>
+
+                                <div class="form-row form-item">
+                                    <label for="card-type">Card type</label>
+                                    <select name="" id="card-type">
+                                        <option value="" selected>Please select</option>
+                                        <option value="">Visa</option>
+                                        <option value="">Visa Debit</option>
+                                        <option value="">Master card</option>
+                                        <option value="">American express</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row form-item">
+                                    <label for="card-name">Name on card</label>
+                                    <input type="text" id="card-name" placeholder="Mr Cardholder" />
+                                </div>
+
+                                <div class="form-row form-item">
+                                    <label for="card-number">Card number</label>
+                                    <input type="text" id="card-number" placeholder="#### #### #### ####" />
+                                </div>
+
+                                <div class="form-row form-item expiry-date">
+                                    <label>Expiry date</label>
+                                    <select name="" title="Expiry month" id="expiry-month">
+                                        <option value="">mm</option>
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                        <option value="">05</option>
+                                        <option value="">06</option>
+                                        <option value="">07</option>
+                                        <option value="">08</option>
+                                        <option value="">09</option>
+                                        <option value="">10</option>
+                                        <option value="">11</option>
+                                        <option value="">12</option>
+                                    </select>
+                                    <span>/</span>
+                                    <select name="" title="Expiry year" id="expiry-year">
+                                        <option value="">yyyy</option>
+                                        <option value="">2018</option>
+                                        <option value="">2019</option>
+                                        <option value="">2020</option>
+                                        <option value="">2021</option>
+                                        <option value="">2022</option>
+                                        <option value="">2023</option>
+                                        <option value="">2024</option>
+                                        <option value="">2025</option>
+                                        <option value="">2026</option>
+                                        <option value="">2027</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row form-item security-number">
+                                    <label for="security-number">Security number</label>
+                                    <input id="security-number" placeholder="###" type="text" />
+                                    <span class="whats-this">What's this <i class="help-icon"><span class="help-content"></span></i></span>
+                                </div>
+
+                                <div class="form-actions">
+
+                                    <a href="#" class="btn form-btn secondary centre-txt">Change order</a>
+                                    <a href="#" class="btn form-btn secondary centre-txt">Cancel</a>
+                                    <input type="submit" value="Make payment">
+
+                                </div>
+
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane" id="pay-by-paypal">
+
+                                <div class="paypal-info">
+                                    <h4>Paying PayPal</h4>
+                                    <p>To pay by paypal please click on the link and you will be forwarded to a secure PayPal website, where you can authorise payment for your order before being returned here.</p>
+                                </div>
+
+                                <div class="form-actions">
+
+                                    <a href="#" class="btn form-btn secondary centre-txt">Cancel</a>
+
+                                </div>
+
+                                <div id="paypal-button"></div>
+
+                                <script>
+									paypal.Button.render({
+										env: 'sandbox', // Or 'production',
+
+										commit: true, // Show a 'Pay Now' button
+
+										style: {
+											color: 'gold',
+											size: 'large'
+										},
+
+										payment: function(data, actions) {
+                                            /*
+                                             * Set up the payment here
+                                             */
+										},
+
+										onAuthorize: function(data, actions) {
+                                            /*
+                                             * Execute the payment here
+                                             */
+										},
+
+										onCancel: function(data, actions) {
+                                            /*
+                                             * Buyer cancelled the payment
+                                             */
+										},
+
+										onError: function(err) {
+                                            /*
+                                             * An error occurred during the transaction
+                                             */
+										}
+									}, '#paypal-button');
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="confirmation-text">
+                        A confirmation email with be sent to you once payment is processed. We will also text you  24 hrs beforehand to confirm the booking time.
+                    </p>
+
+
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="assets/images/walthamlogo-footer.png" alt="" role="presentation"/>
+        </div>
+
+        <nav class="footer-nav">
+            <div class="col1">
+                <h4>Handyman service</h4>
+                <ul>
+                    <li><a href="#">Book a handyman</a></li>
+                    <li><a href="#">Handyman pricing</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h4>Contact us</h4>
+                <ul>
+                    <li><a href="#">Enquiry form</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h4>Accessibility & privacy</h4>
+                <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Our privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="login-form">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="copyright">
+            <p>&copy; 2017 London Borough of Waltham Forest</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+
+<script>
+	jQuery(function($) {
+		$('.navbar .dropdown').hover(function() {
+			$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+		}, function() {
+			$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+		});
+
+		$('.navbar .dropdown > a').click(function(){
+			location.href = this.href;
+		});
+
+	});
+</script>
+
+</html>

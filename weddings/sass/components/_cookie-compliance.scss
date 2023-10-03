@@ -1,0 +1,50 @@
+
+// Variables
+$background-colour: #397F94;
+$site-font: 'Montserrat', sans-serif;
+$btn-background:  #d29d5e;
+$btn-background-sec:  #f5d18a;
+
+div {
+
+  &#sliding-popup {
+    background: $background-colour;
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-family: $site-font;
+      color: $white;
+    }
+
+    h2 {
+      @include font-size(22);
+    }
+
+    .popup-content {
+      padding:15px 0;
+
+      .eu-cookie-compliance-buttons {
+        padding-top: 30px;
+
+        button {
+          display: block;
+          margin-bottom: 20px;
+          background-color: $btn-background;;
+          border:1px solid $btn-background;;
+          color: $white;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            background-color: $btn-background-sec;
+            border-color: $btn-background-sec;
+            color: $background-colour;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,53 @@
+/****************************************
+*
+* Service store colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+$offWhite: #f5f5f5;
+
+// New brand colours
+$brandYellow: #fecc00;
+$brandBlue:   #00a5aa;
+$brandGreen:  #96c11f;
+$brandOrange: #ef7720;
+$brandDkBlue: #211949;
+
+// New brand background colours
+$brandYellowBg: $brandYellow;
+.brandYellowBg {background-color: $brandYellowBg;}
+$brandBlueBg:   $brandBlue;
+.brandBlueBg {background-color: $brandBlueBg;}
+$brandGreenBg:  $brandGreen;
+.brandGreenBg {background-color: $brandGreenBg;}
+$brabdOrangeBg: $brandOrange;
+.brandOrangeBg {background-color: $brabdOrangeBg;}
+$brabdDkBlueBg: $brandDkBlue;
+.brandDkBlueBg {background-color: $brabdDkBlueBg;}
+
+
+//old Brand colours
+$brand90grey: #606059;
+$vDkGrey: $brand90grey;
+$brand72grey:  #6a6a6a;
+$dkGrey:  $brand72grey;
+$brand30grey: #c6c6c6;
+$midGrey: $brand30grey;
+
+$ltGrey: #e1e1e1;
+
+$buttonVDkGrey:  #404040;
+$nearBlack: $buttonVDkGrey;
+$buttonGrey: $brand72grey;
+
+
+// text colours
+$txtColour: #211949;
+$text-color: $txtColour;
+$headingColour: $txtColour;
+
+//other colours
+$notification-bg: #ee1c24;

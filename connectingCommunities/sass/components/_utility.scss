@@ -1,0 +1,90 @@
+/******************************************************************************************
+*
+*
+*
+*   Responsive utility classes for various device widths:
+*   xlg > 1200
+*   lg  >= 992 <1200
+*   md  >= 768 <992
+*   sml >= 480
+*
+*
+*
+*******************************************************************************************/
+
+$xlg-min: 1200px; // Extra large devices, Desktops (≥1200px)
+
+$lg-max:  1199px; // Large devices,
+$lg-min:  992px;  // Desktops (≥992px - <1200px)
+
+$md-max:  991px;  // Medium devices,
+$md-min:  768px;  // Tablets (≥768px - <992px)
+
+$sm-max:  767px;  // Small devices,
+$sm-min:  544px;  // (≥544px - <768px)
+
+$xsm-max: 543px;  // Extra small devices, Portrait phones (<544px)
+
+
+// Extra large devices up
+@media only screen and (min-width : $xlg-min) {
+  .hidden-xl-up {display: none!important;}
+}
+
+// Extra large devices down applies to all sizes, so no media query required
+.hidden-xl-down {display: none!important;}
+
+// large devices up
+@media only screen and (min-width : $lg-min) {
+  .hidden-lg-up {display: none!important;}
+}
+
+// Large devices,
+@media only screen and (min-width : $lg-min) and (max-device-width : $lg-max) {
+
+}
+
+// large devices down
+@media only screen and (max-width : $lg-max) {
+  .hidden-lg-down {display: none!important;}
+}
+
+// Medium devices, up
+@media only screen and (max-width : $md-min) {
+  .hidden-md-up {display: none!important;}
+}
+
+// Medium devices,
+@media only screen and (min-width : $md-min) and (max-device-width : $md-max) {
+
+}
+
+// Medium devices, Down
+@media only screen and (max-width : $md-max) {
+  .hidden-md-down {display: none!important;}
+}
+
+// Small devices, up
+@media only screen and (max-width : $sm-min) {
+  .hidden-sm-up {display: none!important;}
+}
+
+// Small devices
+@media only screen and (min-width : $sm-min) and (max-device-width : $sm-max) {
+
+}
+
+// Small devices down
+@media only screen and (max-width : $sm-max) {
+  .hidden-sm-down {display: none!important;}
+
+}
+
+
+// Extra small devices up, applies to all sizes, so no media query required
+.hidden-xs-up {display: none!important;}
+
+// Extra small devices down
+@media only screen and (max-width : $xsm-max) {
+  .hidden-xs-down {display: none!important;}
+}

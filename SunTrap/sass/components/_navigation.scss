@@ -1,0 +1,131 @@
+/****************************************
+*
+* Navigation stylesheet
+*
+* Styles for Bootstrap 4 Navigation
+*
+* Property declaration order
+*
+* position
+* display
+* box model
+* color
+* text
+* other
+*
+*****************************************/
+
+
+header  {
+  position: relative;
+  z-index: 3;
+
+  .top-nav {
+    height: 97px;
+    margin:0 auto;
+    overflow: visible;
+
+    .navbar {
+      padding: 0;
+    }
+
+    ul {
+
+      &.navbar-nav {
+
+        & > li {
+          height: 97px;
+          @include font-size(18);
+          padding: 12px 0;
+
+          &:not(:last-child) {
+
+            a {
+              border-right: 1px solid $lt-grey;
+            }
+          }
+
+          & > a {
+            display: block;
+            height: 73px;
+            padding: 0 40px!important;
+            color: $text-color;
+            line-height: 73px;
+
+            &.dropdown-toggle {
+
+              &:after {
+                display: none;
+              }
+            }
+          }
+
+          &:hover {
+            background-color: $suntrapOrange;
+
+            a {
+              color: $white;
+              border-color: $suntrapOrange;
+              text-decoration: none;
+
+            }
+          }
+
+          // dropdown menu desktop
+          &.dropdown {
+            display: block!important;//TO DO remove
+
+            & > ul {
+
+              &.dropdown-menu {
+                background-color: $white;
+                @include centerH;
+                top:104%;
+                padding: 10px 30px;
+
+                &:before {
+                  content: '';
+                  //display: block;
+                  width: 20px;
+                  height: 20px;
+                  background-color: $white;
+                  @include centerH;
+                  top:-12px;
+                  transform: rotate(45deg);
+                  transform-origin: top left;
+                }
+
+                & > li {
+                  margin: 10px 0;
+
+                  /*&:first-child {
+                    padding-top: 10px;
+                  }*/
+
+                  & > a {
+                    color: $black;
+                    font-family: $Roboto-font;
+                    font-weight: $regular;
+                    @include font-size(18);
+                    border-bottom: 1px solid transparent;
+                    border-right: none;
+                    padding: 3px 0;
+                    //margin: 0 20px;
+                    white-space: nowrap;
+
+                    &:hover,
+                    &:active {
+                      color: $suntrapOrange;
+                      background-color: transparent;
+                      border-bottom: 1px solid $suntrapOrange;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

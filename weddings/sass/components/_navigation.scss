@@ -1,0 +1,269 @@
+/****************************************
+*
+* Navigation stylesheet
+*
+*****************************************/
+
+nav {
+  margin-top: 35px;
+
+  &.navbar-default {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  &.navbar {
+
+    .navbar-nav {
+      display: inline-block;
+      float: none;
+
+      & > li {
+
+        & > a {
+          color: $white;
+          font-family: $montserrat-font;
+          @include font-size(14);
+          font-weight: $light;
+          text-transform: uppercase;
+
+          &:visited {
+            color: $white;
+          }
+
+          &:hover,
+          &:active {
+            color: $brandGold;
+          }
+        }
+
+        &:nth-child(3) {
+          margin-right:10vw;
+        }
+
+        // dropdown menu desktop
+        &.dropdown {
+
+          & > ul {
+
+            &.dropdown-menu {
+              @include centerH;
+
+              &:before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: $white;
+                @include centerH;
+                top:-12px;
+                transform: rotate(45deg);
+                transform-origin: top left;
+              }
+
+              & > li {
+                margin: 10px 0;
+
+                &:first-child {
+                  padding-top: 10px;
+                }
+
+                & > a {
+                  color: $textGold;
+                  font-family: $montserrat-font;
+                  font-weight: $light;
+                  @include font-size(14);
+                  border-bottom: 1px solid transparent;
+                  padding: 3px 0;
+                  margin: 0 20px;
+
+                  &:hover,
+                  &:active {
+                    color: $txtColour;
+                    background-color: $white;
+                    border-bottom: 1px solid $txtColour;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+}
+
+
+// Mobile menu
+
+@include tablet-portrait-and-below {
+
+/*  .navbar-toggle {
+    float: none!important;
+    margin: 0 30px 30px;
+  }*/
+
+
+}
+
+@media (max-width: 990px) {
+
+  .navbar-toggle {
+    float: none!important;
+    margin: 0 30px 30px;
+    z-index: 50;
+  }
+
+  .navbar-default {
+
+    .navbar-toggle {
+      border:1px solid $brandGold;
+
+      &:focus {
+        background-color: $blueTxtBg;
+      }
+
+      .icon-bar {
+        background-color: $textGold;
+      }
+    }
+  }
+
+  #search {
+
+    form {
+      top:61px!important;
+      right:34px!important;
+
+      .form-item {
+
+        input[type="text"] {
+          position: absolute;
+          top: -60px;
+          right: 54px;
+          background-color: rgba(0,0,0,0.2)!important;
+        }
+      }
+    }
+  }
+
+  header {
+
+    button {
+
+      &#search-btn {
+        top:37px;
+        right:20px;
+      }
+    }
+  }
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+
+    &.in {
+      display: block!important;
+    }
+  }
+  .navbar-nav {
+    float: left!important;
+    margin: 100px 0 20px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  nav {
+    margin-top: 0;
+    padding-top: 35px;
+    transition: all 0.75s;
+
+    &.navbar-default {
+      //background-color: $blueTxtBg;
+    }
+
+    &.navbar {
+
+      .navbar-collapse {
+        margin-top: -100px;
+        background-color: $blueTxtBg;
+
+        &.collapse {
+
+          &.in {
+            //margin-top: -100px;
+          }
+        }
+      }
+
+      .navbar-nav {
+
+        & > li {
+          overflow: hidden;
+          margin:0!important;
+          text-align: left;
+
+          & > a {
+
+
+          }
+
+          &.dropdown {
+
+            & > ul {
+
+              &.dropdown-menu {
+                margin-left: 20px;
+                display: block;
+                background-color: $blueTxtBg;
+                position: static;
+                left:0;
+                transform: none;
+                border-radius: 0;
+                box-shadow: none;
+                border: none;
+                margin-top:0;
+                padding-top: 0;
+
+                &:before {
+                  display: none;
+                }
+
+                & > li {
+
+                  &:first-child {
+                    padding: 0;
+                  }
+
+                  & > a {
+                    color: $white;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,172 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for medium screen down i.e. < 992px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  /*&:before {
+    content: '992 to 768';
+    position: fixed;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1000;
+  }*/
+
+  .page-wrapper {
+
+    header {
+
+      .hero {
+
+        .hero-slider {
+          height: inherit;
+
+          .flexslider {
+            height: inherit;
+          }
+
+          &.slider {
+
+            ul {
+
+              &.slides {
+                height: inherit;
+
+                li {
+
+                  &.slide {
+                    height: inherit;
+
+                    .slide-inner {
+                      height: inherit;
+
+                      picture {
+                        height: inherit;
+
+                        img {
+                          height: inherit;
+                          width: auto;
+                          object-fit: cover;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .place-for-everyone,
+    .affordable-homes {
+      height: 830px;
+
+      img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .place-for-everyone-panel,
+      .affordable-homes-panel {
+        width: 650px;
+        height: auto;
+        padding:60px;
+      }
+    }
+
+    .building-communities {
+      height:950px;
+
+      img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .building-communities-panel {
+        width: 650px;
+        height: auto;
+        padding:60px;
+      }
+    }
+
+    .content-slider {
+      height:1000px;
+      max-height: none;
+
+      .fixed-width-content {
+
+        &.slider {
+          padding:60px 0;
+
+          .flexslider {
+
+            ul {
+
+              &.slides {
+
+                li {
+
+                  &.slide {
+
+                    .slide-inner {
+                      flex-direction: column-reverse;
+
+                      .slide-content {
+                        width: 100%;
+                      }
+
+                      .slide-image {
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .quotes {
+      height: 800px;
+
+      img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .quotes-inner {
+        width: 100%;
+        padding: 0 80px;
+      }
+    }
+
+    footer {
+
+      .footer-footer {
+        height:140px;
+        margin-top: 40px;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+      "navigation navigation"
+      "copyright logos";
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+html,
+body {
+  width:100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $Lato-font;
+  font-weight: $regular;
+  @extend .regular;
+  color: $txtColour;
+  @include font-size(14);
+
+}
+
+#UserAgent {
+  display: none;
+}
+
+a,
+button {
+  display: block;
+  outline: none;
+
+  &.btn {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    border-radius: 0!important;
+
+
+    &.link-btn {
+      width:373px;
+      height: 44px;
+      border: 2px solid $brabdDkBlueBg;
+      margin:20px 0;
+      font-family: $Lato-font;
+      font-weight: $bold;
+      @include font-size(20);
+      line-height: 44px;
+      text-align: center;
+    }
+
+    &.brand-btn {
+      background-color: $brabdDkBlueBg;
+      border:1px solid $brabdDkBlueBg;
+      color: $white;
+      font-family: $Lato-font;
+      font-weight: $regular;
+      @include font-size(14);
+      text-transform: uppercase;
+      transition: all 0.5s ease-in-out;
+
+      &.white-btn {
+        background-color: $white;
+        border-color: $white;
+        color: $text-color;
+      }
+
+      &.brand-reverse {
+        background-color: transparent;
+        border-color: $white;
+      }
+    }
+  }
+
+  &:hover {
+
+    &.btn {
+
+      &.brand-btn {
+        background-color: $white;
+        border:1px solid $brabdDkBlueBg;
+        color: $text-color;
+
+        &.white-btn {
+          //border-color: $white;
+          color: $white;
+        }
+
+        &.brand-reverse {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
+
+

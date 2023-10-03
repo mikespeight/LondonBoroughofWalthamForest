@@ -1,0 +1,32 @@
+.photos {
+
+  .flexslider {
+    border: none;
+    margin: 0;
+    box-shadow: none;
+
+    .flex-direction-nav {
+
+      a {
+        top:52%;
+        width:23px;
+        height:26px;
+        color: transparent;
+        background: url('#{$pathToImages}/arrow-left-grey.png') 0 0 no-repeat;
+        background-size: 23px 26px;
+
+        &:before {
+          content: '';
+        }
+
+        &.flex-next {
+          background-image: url('#{$pathToImages}/arrow-right-grey.png');
+
+          &:before {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}

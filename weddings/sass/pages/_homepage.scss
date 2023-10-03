@@ -1,0 +1,446 @@
+/****************************************
+*
+* Homepage stylesheet
+*
+*****************************************/
+
+.page-node-type-homepage {
+
+  header {
+    width: 100%;
+    max-width: 1600px;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 860px;
+
+    #search-btn {
+      top:50px;
+    }
+
+    .brand {
+      @include centerH;
+      z-index: 2;
+
+      a {
+        text-indent: -10000px;
+        display: block;
+        width: 219px;
+        height:188px;
+
+        h1 {
+          width:100%;
+          height:100%;
+          background: transparent url("#{$pathToImages}/marry-me-logo.png");
+        }
+      }
+
+
+    }
+
+    nav {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero {
+      position: absolute;
+      top:0;
+      left: 0;
+      height:860px;
+      max-height: 860px;
+      width: 100%;
+      z-index: 1;
+
+      .hero-caroulel-wrapper {
+        width:100%;
+        height:100%;
+
+        .slides {
+
+          & > li {
+            position: relative;
+
+            .slide-content {
+              position: absolute;
+              width:100%;
+              height:100%;
+              margin: 0;
+              top:0;
+              left:0;
+
+              h2 {
+                text-align: center;
+                color: $white;
+                @include centerH;
+              }
+
+              .deco-box {
+                position: absolute;
+                @include centerH;
+                top:569px;
+
+                a {
+                  border-radius: 0!important;
+
+                  &.btn {
+                    outline: none;
+
+                    span {
+                      outline: none;
+                      border: none;
+
+                      &.inner {
+                        display: inline-block;
+                        position: static;
+                        height:37px;
+                        line-height: 39px;
+                        background-color: $white;
+                        color: $black;
+                        font-family: $MostraNova-font;
+                        @include font-size(24);
+                        font-weight: $regular;
+                        text-transform: uppercase;
+                        padding:0 20px;
+
+                      }
+                    }
+
+                    &:hover {
+                      span {
+                        transition: all 0.5s ease-in-out;
+                        background-color: $brandGold;
+                        opacity: 0.86;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            h2 {
+              position: absolute;
+              font-family: $MostraNova-font;
+              font-weight: $regular;
+              text-transform: uppercase;
+              @include font-size(53);
+            }
+
+            &.slide1,
+            &:nth-child(1) {
+
+              h2 {
+                top:396px;
+
+              }
+
+
+            }
+
+            &.slide2,
+            &:nth-child(2) {
+
+              .slide-content {
+                left:50%;
+                width: 50%;
+
+                h2 {
+                  top:36%;
+                  @include font-size(40);
+                  width: 60%;
+                }
+              }
+            }
+
+            &.slide3,
+            &:nth-child(3) {
+
+              h2 {
+                top:39%;
+                width: 80%;
+              }
+            }
+
+            &.slide4,
+            &:nth-child(4){
+
+              h2 {
+                top:39%;
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+
+      img {
+
+        &.hero-img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    margin-top: 0;
+
+    .offers {
+      height: 802px;
+      color: $brandBlueGrey;
+
+      header {
+        height:auto;
+
+      }
+
+      .offers-content {
+        margin: 70px 30px 0;
+        //border:1px solid grey;
+
+        .offers-wrapper {
+          height:371px;
+
+          .slides {
+
+            li {
+
+              a {
+                display: block;
+                width:513px;
+                height: 327px;
+                position: relative;
+                transition: all 0.5s;
+
+                .ro {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  height:18%;
+                  background-color: transparent;
+                  color: $white;
+                  text-align: center;
+
+                  h4 {
+                    text-transform: uppercase;
+                    font-family: $MostraNova-font;
+                    @include font-size(24);
+                    margin-bottom: 15px;
+                  }
+
+                  .line {
+                    border-top: 1px solid $white;
+                    margin: 0 auto;
+                    width: 20%;
+                    display: none;
+                  }
+
+                  p {
+                    display: none;
+                    @include font-size(16);
+                    font-weight: $extraLight;
+                    margin-top: 18px;
+                  }
+                }
+
+                &:hover {
+
+                  .ro {
+                    height:100%;
+                    background-color: rgba(193,163,56,0.92);
+                    transition: all 0.75s;
+
+                    h4 {
+                      margin-top: 120px;
+                    };
+
+                    .line {
+                      display: block;
+                    }
+
+                    p {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+
+          p {
+
+            &.more-offers {
+              text-align: center;
+              text-transform: uppercase;
+              margin-top: 67px;
+              font-family: $MostraNova-font;
+              @include font-size(20);
+              font-weight: $regular;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .culture {
+      position: relative;
+      height: 802px;
+
+      .culture-content {
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height: 100%;
+        z-index: 2;
+        color: $white;
+
+        h3 {
+          margin: 94px 0 173px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .our-culture-content {
+          @include flex-container();
+          justify-content: space-between;
+          padding: 0 90px;
+
+          .content-column {
+            width: 410px;
+
+            p {
+              @include font-size(18);
+              font-weight: $extraLight;
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .stories {
+      height: 786px;
+      color: $brandBlueGrey;
+
+      header {
+        height:auto;
+
+      }
+
+      .stories-content {
+        margin: 70px 15px 0;
+
+        .stories-wrapper {
+          height:371px;
+
+          .slides {
+
+            li {
+
+              a {
+                position: relative;
+                display: block;
+                width: 370px;
+                height: 370px;
+                overflow: hidden;
+                color: $white;
+
+
+                img  {
+                  position: absolute;
+                  display: block;
+                  width: 370px;
+                  height: 370px;
+                  left: 0;
+                  top:0;
+                  z-index: 1;
+                }
+
+                h4 {
+                  @include centerV;
+                  width:100%;
+                  text-align: center;
+                  z-index: 2;
+                  font-family: $MostraNova-font;
+                  @include font-size(30);
+                  text-transform: uppercase;
+                }
+
+                .ro {
+                  background-color: rgba(90,135,158,0.89);
+                  opacity: 0;
+
+                }
+
+                &:hover {
+
+                  h4 {
+                    display: none;
+                  }
+
+                  .ro {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 3;
+                    -webkit-transition: opacity 0.5s ease-in-out;
+                    -moz-transition: opacity 0.5s ease-in-out;
+                    -ms-transition: opacity 0.5s ease-in-out;
+                    -o-transition: opacity 0.5s ease-in-out;
+                    opacity: 1;
+
+
+                    h4 {
+                      display: block;
+                      @include centerH;
+                      top: calc(50% - 45px);
+                    }
+
+                    p {
+                      display: block;
+                      width: 100%;
+                      @include centerH;
+                      top: calc(50% + 10px);
+                      @include font-size(16);
+                      font-weight: $extraLight;
+
+
+                      span {
+                        position: static!important;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          p {
+
+            &.more-stories {
+              text-align: center;
+              text-transform: uppercase;
+              margin-top: 67px;
+              font-family: $MostraNova-font;
+              @include font-size(20);
+              font-weight: $regular;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

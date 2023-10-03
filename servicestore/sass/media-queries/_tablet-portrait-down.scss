@@ -1,0 +1,296 @@
+/****************************************
+*
+* Tablet portrait and below stylesheet
+*
+*****************************************/
+
+header {
+
+  .brand {
+    height:79px;
+
+    .logo {
+      display: block;
+      width: 350px;
+      height: 69px;
+      margin:0 auto;
+
+      h1 {
+        width:100%;
+        height:100%;
+        background-size: contain;
+      }
+
+    }
+  }
+}
+
+.main-content {
+
+  .services {
+    height: 2000px;
+
+    .services-wrapper {
+      max-width: 100%;
+    }
+
+    h3 {
+      padding: 0 30px
+    }
+  }
+
+  .booking-process {
+    height:1500px;
+
+    .booking-process-inner {
+
+      .booking-process-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .process-inter {
+          height: 75px;
+          overflow-y: hidden;
+        }
+      }
+    }
+  }
+
+  .our-guarantee {
+    background-image: none;
+    min-height: 400px;
+
+    .our-guarantee-inner {
+      padding: 0 30px;
+
+      .our-guarantee-item {
+        min-width: 250px;
+        text-align: center;
+        padding: 0 60px;
+        margin:0;
+
+        p {
+          @include font-size(18);
+        }
+      }
+    }
+  }
+
+  .testimonials {
+
+    .section-bg-img-full {
+      background-color: $greyBg;
+
+      img {
+        display: none;
+      }
+    }
+
+    .testimonials-inner {
+      flex-direction: column;
+      align-items: center;
+
+      .testimonials-container {
+        margin: 0;
+        width: 60%;
+
+        &:first-child {
+
+          .testinonial {
+            margin:100px auto 0;
+          }
+        }
+
+        .testinonial {
+          margin:50px auto 0;
+        }
+      }
+    }
+  }
+
+  // service landing page
+  .our-teams {
+    background-color: $greyBg;
+    height:550px;
+
+    .our-teams-wrapper {
+
+      div {
+
+        &:first-child {
+          padding-top:50px;
+        }
+      }
+    }
+  }
+
+  .our-services {
+
+    .our-services-wrapper {
+
+      .our-services-grid {
+        justify-content: space-around;
+      }
+    }
+  }
+
+  .contact-us {
+
+    .contact-us-wrapper {
+
+      div {
+
+        &:nth-child(2) {
+          display: flex;
+          justify-content: center;
+        }
+
+        img {
+          //width:314px;
+          //margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  // Product page
+
+  .product-page-introduction {
+
+    .product-page-introduction-wrapper {
+
+      div {
+
+        &:nth-child(2) {
+          display: flex;
+          justify-content: center;
+        }
+
+        img {
+          //width:314px;
+          margin: 0 0 30px;
+        }
+      }
+    }
+  }
+
+  .product-page-detail {
+    background-color: $greyBg;
+    height:780px;
+
+    .product-page-detail-wrapper {
+
+      div {
+
+        &.section-icon {
+          float: none;
+          width:131px;
+          margin: 40px auto 0;
+        }
+      }
+
+      h3 {
+        margin: 30px 0;
+      }
+    }
+  }
+
+  .product-page-pricing-and-servises {
+
+    .product-page-pricing-and-servises-wrapper {
+
+      .product-page-pricing {
+
+        .booking-panel-wrapper {
+          flex-direction: column;
+          justify-content: center;
+
+          .booking-panel {
+            min-height: 160px;
+          }
+
+          div {
+            margin:20px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .product-page-summary   {
+    background-color: $greyBg;
+    height:600px;
+
+    .product-page-summary-wrapper {
+
+      div {
+
+        .enquiry-inlay {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .servicestore-form {
+
+    .form-wrapper {
+
+      &.fixed-width-content {
+
+        .form-inner {
+          margin:0;
+          min-width: 0;
+          padding: 23px 10px 50px;
+
+          form {
+
+            .booking-process-info {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.other-services-carousel {
+  min-height:320px;
+
+  .other-services-carousel-wrapper  {
+
+    div {
+
+      &.flexslider {
+        width: 400px;
+
+        .flex-control-nav {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.section-bg-img,
+.section-bg-grad {
+  display: none;
+}
+
+footer {
+
+  .footer-inner {
+
+    .footer-nav {
+      flex-wrap: wrap;
+
+      div {
+        margin-right: 20px;
+      }
+    }
+  }
+}

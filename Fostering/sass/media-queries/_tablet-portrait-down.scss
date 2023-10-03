@@ -1,0 +1,124 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for tablet portrait down i.e. < 768px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  /*&:before {
+    content: 'tablet portrait down i.e. <768';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
+  overflow: hidden;
+
+
+  header {
+
+    &.page-header {
+
+      .hero-section {
+
+        & > div {
+
+          &.hero-content {
+
+            h2 {
+              width:346px;
+              height:106px;
+              background-image: url("#{$pathToImages}/fostering-logo-mob.png");
+              background-size:346px 106px ;
+            }
+
+            h3 {
+              @include font-size(17);
+            }
+
+            .brand-btn {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section {
+
+    &.intro-section {
+
+      .intro-section-content {
+        grid-template-rows: max-content 9vw 397px max-content;
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  section {
+
+    &.info-on-image-section {
+      height: 880px;
+    }
+  }
+
+  section {
+
+    &.the-process {
+
+      .the-process-content {
+
+        .the-process-grid {
+
+          h3 {
+            padding:0 30px;
+          }
+
+          /*& > div {
+
+            & > .step-text {
+              display: none!important;
+            }
+
+            & > .step-img {
+              display: block!important;
+              top: 64%!important;
+
+            }
+          }*/
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .footer-grid {
+
+      &.footer-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "logos"
+        "footer-nav"
+        "copyright";
+        height: inherit;
+
+        nav {
+
+          ul {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,127 @@
+/****************************************
+*
+* Navigation styles
+*
+*****************************************/
+
+header  {
+  position: relative;
+  z-index: 3;
+  border-bottom: 1px solid $mid-grey;
+
+  .top-nav {
+    height: 118px;
+    margin:0 auto;
+    overflow: visible;
+
+    .navbar {
+      padding: 0;
+    }
+
+    ul {
+
+      &.navbar-nav {
+        margin-top:14px;
+
+        & > li {
+          //height: 97px;
+          @include font-size(20);
+          padding: 22px 20px 12px;
+
+          &:not(:last-child) {
+
+            a {
+              //border-right: 1px solid $lt-grey;
+            }
+          }
+
+          & > a {
+            display: block;
+            height: 46px;
+            padding-bottom: 10px;
+            color: $brandSecondary;
+            font-weight: $medium;
+            line-height: 40px;
+
+            &.dropdown-toggle {
+
+              &:after {
+                display: none;
+              }
+            }
+          }
+
+          &:hover {
+            //background-color: $brandPrimary;
+
+            a {
+              color: $brandSecondary;
+              border-color: $brandPrimary;
+              text-decoration: none;
+              border-bottom: 2px solid $brandBrightOrange;
+              line-height: 40px;
+
+            }
+          }
+
+          // dropdown menu desktop
+          &.dropdown {
+            display: block!important;//TO DO remove
+
+            & > ul {
+
+              &.dropdown-menu {
+                background-color: $white;
+                @include centerH;
+                top:104%;
+                padding: 10px 30px;
+
+                &:before {
+                  content: '';
+                  display: block;
+                  width: 20px;
+                  height: 20px;
+                  background-color: $white;
+                  @include centerH;
+                  top:-14px;
+                  transform: rotate(45deg);
+                  transform-origin: top left;
+                  border: 1px solid rgba(0, 0, 0, 0.15);
+                  border-bottom-color: transparent;
+                  border-right-color: transparent;
+                }
+
+                & > li {
+                  margin: 10px 0;
+
+                  /*&:first-child {
+                    padding-top: 10px;
+                  }*/
+
+                  & > a {
+                    color: $brandSecondary;
+                    font-family: $brandFont;
+                    font-weight: $medium;
+                    @include font-size(18);
+                    border-bottom: 2px solid transparent;
+                    border-right: none;
+                    padding: 3px 0;
+                    white-space: nowrap;
+
+                    &:hover,
+                    &:active {
+                      color: $brandSecondary;
+                      background-color: transparent;
+                      border-bottom: 2px solid $brandSecondary;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,170 @@
+/****************************************
+*
+*  colour palette styles
+*
+*****************************************/
+
+$white: #fff;
+.white {color: $white}
+
+$black: #000;
+.black {color: $black}
+
+//Brand colours
+$brandGreen: #78BE20; //RGB 120, 190, 132
+$brandPrimary: $brandGreen;
+.brandGreen {  color: $brandGreen;}
+
+$brandDkGreen: #2C5234; //RGB 186, 114, 51
+$brandSecondary: $brandDkGreen;
+.brandDkGreen { color: $brandDkGreen}
+
+$brandLtGreen: #A4D65E; //RGB 164, 214, 94
+$brandTertiary: $brandLtGreen;
+.brandLtGreen {color: $brandLtGreen}
+
+$brandDkGrey: #3c3c3c; //RGB 60, 60, 60
+$brandQuaternary: $brandDkGrey;
+.brandDkGrey {color: $brandDkGrey;};
+
+// Community colours
+$communityDkPink: #D00058; //RGB 208 0 88
+$communityPrimary:  $communityDkPink;
+.communityDkPink{color: $communityDkPink;}
+
+$communityLtPink: #F7C2D1; //RGB 247 194 209
+$communityPrimary:  $communityLtPink;
+.communityLtPink{color: $communityLtPink;}
+
+//PriSch colours
+$priSchGreen: #C2D500;
+$priSchPrimary: $priSchGreen;
+.priSchGreen{color: $priSchGreen;}
+
+$priSchDkPink: #AE1065;
+$priSchSecondary: $priSchDkPink;
+.priSchDkPink {color: $priSchDkPink}
+
+$priSchMauve: #682575;
+$priSchTertiary: $priSchMauve;
+.priSchMauve {color: $priSchMauve}
+
+$priSchMauve: #682575;
+$priSchQuaternary: $priSchMauve;
+.priSchMauve {color: $priSchMauve}
+
+$priSchDkGreen: #294634;
+$priSchQuinary: $priSchDkGreen;
+.priSchDkGreen {color: $priSchDkGreen}
+
+//SecSch colours
+$secSchOrange: #E9540D;
+$secSchPrimary: $secSchOrange;
+.secSchOrange {color: $secSchOrange}
+
+$secSchLtOrange: #FCCB8C;
+$secSchSecondary: $secSchLtOrange;
+.secSchLtOrange {color: $secSchLtOrange}
+
+$secSchMauve: #652F6C;
+$secSchTertiary: $secSchMauve;
+.secSchMauve {color: $secSchMauve}
+
+
+//backgrounds
+$midGreyBg: #dbdbdb;
+$ltGreyBg:  #f1f1f1;
+
+$white75: rgba(255,255,255,0.75);
+
+.whiteBg {
+  background-color: $white;
+}
+
+.noBgColor,
+.transparentBg {
+  background-color: transparent;
+}
+
+/**
+ * Social Media Brand Colors
+ */
+
+
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$instagrammagenta: #c32aa3;
+$instagramblue: #4c5fd7;
+$instagrampurple: #7232bd;
+$instagramorange: #f46f30;
+$instagramyellow: #ffdc7d;
+$googleblue: #4285f4;
+$googlered: #ea4335;
+$googleyellow: #fbbc05;
+$googlegreen: #34a853;
+$pinterest: #bd081c;
+$googleplus: #db4437;
+$linkedin: #007bb5;
+$vimeoblue: #1ab7ea;
+$tumblr: #2c4762;
+$snapchat: #fffc00;
+$whatsappgreen: #25d366;
+$whatsappteal1: #075e54;
+$whatsappteal2: #128c7e;
+$mastodon: #2b90d9;
+$apple: #a6b1b7;
+$amazon: #ff9900;
+$microsoftred: #f35022;
+$microsoftgreen: #80bb03;
+$microsoftblue: #03a5f0;
+$microsoftyellow: #ffb903;
+$periscope: #40a4c4;
+$foursquarepink: #f94877;
+$foursquarenavy: #073282;
+$foursquareblue: #2d5be3;
+$swarm: #ffa633;
+$medium: #02b875;
+$skypeblue: #00aff0;
+$skypedkblue: #0078d7;
+$android: #a4c639;
+$stumbleupon: #e94826;
+$flickrpink: #f40083;
+$flickrblue: #006add;
+$yahoo: #430297;
+$twitch: #6441a4;
+$soundcloud: #ff5500;
+$spotifygreen: #1ed760;
+$spotifydarkgreen: #1db954;
+$dribbble: #ea4c89;
+$slackpurple: #4a154b;
+$slackblue: #36c5f0;
+$slackgreen: #2eb67d;
+$slackred: #e01e5a;
+$slackyellow: #ecb22e;
+$reddit: #ff5700;
+$deviantart: #05cc47;
+$pocket: #ee4056;
+$quora: #aa2200;
+$quorablue: #2b6dad;
+$slideshareorange: #e68523;
+$slideshareblue: #00a0dc;
+$fivehundredpx: #0099e5;
+$vk: #4a76a8;
+$listlyorange: #df6d46;
+$listlyblue: #52b1b3;
+$vine: #00b489;
+$steam: #171a21;
+$discord: #7289da;
+$telegram: #0088cc;
+
+// non brand colours i.e. Rob's
+$dk-grey: #333231;
+$grey:  #808080;
+$mid-grey: #dbdbdb;
+$lt-grey:  #f1f1f1;
+$lt-grey-bg:  #eeeeee;
+
+// text colours
+$txtColour: $brandDkGrey;
+$text-color: $txtColour;

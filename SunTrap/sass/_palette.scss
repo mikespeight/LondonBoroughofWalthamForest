@@ -1,0 +1,25 @@
+/****************************************
+*
+*  colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+//Brand colours
+$suntrapOrange: #eb602a;  // Suntrap Orange:
+$suntrapYellow1: #f8ad00;  // Suntrap Yellow 1:
+$suntrapYellow2: #ffd800;  // Suntrap Yellow 2:
+$suntrapBlue: #253746;  // Suntrap Blue:
+$suntrapSilver: #c0c0c0;  // Suntrap Silver:
+
+// non brand colours i.e. Rob's
+$grey:  #808084;
+$mid-grey: #dbdbdb;
+$lt-grey:  #f1f1f1;
+
+
+// text colours
+$txtColour: $black;
+$text-color: $txtColour;

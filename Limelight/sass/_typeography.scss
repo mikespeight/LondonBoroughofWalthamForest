@@ -1,0 +1,86 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+
+@font-face {
+  font-family: 'Town 23 Lines Bold';
+  src: url('#{$pathToFonts}/town23LinesBold/Town23LinesBold.eot');
+  src: url('#{$pathToFonts}/town23LinesBold/Town23LinesBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$pathToFonts}/town23LinesBold/Town23LinesBold.woff2') format('woff2'),
+  url('#{$pathToFonts}/town23LinesBold/Town23LinesBold.woff') format('woff'),
+  url('#{$pathToFonts}/town23LinesBold/Town23LinesBold.ttf') format('truetype'),
+  url('#{$pathToFonts}/town23LinesBold/Town23LinesBold.otf') format('opentype');
+}
+
+//font weights
+$extraLight:200;
+$light:     300;
+$regular:   400;
+$medium:    500;
+$semiBold:  600;
+$bold:      700;
+$black:     900;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+
+$Town-23-lines-bold-font: 'Town 23 Lines Bold', sans-serif;
+$Lato-font: 'Lato', sans-serif;
+
+$Oswald-font: 'Oswald', sans-serif;
+
+.lato-bold-font { font-family: $Lato-font; font-weight: $black;}
+.lato-regular-font {font-family: $Lato-font; font-weight: $regular; }
+
+.town-23-lines-bold-font {font-family: $Town-23-lines-bold-font}
+
+.oswald-font {font-family: $Oswald-font;}
+
+
+
+
+
+.extra-light      {font-weight: $extraLight;}
+.light            {font-weight: $light}
+.regular          {font-weight: $regular;}
+.semi-bold        {font-weight: $semiBold;}
+.medium           {font-weight: $medium;}
+.bold             {font-weight: $bold;}
+
+.centre {text-align: center}
+
+h1 {
+  font-family: $Town-23-lines-bold-font;
+  font-weight: $regular;
+  @include font-size(97);
+  line-height: 80px;
+  margin-left: -3px;
+  color: $white;
+}
+
+h2 {
+  //font-family: $Town-23-lines-bold-font;
+  font-family: $Oswald-font;
+  font-weight: $bold;
+  @include font-size(97);
+  margin-left: -3px;
+  line-height: 80px;
+}
+
+h3 {
+  //font-family: $Town-23-lines-bold-font;
+  font-family: $Oswald-font;
+  font-weight: $bold;
+  @include font-size(77);
+  margin-left: -3px;
+  line-height: 80px;
+}
+
+h4 {
+  margin-bottom: 15px;
+  @extend .lato-bold-font;
+  @include font-size(14);
+  text-transform: uppercase;
+}

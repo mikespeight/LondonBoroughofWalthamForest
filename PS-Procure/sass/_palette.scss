@@ -1,0 +1,33 @@
+/****************************************
+*
+* Service store colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+$offWhite: #fafbfb;
+
+//brand colours
+$primaryBrand: #662483;
+$secondaryBrand: lighten($primaryBrand, 20%); //#c992e1
+$tertiaryBrand: lighten($primaryBrand, 40%);
+
+$linkColor: #3b5b59;
+$linkColorHover: #83215f;
+
+
+$LtGreyBg: #eee;
+$greyBg: #e3e3e3;
+$DkGreyBG: #999;
+
+$dkGrey:  #6f6f6f;
+$medGrey: #999;
+
+
+//$dkGreenGrey:#3b5b59;
+
+
+// backgrounds opacity
+$heroCaptionBg: rgba(255,255,255,0.85);

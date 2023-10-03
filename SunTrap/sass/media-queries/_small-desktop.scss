@@ -1,0 +1,163 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles that cover the transition from 1200px to 992px i.e. between desktop and tablet
+*
+*
+*
+*******************************************************************************************/
+body {
+
+  /*&:before {
+    content: 'std screen down i.e. 1280 to 992';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
+  .booking-form {
+
+    .booking-form-content {
+
+      .form-wrapper {
+
+        form {
+
+          .form-item,
+          .form-actions {
+
+            input {
+              width: calc((100% - 30px) * 0.640);
+
+              &[type=submit] {
+                display: block;
+                margin-left: calc(((100% - 30px) * 0.357) + 14px);
+              }
+            }
+          }
+        }
+
+        p {
+
+          &.privacy-policy {
+            text-align: right;
+            margin-left: 0;
+            padding-right: calc((50% - 75px) * 0.357);
+          }
+        }
+      }
+    }
+  }
+
+  .connect {
+
+    .connect-content {
+
+      .connect-details {
+        width: calc((100% - 60px) / 3);
+      }
+
+      .map-wrapper {
+        width: calc((2 * ((100% - 60px) / 3)) + 30px);
+      }
+    }
+  }
+
+  .event-list {
+
+    .event-list-content {
+
+      ul {
+
+        & > li {
+          width: calc((100% - 60px) / 3);
+
+          .inner {
+            overflow: hidden;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .feature-block {
+
+    .feature-block-content {
+
+      .image-block {
+        width: calc((2 * ((100% - 60px) / 3)) + 30px);
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .text-block {
+        width: calc((100% - 60px) / 3);
+      }
+    }
+  }
+
+  .feature-links {
+
+    .feature-links-content {
+
+      & > .link-box {
+        width: calc((100% - 60px) / 3);
+      }
+    }
+  }
+
+  .single-image {
+
+    .single-image-content {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .twin-image {
+
+    .twin-image-content {
+
+      .image-block {
+        width: calc((100% - 30px) / 2);
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .two-col {
+
+    .two-col-content {
+
+      .col {
+        width: calc((100% - 30px) / 2);
+        overflow: hidden;
+
+        .flex-row {
+          overflow: hidden;
+
+          img {
+            width: 100%m;
+          }
+        }
+      }
+    }
+  }
+}

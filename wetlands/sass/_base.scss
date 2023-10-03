@@ -1,0 +1,152 @@
+/*************************************************
+
+    =Base Styles Begin
+
+**************************************************/
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+}
+
+body {
+  color: $primaryBlueGrey;
+  background-color: $white;
+  font-family: $montserrat-font;
+}
+
+p {
+  @include font-size(16);
+  font-weight: $light;
+}
+
+h2 {
+  @include font-size(55);
+  font-family: $montserrat-font;
+  font-weight: $light;
+}
+
+h3 {
+  @include font-size(40);
+  font-family: $montserrat-font;
+  font-weight: $light;
+
+  &.box-heading {
+    display: inline-block;
+    margin-top: -15px;
+    line-height: 84px;
+    width: 84px;
+    height: 84px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: $regular;
+    text-align: center;
+    @include font-size(66);
+
+    &.orange {
+      background-color: $primaryOrange;
+      color: $white;
+    }
+
+    &.yellow {
+      background-color: $primaryYellow;
+      color: $white;
+    }
+  }
+}
+
+h4 {
+  @include font-size(20);
+  font-family: $montserrat-font;
+  font-weight: $light;
+}
+
+
+a {
+  color: $primaryOrange;
+  font-family: $montserrat-font;
+
+  &:hover {
+    color: $secondaryOrange;
+  }
+}
+
+button,
+a {
+  font-family: $montserrat-font;
+
+  &.btn {
+    display: inline-block;
+    height:34px;
+    border:none;
+    border-radius: 0;
+    outline: none;
+  }
+
+  &.primary-btn {
+    color: $white;
+    background: $primaryBlueGrey;
+
+    &:hover {
+      color: $white;
+      background: $secondaryBlueGrey;
+    }
+  }
+
+  &.secondary-btn {
+    color: $white;
+    background: $secondaryBlueGrey;
+
+    &:hover {
+      color: $white;
+      background: $primaryBlueGrey;
+    }
+  }
+
+  &.btn-brand-primary {
+    color: $white;
+    background: $primaryOrange;
+  }
+
+  &.btn-brand-secondary {
+    color: $white;
+    background: $primaryYellow;
+  }
+}
+
+.grow { transition: all .5s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.off-white-bg {
+  background-color: $offWhiteBg;
+  padding: 30px 15px;
+  margin: 0!important
+}
+
+.main-content {
+
+  .row {
+
+    &.full-spacing-top-bott {
+      margin: 30px 0;
+    }
+  }
+}
+
+.centre {
+  text-align: center;
+}
+
+.clearfix:after {
+  content: "."; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+

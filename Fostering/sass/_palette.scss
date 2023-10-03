@@ -1,0 +1,70 @@
+/****************************************
+*
+* Service store colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+$offWhite: #f5f5f5;
+
+//Brand colours
+$brandPrimary: #148ba3;
+$brandBlue: $brandPrimary;
+
+$brandSecondary: #09748a;
+$brandDkBlue: $brandSecondary;
+
+$brandTertiary: #eb745c;
+$brandRed: $brandTertiary;
+
+$brandQuaternary: #a31462;
+$brandDkRed: $brandQuaternary;
+
+// Overlays
+$imageOverlay: #79bdcb;
+
+//transparents
+$transBrandBlue: rgba(20,139,163,0.75);
+$transBrandDkBlue: rgba(9,116,138,0.75);
+$transBrandVDkBlue: rgba(7,96,114,0.75);
+$transBrandRed: rgba(235,116,92,0.75);
+$transBrandDkRed: rgba(163,20,98,0.75);
+
+// text colours
+$txtColour: #0a4551;
+$text-color: $txtColour;
+$headingColour: $brandBlue;
+
+//other colours
+$notification-bg: $brandRed;
+
+// Backgrounds
+$filterImageBg: #1bbbdb;
+$caseStudiesBg: #f1f1f1;
+$footerBg:  #a6a6a6;
+
+.primaryBg {background-color: $brandBlue;}
+.blueBg {background-color: $brandBlue;}
+
+.secondaryBg {background-color: $brandDkBlue;}
+.dkBlueBg {background-color: $brandDkBlue;}
+
+.tertiaryBg {background-color: $brandRed;}
+.redBg {background-color: $brandRed;}
+
+.quaternaryBg {background-color: $brandDkRed;}
+.dkRedBg {background-color: $brandDkRed;}
+
+// non brand colours i.e. Rob's
+$grey:  #808084;
+$dk-grey: #bcbcbc;
+$mid-grey: #dbdbdb;
+$lt-grey:  #f1f1f1;
+
+// pager colours
+$pager-bg: $white;
+$pager-border: #ddd;
+$pager-hover-bg: #eee;
+$pager-disabled-color: #777;

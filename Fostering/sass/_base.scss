@@ -1,0 +1,147 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+html,
+body {
+  width:100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $Montserrat-font;
+  font-weight: $regular;
+  @extend .regular;
+  color: $txtColour;
+  @include font-size(14);
+
+  & > section {
+    overflow: hidden;
+  }
+
+}
+
+#UserAgent {
+  display: none;
+}
+
+a,
+button {
+  display: block;
+  outline: none;
+
+  &.btn {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-radius: 8px!important;
+
+
+    &.link-btn {
+      //width:373px;
+      height: 44px;
+      border: 2px solid $white;
+      margin:20px 0;
+      background-color: transparent;
+      color: $white;
+      font-family: $Montserrat-font;
+      font-weight: $regular;
+      @include font-size(20);
+      line-height: 44px;
+      text-align: center;
+    }
+
+    &.brand-btn {
+      background-color: $brandBlue;
+      border:2px solid $white;;
+      color: $white;
+      font-family: $Montserrat-font;
+      font-weight: $regular;
+      letter-spacing: 0.0055rem;
+      @include font-size(18);
+      transition: all 0.5s ease-in-out;
+
+      &.brand-transparent {
+        background-color: transparent;
+      }
+
+      &.brand-red {
+        background-color: $brandRed;
+        border-color: $brandRed;
+      }
+
+      &.brand-reverse {
+        background-color: transparent;
+        border-color: $brandBlue;
+        color: $brandBlue;
+      }
+    }
+
+    &.wide-btn {
+      padding: 0 100px;
+
+    }
+  }
+
+  &:hover {
+
+    &.btn {
+
+      &.link-btn {
+        background-color: $white;
+        border:1px solid $white;
+        color: $brandBlue;
+      }
+
+      &.brand-btn {
+        background-color: $white;
+        border:1px solid $brandBlue;
+        color: $brandBlue;
+
+        &.brand-red {
+          border-color: $brandRed;
+          background-color: $brandRed;
+          color: $white;
+        }
+
+        &.brand-reverse {
+          border-color: $white;
+          background-color: $brandBlue;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.btn-wrapper {
+  position: relative;
+  padding: 36px 0;
+  margin-bottom: 30px;
+
+  &.centred {
+
+    a {
+      @include centerer;
+    }
+  }
+
+  &.row {
+    @include flex-container(row, flex-start);
+    padding: 0 36px;
+
+    & > a {
+      margin-right: 25px;
+    }
+  }
+}

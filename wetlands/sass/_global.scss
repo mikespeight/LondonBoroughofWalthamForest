@@ -1,0 +1,925 @@
+
+.homepage {
+
+  .main-content {
+    padding-top:722px;
+    max-width: 1200px;
+    margin:0 auto;
+  }
+
+  // Hero Homepage
+  .homepage-hero {
+    background: transparent url("#{$pathToImages}/geese-and-kid-hero.jpg") 50% 50% no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height:722px;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 1;
+  }
+}
+
+.subpage {
+
+  .main-content {
+    padding-top:47px;
+    max-width: 1200px;
+    margin:0 auto;
+
+    // global hero
+    .hero {
+      width: 100%;
+      height:331px;
+      position: relative;
+
+      .inner {
+        padding:0;
+        margin: 15px 0;
+        overflow: hidden;
+      }
+
+      img {
+        object-fit: contain;
+        width:1200px;
+        height: 331px;
+      }
+      h2 {
+        color: $white;
+        font-weight: $light;
+        @include font-size(55);
+        position: absolute;
+        left:80px;
+        top:244px;
+      }
+    }
+  }
+
+  .touchstone-block {
+    overflow: hidden;
+
+    &.off-white-bg {
+
+      .inner {
+        margin: 0;
+      }
+
+      h3 {
+
+        &.box-heading {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .block {
+      overflow: visible;
+      margin:20px 0;
+    }
+  }
+
+  .hero-block {
+
+    &+ .touchstone-block {
+
+      &.row {
+        margin-top: 60px;}
+    }
+
+  }
+
+
+}
+
+
+.main-content {
+  //border:1px solid gold; //debugging code
+  min-height: 500px;
+
+  .row {
+    margin: 15px -15px;
+
+    &:first-child {
+      margin: 0 -15px;
+    }
+  }
+
+  //content type styles
+  .type-8-4,
+  .type-4-8 {
+
+    &.row {
+      margin:30px -15px;
+    }
+  }
+
+  .type--12-3-3-3-3 {
+
+    &.row {
+      margin: 30px 15px;
+    }
+  }
+
+
+
+}
+
+.inner {
+  margin:15px;
+  padding:0 15px;
+
+  &.info-panel,
+  &.content-panel {
+    padding-top:30px;
+
+    p {
+      margin-bottom: 30px;
+      @include font-size(18);
+      color: $primaryBlueGrey;
+      font-weight: $light;
+    }
+
+    h4 {
+
+      &.sub-head {
+        @include font-size(18);
+        font-weight: $bold;
+        color: $primaryBlueGrey;
+        margin-bottom: 5px;
+      }
+    }
+
+    img {
+      width:100%;
+
+      &+ p {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  a {
+
+    h3 {
+      margin:0;
+    }
+  }
+}
+
+.off-white-bg {
+
+  .inner {
+    margin: -10px -15px -60px;
+    &.info-panel,
+    &.content-panel {
+
+
+    }
+  }
+
+  &.article-lead-block {
+
+    .inner {
+      padding-bottom: 30px;
+
+      &.info-panel,
+      &.content-panel {
+        padding-top: 0;
+
+        h3 {
+          margin-top: 0;
+          @include font-size(25);
+          font-weight: $regular;
+
+          & + p {
+
+            &.leader {
+              margin-top: 15px;
+            }
+          }
+        }
+
+        p {
+
+          &.leader {
+            margin-top: 42px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-newsletter {
+
+  .type-6-6 {
+
+    &.feature-info-panel {
+
+      .inner {
+
+        p {
+          margin:0;
+          margin:0;
+        }
+
+        &.info-panel {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+}
+
+.content-feature-block {
+
+  .inner {
+    margin: -10px -15px 0;
+
+    &.info-panel,
+    &.content-panel {
+
+      h3 {
+        margin-top: -5px;
+        @include font-size(25);
+        font-weight: $regular;
+      }
+
+      p {
+
+        &.hilight {
+          margin-top: -6px;
+          font-weight: $regular;
+
+          &.primary-col {
+            color: $primaryOrange;
+          }
+
+          &.secondary-col {
+            color: $primaryYellow;
+          }
+        }
+      }
+    }
+
+    &.info-image {
+
+      img {
+        width:100%;
+      }
+    }
+  }
+}
+
+
+
+// Feature info panels
+.feature-info-panel {
+
+  p {
+    margin: 30px 0;
+  }
+
+  a {
+
+    &.topic-info-btn {
+      border: 2px solid $primaryBlueGrey;
+      @include border-radius(7px);
+      padding:10px 8px;
+      color: $primaryBlueGrey;
+      line-height: 11px;
+
+      &:hover {
+        color: $white;
+        background-color: $primaryBlueGrey;
+      }
+    }
+  }
+}
+
+//feature image links
+.feature-img-link-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 367px;
+  margin:0 15px;
+
+  a {
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width:100%;
+    height:100%;z-index: 2;
+
+    img {
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .5s ease-in-out;
+    }
+
+    &:hover {
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    h3 {
+      @include centerer;
+      color: $white;
+      font-weight: $light;
+      @include font-size(40);
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+// Full width text only pages
+.full-width-text-only {
+
+  h4, .h4, h5, .h5, h6, .h6 {
+    margin: 30px 0 10px;
+    font-weight: $regular;
+
+  }
+
+  ul {
+    margin: 20px 0;
+
+    li {
+      font-family: $montserrat-font;
+      @include font-size(16);
+      font-weight: $light;
+    }
+  }
+}
+
+//feature image panel
+.feature-img-panel {
+  padding: 0;
+  margin: 0 15px;
+
+  img {
+    width: 370px;
+    height:370px;
+
+    &.right-img {
+      float: right;
+    }
+  }
+}
+
+//feature page feature link panels
+
+.type-fluid-grid {
+
+  &.row {
+    margin:15px 0;
+
+    .block {
+      padding:0;
+
+      &:nth-child(odd) {
+
+        .inner {
+          //margin-right: 15px;
+
+          img {
+            float: left;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+
+        .inner {
+
+          img {
+            float: right;
+          }
+        }
+      }
+
+      .inner {
+        margin:15px;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .block {
+
+    .inner {
+      position: relative;
+      padding:0;
+
+      a {
+        display: inline-block;
+        width: 100%;
+        height:100%;
+
+        h3 {
+          @include centerer;
+          text-align: center;
+          color: $white;
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+// getting here feature panel
+
+.getting-here-feature-panel {
+  background: transparent url("#{$pathToImages}/transport-feature-bg.jpg") center bottom no-repeat;
+  background-size: cover;
+
+  .inner {
+    overflow: hidden;
+    min-height: 154px;
+  }
+
+  a {
+    color: white;text-align: center;
+
+    &:hover {
+      text-decoration: none;
+
+      h3, h4, img {
+        opacity: 0.5;
+      }
+    }
+
+    h3 {
+      @include font-size(40);
+      text-align: center;
+      padding-top: 50px;
+      font-weight: $light;
+    }
+
+    h4 {
+      @include font-size(20);
+      //margin: 118px 0 52px;
+      margin-top: 0;
+      padding: 128px 0 52px;
+    }
+
+    img {
+      @include centerH;
+      object-fit: contain;
+      clear: both;
+    }
+  }
+}
+
+// feature page guided maps
+.guided-maps-feature-panel {
+  background: transparent url("#{$pathToImages}/transport-feature-bg.jpg") center bottom no-repeat;
+  background-size: cover;
+  height: 370px;
+
+  &.row {
+    margin:0 15px;
+  }
+
+  .inner {
+    overflow: hidden;
+
+    a {
+      text-align: center;
+      color: $white;
+
+      &:hover {
+        text-decoration: none;
+
+        img, h3, p {
+          opacity:0.5;
+        }
+      }
+
+      img {
+        @include centerH;
+        top:85px;
+      }
+
+      h3 {
+        @include font-size(40);
+        color: $white;
+        font-weight: $light;
+        margin-top: 167px;
+      }
+
+      p {
+        color: $white;
+        @include font-size(21.6);
+        font-weight: $light;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// Faature panel row
+.feature-link-panel-row {
+
+  &.row {
+    margin: 30px 0;
+  }
+
+  .block {
+    padding: 0;
+
+    .feature-img-link-panel {
+      padding: 0;
+      margin:0 15px;
+
+      a {}
+    }
+  }
+}
+
+
+/* contact us page */
+
+// v-card styling
+.vcard {
+  margin-bottom: 30px;
+
+  span {
+    display: block;
+
+    &.adr {
+      margin-bottom: 30px;
+    }
+
+    &.region,
+    &.postal-code {
+      display: inline;
+    }
+  }
+}
+
+.type-6-6x2 {
+  margin-bottom: -15px;
+
+  div {
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+
+      .how-to-get-here-feature {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.row {
+    margin:0;
+
+    .row  {
+      margin-left: 0;
+    }
+  }
+
+  .block {
+    //width:570px;
+  }
+}
+
+
+
+
+// social media feature panel
+.social-media-feature {
+  height: 370px;
+  max-width: 570px;
+  background: transparent url("#{$pathToImages}/social-media-feature-bg-img.jpg") 0 0 no-repeat;
+  background-size: cover;
+
+  .inner {
+    margin:0;
+  }
+
+  .social-media {
+    color: $white;
+    text-align: center;
+    padding-top:80px;
+
+    a {
+      color: $white;
+      @include font-size(64);
+      margin-right: 25px;
+
+      &:hover {
+
+        i {
+          opacity: 0.5!important;
+        }
+      }
+    }
+
+    h3 {
+      @include font-size(40);
+      font-weight: $light;
+      width:100%;
+      margin-top: 0;
+    }
+
+    p {
+      @include font-size(21);
+      margin-top:96px;
+    }
+  }
+}
+
+// How to get here feature panel
+.how-to-get-here-feature {
+  height: 370px;
+  max-width: 570px;
+  margin-top: 30px;
+  background: transparent url("#{$pathToImages}/how-to-get-here-feature-bg-img.jpg") 50% 50% no-repeat;
+  background-size: 100%;
+  position: relative;
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    background-size: 110%;
+  }
+  
+  a {
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    background: transparent url("#{$pathToImages}/lg-map-pin-wht-bg.png") center 77px no-repeat;
+    width: 100%;
+    height:100%;
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    h3 {
+      @include font-size(40);
+      font-weight: $light;
+      margin-top: 163px;
+      width:100%;
+      text-align: center;
+    }
+  }
+}
+
+// opening times info panel
+.opening-times-info-panel {
+
+  .inner {
+
+    .inner-top {
+      padding-top: 20px;
+      min-height: 250px;
+
+      &.visitor-centre {
+
+        img {
+          position: relative;
+          top:-15px;
+        }
+      }
+    }
+
+    .parking {
+
+      img {
+        position: relative;
+        top: 7px;
+      }
+    }
+
+    div {
+
+      margin-top: 30px;
+
+      img {
+        float: left;
+        position: relative;
+        top:15px;
+      }
+
+      h4 {
+        margin-left:150px;
+        font-weight: $regular;
+      }
+
+      p {
+        margin-left:150px;
+
+      }
+    }
+  }
+}
+
+// events info panel
+.events-info-panel {
+
+  &.row {
+    margin:0;
+  }
+
+  .event-block {
+    padding:0;
+
+    .inner {
+      background: $offWhiteBg;
+      box-sizing: content-box;
+      padding-bottom: 70px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        margin-left: -15px;
+        width:370px;
+      }
+
+      h4 {
+        @include font-size(24);
+        font-weight: $regular;
+      }
+
+      p {
+        line-height: 20px;
+
+        &.hilight {
+          @include font-size(18);
+          margin-top: -7px;
+          font-weight: 400;
+
+          &.primary-col {
+            color: $primaryOrange;
+          }
+
+          &.secondary-col {
+            color: $primaryYellow;
+          }
+
+        }
+      }
+
+      button {
+        position: absolute;
+        bottom:30px;
+
+
+      }
+    }
+  }
+}
+
+// places feature panel
+.places-feature-panel {
+  background: transparent url("#{$pathToImages}/places-feature-img.jpg") center bottom no-repeat;
+  background-size: cover;
+  height: 370px;
+
+  &.row {
+    margin: 15px;
+  }
+
+  .inner {
+    overflow: hidden;
+
+    a {
+      text-align: center;
+      color: $white;
+      transition: all .5s ease-in-out;
+
+      &:hover {
+        text-decoration: none;
+
+        h3, p {
+          opacity:0.5;
+        }
+      }
+
+      h3 {
+        @include font-size(40);
+        color: $white;
+        font-weight: $light;
+        margin-top: 125px;
+      }
+
+      p {
+        color: $white;
+        @include font-size(18);
+        font-weight: $light;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+
+// places to see info panel
+.places-info-panel {
+
+  &.row {
+    margin:0;
+  }
+
+  .places-block {
+    padding:0;
+
+    .inner {
+      min-height: 538px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        margin-left: -15px;
+      }
+
+      h4 {
+        @include font-size(24);
+        font-weight: $regular;
+      }
+
+      button {
+        position: absolute;
+        bottom:30px;
+      }
+    }
+  }
+}
+
+// Dummy Map panel
+
+#dummy-map {
+  display: none;
+  min-height:567px;
+  background: transparent url("#{$pathToImages}/dummy-map.jpg");
+}
+
+#map {
+  display: block;
+  min-height:567px;
+}
+
+.map-panel {
+
+  .block {
+
+    .inner {
+      //background: transparent url("#{$pathToImages}/dummy-map.jpg");
+    }
+  }
+}
+
+// coming soon panel
+.coming-soon-panel {
+  min-height: 515px;
+  position: relative;
+
+  .inner {
+    text-align: center;
+
+    a {
+      position: absolute;
+      left:0;
+      top:0;
+      display: block;
+      width:100%;
+      height: 100%;
+      color: $primaryBlueGrey;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    i {
+      display: inline-block;
+      width:43px;
+      height:78px;
+      background: transparent url("#{$pathToImages}/egg-timer-icon.png") 0 0 no-repeat;
+      margin-top: 150px;
+    }
+
+    p {
+      @include font-size(20);
+      margin-top: 27px;
+    }
+
+    h2 {
+      margin-top: -9px;
+    }
+  }
+}

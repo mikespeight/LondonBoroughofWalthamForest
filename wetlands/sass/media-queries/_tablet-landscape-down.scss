@@ -1,0 +1,126 @@
+/*************************************************
+
+    =Base Styles Begin
+
+**************************************************/
+
+
+
+// Max width 1024 - min width 768
+@media only screen and (min-width : $mq-tablet-portrait) {
+
+  .col-sm-6 {
+    width: 50%!important;}
+
+  .subpage {
+
+    .main-content {
+
+      .hero {
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .how-can-we-help-frm {
+      width:482px!important;
+
+    }
+
+    .type-6-6x2 {
+
+      .how-to-get-here-feature {
+        background-size: cover;
+
+        .social-media {
+
+          p {
+            margin-top: 50px!important;
+          }
+        }
+      }
+    }
+
+    header {
+
+      nav {
+
+        .navbar-header {
+
+          a {
+            left: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .subpage {
+
+    header {
+
+      nav {
+
+        .navbar-header {
+
+          a {
+            left:40px;
+
+          }
+        }
+      }
+    }
+
+    .main-content {
+
+      .hero {
+
+        h2 {
+          top:200px;
+        }
+      }
+
+      .feature-img-panel {
+
+        img {
+          height: 340px;
+          width: 340px;
+        }
+      }
+    }
+  }
+
+
+
+  //footer
+  footer {
+
+    .footer-row {
+
+      .footer-nav {
+
+        ul {
+
+          li {
+
+            a {
+              @include font-size(18);
+            }
+          }
+        }
+      }
+
+      .address-line {
+
+        p {
+          @include font-size(15)
+        }
+      }
+    }
+  }
+}
+
+//

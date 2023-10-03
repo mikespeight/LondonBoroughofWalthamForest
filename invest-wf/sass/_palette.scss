@@ -1,0 +1,163 @@
+/****************************************
+*
+*  Colour palette styles
+*
+*****************************************/
+
+$white: #fff;
+.white {color: $white}
+
+$black: #000;
+.black {color: $black}
+
+// Brand Colours
+$brandPrimary: #60a13d; // Pea Green
+
+$brandSecondary: #e48318; // Logo Orange
+
+$brandTertiary: #457a66;
+
+$brandQuaternary: #23421a;
+
+// Complimentary colours
+$brandGreenBg: #5cae30;
+
+$brandBrightOrange: #ff8805;
+$brandBrightOrangeBg: $brandBrightOrange;
+
+$brandDkGreenBg: #23421a;
+
+$brandLtBlue: #6abcce;
+
+$brandDkBlue: #0e1254;
+
+$brandMauve: #b8719c;
+
+
+  // Non brand colours
+$footerDkGreyBg: #30333f;
+$dk-grey: #41444f;
+$footerLtGreyBg: $dk-grey;
+$grey:  #808080;
+$grey-underline: #ababab;
+$mid-grey: #dbdbdb;
+$lt-grey:  #f1f1f1;
+$lt-grey-bg:  #eeeeee;
+
+// text colours
+$txtColour: #403f3f;
+$text-color: $txtColour;
+
+// pager colours
+$pager-bg: $white;
+$pager-border: #ddd;
+$pager-hover-bg: #eee;
+$pager-disabled-color: #777;
+
+
+
+
+// Social Media Brand Colors
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$instagrammagenta: #c32aa3;
+$instagramblue: #4c5fd7;
+$instagrampurple: #7232bd;
+$instagramorange: #f46f30;
+$instagramyellow: #ffdc7d;
+$googleblue: #4285f4;
+$googlered: #ea4335;
+$googleyellow: #fbbc05;
+$googlegreen: #34a853;
+$pinterest: #bd081c;
+$googleplus: #db4437;
+$linkedin: #007bb5;
+$vimeoblue: #1ab7ea;
+$tumblr: #2c4762;
+$snapchat: #fffc00;
+$whatsappgreen: #25d366;
+$whatsappteal1: #075e54;
+$whatsappteal2: #128c7e;
+$mastodon: #2b90d9;
+$apple: #a6b1b7;
+$amazon: #ff9900;
+$microsoftred: #f35022;
+$microsoftgreen: #80bb03;
+$microsoftblue: #03a5f0;
+$microsoftyellow: #ffb903;
+$periscope: #40a4c4;
+$foursquarepink: #f94877;
+$foursquarenavy: #073282;
+$foursquareblue: #2d5be3;
+$swarm: #ffa633;
+$medium: #02b875;
+$skypeblue: #00aff0;
+$skypedkblue: #0078d7;
+$android: #a4c639;
+$stumbleupon: #e94826;
+$flickrpink: #f40083;
+$flickrblue: #006add;
+$yahoo: #430297;
+$twitch: #6441a4;
+$soundcloud: #ff5500;
+$spotifygreen: #1ed760;
+$spotifydarkgreen: #1db954;
+$dribbble: #ea4c89;
+$slackpurple: #4a154b;
+$slackblue: #36c5f0;
+$slackgreen: #2eb67d;
+$slackred: #e01e5a;
+$slackyellow: #ecb22e;
+$reddit: #ff5700;
+$deviantart: #05cc47;
+$pocket: #ee4056;
+$quora: #aa2200;
+$quorablue: #2b6dad;
+$slideshareorange: #e68523;
+$slideshareblue: #00a0dc;
+$fivehundredpx: #0099e5;
+$vk: #4a76a8;
+$listlyorange: #df6d46;
+$listlyblue: #52b1b3;
+$vine: #00b489;
+$steam: #171a21;
+$discord: #7289da;
+$telegram: #0088cc;
+
+//background styles
+.orangeBg {
+   background-color: $brandBrightOrange;
+ }
+
+.darkOrangeBg {
+  background-color: darken($brandBrightOrange, 10%);
+}
+
+.darkGreenImgBg {
+  background-color: darken($brandDkGreenBg, 10%);
+}
+
+.darkGreenBg {
+  background-color: darken($brandDkGreenBg, 10%);
+}
+
+.brightGreenBg {
+  background-color: $brandGreenBg;
+}
+
+.dkGreenBg {
+  background-color: $brandTertiary;
+}
+
+.darkDkGreenBg {
+  background-color: darken($brandTertiary, 10%);
+}
+
+.whiteBg {
+  background-color: $white;
+}
+
+.offWhiteBg {
+  background-color: $lt-grey;
+}

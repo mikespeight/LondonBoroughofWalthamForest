@@ -1,0 +1,26 @@
+/****************************************
+*
+* Admin styles and overrides
+*
+*****************************************/
+
+body {
+
+  &.adminimal-admin-toolbar {
+
+
+    div {
+
+      &#toolbar-administration {
+
+        nav {
+
+          &#toolbar-bar {
+            margin-top: 0!important;
+          }
+        }
+      }
+    }
+  }
+}
+

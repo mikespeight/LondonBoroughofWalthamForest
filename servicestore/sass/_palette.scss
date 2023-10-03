@@ -1,0 +1,44 @@
+/****************************************
+*
+* Service store colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+$offWhite: #fafbfb;
+
+$brandGreen: #3b5b59;
+$brandPurple: #83215f;
+$brandBlue: #12a1be;
+$brandOrange: #fab017;
+$brandLimeGreen: #c8d42c;
+$brandDanger: #d65353;
+
+$logoGreen: #009577;
+$logoRed: #6c3230;
+
+$linkColor: #3b5b59;
+$linkColorHover: #83215f;
+
+$tblHeadBg: #cfd202;
+
+//greys
+$vLightGrey: #f7f7f7;
+$tblBgLtGrey: #eee;
+$greyBg: #e3e3e3;
+$helpTextBg: #d0d0d0;
+$borderGrey: #bbb;
+$tblBgDkGrey: #999;
+
+$dkGrey:  #6f6f6f;
+$dkGreenGrey:#3b5b59;
+
+//gradient colours
+$gradStartDkBlue: #0a596c;
+$gradEndOrange: #c99000;
+
+// backgrounds
+$formBg:  $vLightGrey;
+$heroCaptionBg: rgba(255,255,255,0.85);

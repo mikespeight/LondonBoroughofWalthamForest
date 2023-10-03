@@ -1,0 +1,82 @@
+// Media Queries in Sass 3.2
+//
+// These mixins make media queries a breeze with Sass.
+// The media queries from mobile up until desktop all
+// trigger at different points along the way
+//
+// And important point to remember is that and width
+// over the portrait width is considered to be part of the
+// landscape width. This allows us to capture widths of devices
+// that might not fit the dimensions exactly. This means the break
+// points are seamless.
+
+$mq-mobile-portrait		: 320px !default;
+$mq-mobile-landscape	: 480px !default;
+$mq-tablet-portrait		: 768px !default;
+$mq-screen-md           : 992px !default;
+$mq-tablet-landscape	: 1024px !default;
+$mq-screen-std          : 1200px !default;
+$mq-desktop				: 1382px !default;
+$mq-iPhone-6-portrait   : 375px  !default;
+$mq-iPhone-6-landscape  : 667px  !default;
+$mq-iPhone-6p-portrait   : 414px  !default;
+$mq-iPhone-6p-landscape  : 736px  !default;
+
+//mixins
+
+// Both portrait and landscape
+@mixin mobile-only {
+  @media (max-width : $mq-mobile-landscape) {
+    @content;
+  }
+}
+
+// Everything below and including the portrait width of the tablet
+@mixin tablet-portrait-and-below {
+  @media only screen and (max-width : $mq-tablet-portrait - 1) {
+    @content;
+  }
+}
+
+// Everything 992 and below
+@mixin screen-md-and-below {
+  @media only screen and (max-width : $mq-screen-md - 1px) {
+    @content;
+  }
+}
+
+// Everything 1200 and below
+@mixin screen-std-and-below {
+  @media only screen and (min-width : $mq-screen-md - 1) and (max-width: $mq-screen-std) {
+    @content;
+  }
+}
+
+
+/* Init media queries */
+
+@include screen-std-and-below {
+  @import "media-queries/std-screen-down";
+}
+
+
+@include screen-md-and-below {
+
+  @import "media-queries/md-screen-down";
+
+}
+
+// Everything below and including the portrait width of the tablet
+@include tablet-portrait-and-below {
+
+  @import "media-queries/tablet-portrait-down";
+
+}
+
+// Both portrait and landscape
+@include mobile-only {
+
+  @import "media-queries/mobile-only";
+
+}
+

@@ -1,0 +1,330 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles that cover the transition from 1200px to 992px i.e. between desktop and tablet
+*
+*
+*
+*******************************************************************************************/
+body {
+
+  /*&:before {// TODO: remove for test only
+    content: 'Standard screen down i.e. 1200 to 992';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    @include font-size(24);
+    color: red;
+  }*/
+
+  .page-wrapper {
+
+    .fixed-width-content {
+      width:93.75vw;
+    }
+
+    .content-wrapper {
+
+      .page-title {
+
+        h1 {
+          font-size: 6.015vw;
+        }
+      }
+
+      .dynamic-row {
+
+        .block {
+
+          &.trans-image-block,
+          &.content-block {
+
+            .block-inner-content {
+
+              p {
+                font-size:2.187vw ;
+              }
+            }
+          }
+        }
+
+        &.areas {
+
+          .block {
+
+            a {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 3.593vw
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .downloads {
+
+        .downloads-body {
+
+          .download-box {
+
+            .block-inner-content {
+              padding: 2.343vw 3.281vw;
+
+              h3 {
+                font-size: 1.875vw;
+              }
+
+              p {
+                font-size: 1.562vw;
+              }
+
+              a {
+
+                &.download {
+                  font-size: 1.484vw;
+                  line-height: 1.875vw;
+                  background-size: 2.109vw 3.046vw;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .two-col {
+
+        .two-col-content {
+
+          .double-col {
+            width: 60.937vw;
+
+            ul {
+
+              &.date-list {
+
+                li {
+
+                  a {
+
+                    p {
+                      font-size: 1.406vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .single-col {
+            max-width: 24.833vw;
+
+            img {
+              width: 100%;
+            }
+
+            .quote-wrapper {
+
+              .quote {
+                font-size: 2.734vw;
+              }
+
+              .attributed {
+                font-size: 1.406vw;
+              }
+            }
+          }
+        }
+      }
+
+      .twin-image {
+
+        .twin-image-content {
+
+          .image-block {
+            width: 45.703vw;
+          }
+        }
+      }
+
+      .hi-lite-text {
+
+        .inner {
+
+          &.wysiwyg {
+
+            p {
+              font-size: 2.578vw;
+            }
+          }
+        }
+
+        &.blushBg,
+        &.roseBg,
+        &.greenBg,
+        &.tangerineBg,
+        &.darkDkGreenBg {
+          //padding: 4.687vw 7.812vw;
+
+          &.quotes {
+
+            &:before,
+            &:after {
+              background-size: 5.312vw 4.531vw;
+            }
+          }
+        }
+      }
+
+      .steps-section {
+
+        .steps-container {
+
+          div {
+
+            &.block {
+
+              & > a {
+
+                h3 {
+                  font-size: 1.975vw;
+                  line-height: 6.25vw;
+                }
+
+                p {
+                  font-size: 1.406vw;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .feature-slider {
+
+        .slides {
+
+          .slide {
+
+            .slide-content {
+
+              .slide-block {
+
+                a {
+
+                  .block-inner-content {
+                    padding: 7.842vw 4.687vw 0;
+
+                    h2 {
+                      margin: 6.25vw 0 4vw;
+                      font-size: 2.187vw;
+                    }
+
+                    p {
+                      font-size: 1.406vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .audience-flex {
+
+        .audience-content {
+
+          .audience-row {
+
+            & > div {
+
+              &.block {
+
+                a {
+
+                  .block-inner-content {
+
+                    h2 {
+                      font-size: 2.187vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .coloured-link-block-section {
+
+        .coloured-link-block {
+
+          h3 {
+            font-size: 2.5vw;
+          }
+        }
+      }
+
+      .events-section {
+
+        .events-wrapper {
+
+          .event-block {
+
+            h3 {
+              font-size: 2.1875vw;
+
+              & + p {
+                font-size: 1.718vw;
+              }
+            }
+
+            .event-content {
+
+              &.wysiwyg {
+
+                p {
+                  font-size: 1.484vw;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    footer {
+
+      .footer-nav {
+
+        nav {
+
+          ul {
+
+            li {
+
+              a {
+                font-size: 1.25vw;
+              }
+            }
+          }
+        }
+      }
+
+      .copyright {
+
+        p {
+          font-size: 1.25vw;
+        }
+      }
+    }
+  }
+}

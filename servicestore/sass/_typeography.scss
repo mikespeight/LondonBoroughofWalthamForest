@@ -1,0 +1,37 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,400i,600,600i,700,700i');
+
+$sourceSansPro: 'Source Sans Pro', sans-serif;
+
+$light:     300;
+$regular:   400;
+$semiBold:  600;
+$bold:      700;
+
+.source-sans-pro  {font-family: $sourceSansPro;}
+
+.light-italic     {font-weight: $light;font-style: italic;}
+.regular          {font-weight: $regular;}
+.regular-italic   {font-weight: $regular;font-style: italic;}
+.semi-bold        {font-weight: $semiBold;}
+.semi-bold-italic {font-weight: $semiBold;font-style: italic;}
+.bold             {font-weight: $bold;}
+
+.centre {text-align: center}
+
+h2 {
+  font-family: $sourceSansPro;
+  @include font-size(55);
+  @extend .light-italic;
+}
+
+h3 {
+  font-family: $sourceSansPro;
+  @include font-size(38);
+  @extend .regular-italic;
+}

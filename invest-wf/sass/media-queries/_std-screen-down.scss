@@ -1,0 +1,122 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles that cover the transition from 1200px to 992px i.e. between desktop and tablet
+*
+*
+*
+*******************************************************************************************/
+body {
+
+  /*&:before {// TODO: remove for test only
+    content: 'Standard screen down i.e. 1200 to 992';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    @include font-size(24);
+    color: red;
+  }*/
+
+  .page-wrapper {
+
+    .content-wrapper {
+
+      .cta-row {
+
+        .cta-row-content {
+
+          .cta {
+            margin:1.666vw 0;
+
+            a {
+
+              i {
+
+                &.icon {
+                  height:17.083vw;
+                  width:14vw;
+                  background-size: 42vw 17.083vw;
+
+                  &.keys {
+                    background-position: 0 0;
+                  }
+
+                  &.building{
+                    background-position: -14vw 0;
+                  }
+
+                  &.train {
+                    background-position: -28vw 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .slider-section {
+
+        .slider-section-content {
+
+          .slider-wrapper {
+
+            .flexslider {
+
+              .slides {
+
+                .slide {
+                  width: 39.062vw;
+                  height:31.25vw;
+
+                  a {
+
+                    .slide-img {
+                      margin:0 2.083vw;
+                      width: 20.833vw;
+                      height: 18.333vw;
+                    }
+
+                    .slide-info {
+                      width:25vw;
+                      height: 10.416vw;
+                      padding-left: 3.333vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .latest-news-section {
+
+        .latest-news-section-content {
+
+          h2 {
+
+          }
+
+          .latest-news-wrapper {
+
+            .news-item {
+              width: 25vw;
+              height: 4.083vw;
+
+              .news-img {
+                width: 20.833vw;
+                height: 18.333vw;
+                margin: 0 2.083vw;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

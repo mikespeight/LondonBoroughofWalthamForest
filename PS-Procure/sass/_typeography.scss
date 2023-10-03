@@ -1,0 +1,43 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "font";
+
+$dinAlternateLight: 'din_alternate_light', sans-serif;
+$dinAlternateRegular: 'din_alternate_regular', sans-serif;
+$dinAlternateMedium: 'din_alternate_medium', sans-serif;
+$dinAlternateBold: 'din_alternate_bold', sans-serif;
+$dinAlternateBlack: 'din_alternate_black', sans-serif;
+
+.centre {text-align: center}
+
+h2 {
+  font-family: $dinAlternateMedium;
+  @include font-size(55);
+}
+
+h3 {
+  font-family: $dinAlternateMedium;
+  @include font-size(38);
+
+  &.underline {
+
+    span {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom:-43px;
+        left: calc(50% - 25px);
+        width:50px;
+        height:3px;
+        border-top: 3px solid $primaryBrand;
+      }
+    }
+  }
+}

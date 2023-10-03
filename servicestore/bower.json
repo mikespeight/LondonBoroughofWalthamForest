@@ -1,0 +1,23 @@
+{
+  "name": "servicestore",
+  "description": "London Borough of Waltham Forest Servicestore",
+  "main": "index.html",
+  "authors": [
+    "Mike Speight"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "fontAwesome#^4.7.0",
+    "flexslider-scss": "^1.0.0"
+  }
+}

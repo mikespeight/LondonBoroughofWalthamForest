@@ -1,0 +1,219 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for tablet portrait down i.e. < 768px
+*
+*
+*
+*******************************************************************************************/
+
+section {
+
+  div {
+
+    .wysiwyg {
+
+      &.inner {
+        margin: 0;
+      }
+
+      p {
+
+        &:nth-child(1) {
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-homepage {
+
+  .hero {
+
+    .hero-content {
+
+      .social {
+
+        a, p {
+          color: $white;
+        }
+      }
+
+      a {
+
+        &.btn {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      h1 {
+        top:370px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 502px;
+        height:311px;
+        background-size: 497px 302px;
+      }
+
+      h2 {
+        top:635px;
+      }
+    }
+
+    h2 {
+      color: $white;
+      top:545px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+}
+
+.the-scene {
+
+  .the-scene-content {
+    min-height: 733px;
+  }
+
+  .the-scene-bg-img {
+    display: none
+  }
+}
+
+.character {
+
+  .character-content {
+    
+    p {
+      color: $white;
+    }
+
+    h3 {
+      color: $white;
+    }
+  }
+}
+
+.shared-ownership {
+
+}
+
+.properties {
+
+  .property-grid {
+
+    .property {
+
+      img {
+        width: 100%!important;
+
+      }
+    }
+  }
+}
+
+.connect {
+
+  .connect-content {
+
+   /* .train-times {
+      display: flex;
+      justify-content: center;
+
+      img {
+
+        &.journey-planner {
+          width: 314px;
+          margin:0 auto 50px;
+        }
+      }
+    }*/
+  }
+}
+
+.plan {
+  min-height: 1570px;
+  overflow: hidden;
+
+  .plan-content {
+    min-height: inherit;
+
+    .floor-plan {
+
+      img {
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%)
+      }
+    }
+
+    .speification {
+      min-height: 700px;
+
+      .site-plan {
+        left: 50%;
+        bottom: -140px;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.subpage {
+
+  .hero {
+
+    .hero-content {
+
+      h2 {
+        width: 190px;
+        color: $white;
+      }
+    }
+  }
+}
+
+.details {
+  min-height: 977px;
+
+  .details-content {
+    min-height: inherit;
+
+    .heading {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.photos {
+
+  .photos-content {
+
+    .row {
+      justify-content: center;
+    }
+
+    .flexslider-wrapper {
+
+      .flexslider {
+        width: 546px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+}
+
+.priority {
+  min-height: 990px;
+
+  .priority-content {
+    min-height: inherit;
+  }
+
+}
+

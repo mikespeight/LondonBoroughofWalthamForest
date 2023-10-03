@@ -1,0 +1,420 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+html,
+body {
+  width:100%;
+  overflow-x: hidden;
+
+  .page-wrapper {
+    position: relative; // Sets up positioning context for page, and to seperate page content from Drupal
+  }
+}
+
+body {
+  font-family: $Archia-font;
+  font-weight: $regular;
+  @extend .regular;
+  color: $txtColour;
+  @include font-size(14);
+
+  & > section {
+    overflow: hidden;
+  }
+}
+
+#UserAgent {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.btn-wrapper {
+  margin: 0 0 50px 36px;
+
+  &.align-center {
+    text-align: center;
+    overflow: hidden;
+    margin: 30px 0;
+  }
+}
+
+a,
+button {
+  display: block;
+  outline: none;
+
+  &.btn {
+    height: 44px;
+    line-height: 44px;
+
+    &.blob-btn {
+      display: inline-block;
+      position: relative;
+      height: 58px;
+      @include border-radius(29px);
+      padding: 0 100px 0 30px;
+      color: $white;
+      @include font-size(16);
+      font-weight: $semiBold;
+      line-height: 58px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height:58px;
+        width: 87px;
+        top:0;
+        right:0;
+        background-color: transparent;
+        background-image: url("#{$pathToImages}/blob-btn-bg-sprite.png");
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: all, 0.33s ease-in-out;
+      }
+
+      &.green,
+      &.green-green {
+        background-color: $brandPrimary;
+
+        &:after {
+          background-position: 100% -58px;
+        }
+      }
+
+      &.white-green {
+        background-color: $white;
+        color: $brandPrimary;
+
+        &:after {
+          background-position: 100% -58px;
+          opacity:0.5;
+        }
+      }
+
+      &.white-purple {
+        background-color: $white;
+        color: $brandDarkPurple;
+
+        &:after {
+          background-position: 100% -174px;
+          opacity:0.4;
+        }
+      }
+
+      &.pink,
+      &.white-pink {
+        background-color: $white;
+        color: $brandDarkPink;
+
+        &:after {
+          background-position: 100% 0;
+        }
+      }
+
+      &:hover {
+
+        &:after {
+          opacity:0;
+        }
+      }
+
+    }
+
+    &.link-btn {
+      height: 48px;
+      @include border-radius(24px);
+      min-width: 216px;
+      border: 2px solid $white;
+      margin:20px 0;
+      font-family: $Archia-font;
+      font-weight: $semiBold;
+      @include font-size(16);
+      line-height: 47px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      transition: all 0.125s ease-in-out;
+
+      &.external {
+        position: relative;
+
+        span {
+          position: relative;
+          padding-right: 35px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right:0;
+            display: inline-block;
+            width:23px;
+            height: 23px;
+            background-color: transparent;
+            background-image: url("#{$pathToImages}/link-icons-sprite.png");
+            background-position: -3px -2px;
+            background-size: 135px 112.5px;
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.primary {
+
+          span {
+
+            &:after {
+              background-position: -3px -3px;
+            }
+          }
+        }
+      }
+
+      &.list {
+        position: relative;
+
+        span {
+          position: relative;
+          padding-right: 35px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right:0;
+            display: inline-block;
+            width:25px;
+            height: 22px;
+            background-color: transparent;
+            background-image: url("#{$pathToImages}/link-icons-sprite.png");
+            background-position: -3px -65px;
+            background-size: 135px 113px;
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.primary {
+
+          span {
+
+            &:after {
+              background-position: 0 -65px;
+            }
+          }
+        }
+      }
+
+      &.download {
+        position: relative;
+        padding-right: 90px;
+
+        span {
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width:18px;
+            height: 30px;
+            background-color: transparent;
+            background-image: url("#{$pathToImages}/link-icons-sprite.png");
+            background-position: 4.5px 39.5px;
+            background-size: 155px 62px;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+      &.primary {
+        color: $white;
+        border-color: $brandPrimary;
+        background-color: $brandPrimary;
+
+        span {
+
+        }
+      }
+
+
+
+      &.tertiary {
+        color: $white;
+        background-color: $brandTertiary;
+        border-color: $brandTertiary;
+
+        span {
+
+        }
+      }
+
+      &.quaternary {
+        border-color: $brandQuaternary;
+        background-color: $white;
+        color: $brandQuaternary;
+
+        span {
+
+          &:after {
+            background-position: -96px -3px;
+          }
+        }
+      }
+
+      &.secondary,
+      &.cta-btn {
+        border-color: $brandPrimary;
+        background-color: $brandPrimary;
+        color: $white;
+
+        span {
+
+        }
+      }
+
+    }
+
+    &.wide-btn {
+      padding: 0 100px;
+
+      span {
+
+      }
+    }
+  }
+
+  &:hover {
+
+    &.btn {
+
+      &.link-btn {
+        color: $brandPrimary;
+        background-color: $white;
+
+        &.external {
+
+          span {
+
+            &:after {
+              background-position: -27px -3px;
+            }
+          }
+        }
+
+        &.list {
+
+          span {
+
+            &:after {
+              background-position: -27px -65px;
+            }
+          }
+        }
+
+        &.primary {
+          color: $brandPrimary;
+          background-color: $white;
+
+          &.external {
+
+            span {
+
+              &:after {
+                background-position: -29px -2px;
+              }
+            }
+          }
+
+          &.list {
+
+            span {
+
+              &:after {
+                background-position: -27px -65px;
+              }
+            }
+          }
+        }
+
+        &.cta-btn {
+          border-color: $brandSecondary;
+          background-color: $brandSecondary;
+          //color: $white;
+
+          span {
+
+          }
+        }
+
+        &.secondary {
+          border-color: $brandSecondary;
+          background-color: $brandSecondary;
+          color: $white;
+
+          &.external {
+
+            span {
+
+              &:after {
+                background-position: -3px -3px;
+              }
+            }
+          }
+        }
+
+        &.tertiary {
+          color: $brandTertiary;
+          background-color: $white;
+          border-color: $brandTertiary;
+
+          &.external {
+
+            span {
+
+              &:after {
+                background-position: -127px -3px;
+              }
+            }
+          }
+        }
+
+        &.quaternary {
+          background-color: $brandQuaternary;
+          color: $white;
+
+          &.external {
+
+            span {
+
+              &:after {
+                background-position: -3px -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

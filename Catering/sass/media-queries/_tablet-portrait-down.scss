@@ -1,0 +1,115 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for tablet portrait down i.e. < 768px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+  width:100%;
+  overflow-x: hidden;
+
+  /*&:before {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    content: 'Tablet Portrait down < 768';
+  }*/
+
+  &.homepage {
+
+    .hero {
+
+      .hero-content {
+
+        h1 {
+        }
+      }
+    }
+  }
+
+  .twin-image {
+
+    .twin-image-content {
+      @include flex-container();
+
+      .image-block {
+        width: 100%!important;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .video-container {
+    width: 100%;
+    padding-bottom: 50%;
+    padding-top: 30px;
+  }
+
+  .connect {
+
+    .connect-content {
+
+      .connect-details {
+        padding: 100px 50px!important;
+
+        .inner {
+
+          h2 {
+          }
+        }
+      }
+    }
+  }
+
+  .feature-list {
+
+    .content {
+
+      ul {
+        flex-direction: column;
+
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .feature-links {
+
+    .feature-links-content {
+      flex-direction: column;
+
+      .link-box {
+        width:100%;
+      }
+    }
+  }
+
+  footer {
+
+    .footer-grid {
+
+      &.footer-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "logos"
+        "footer-nav"
+        "copyright";
+        height: inherit;
+
+        nav {
+
+          ul {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+/********************************************************
+*
+*
+*     Cookie compliance stylesheet
+*
+*
+*********************************************************/
+// Variables
+$background-colour: #12a1be;
+$site-font: 'Source Sans Pro', sans-serif;
+$btn-background:  #3b5b59;
+$btn-background-sec:  #c8d42c;
+
+div {
+
+  &#sliding-popup {
+    background: $background-colour;
+    width: 100%;
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-family: $site-font;
+      color: $white;
+    }
+
+    h2 {
+      @include font-size(22);
+    }
+
+    .popup-content {
+      padding:15px 0;
+
+      #popup-buttons {
+        padding-top: 30px;
+
+        button {
+          display: block;
+          margin-bottom: 20px;
+          background-color: $btn-background;;
+          border:1px solid $btn-background;;
+          color: $white;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            background-color: $btn-background-sec;
+            border-color: $btn-background-sec;
+            color: $btn-background;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,193 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for WYSIWYG editor
+*
+*
+*
+*******************************************************************************************/
+
+section {
+
+  div {
+
+    &.wysiwyg {
+      display: block!important;
+      //padding:60px 0 40px;
+      font-family: $brandFont;
+      font-weight: $light;
+
+      a {
+        display: inline;
+        color: $brandPrimary;
+      }
+
+      &.inner {
+      }
+
+      p {
+        @include font-size(18);
+        text-align: left;
+        margin: 5px 0 20px;
+        line-height: 28px;
+        font-weight: $light;
+
+        &:last-child {
+          margin-bottom:0;
+        }
+
+        &.small-text {
+          @include font-size(14);
+          line-height: 19px;
+        }
+      }
+
+      h3 {
+        color: $brandPrimary;
+        @include font-size(18);
+        font-weight: $bold;
+        margin-bottom: 0;
+      }
+
+      ul {
+        list-style: none;
+        margin-top: 5px;
+      }
+
+      li {
+        position: relative;
+        //margin-bottom: 24px;
+        @include font-size(18);
+        padding-left: 10px;
+        line-height: 31px;
+        font-weight: $light;
+        color: $txtColour;
+
+
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 10;
+          left:0;
+          top:12px;
+          display: block;
+          width: 6px;
+          height: 6px;
+          background-color: $brandSecondary;
+          @include border-radius(3px);
+        }
+      }
+
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 17px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          width: 50%;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      ol {
+        list-style: none;
+        padding-left:25px;
+        counter-reset: list-counter;
+
+        li {
+          position: relative;
+          margin-bottom: 24px;
+          @include font-size(18);
+          padding-left: 0;
+          left:-3px;
+          line-height: 26px;
+          font-weight: $light;
+          color: $txtColour;
+
+          &:before {
+            content: counter(list-counter);
+            counter-increment: list-counter;
+            position: absolute;
+            top: -8px;
+            left:-40px;
+            display: inline-block;
+            height: 44px;
+            width: 44px;
+            @include border-radius(22px);
+            color: $brandSecondary;
+            background-color: transparent;
+            @include font-size(20);
+            font-weight: $light;
+            text-align: center;
+            line-height: 43px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+
+    div {
+
+      &.wysiwyg {
+
+        div {
+          flex-direction: column;
+          justify-content: center;
+          margin-bottom: 30px;
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  section {
+
+    div {
+
+      &.wysiwyg {
+
+        div {
+          margin-bottom: 30px;
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  section {
+
+    div {
+
+      &.wysiwyg {
+        //padding:60px 0 40px;
+
+      }
+    }
+  }
+}
+

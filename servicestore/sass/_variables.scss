@@ -1,0 +1,26 @@
+$baseFontSize:  10px;
+
+$pathToImages:          '../assets/images';
+$pathToFonts:           '../assets/fonts';
+$pathToComponents:      '../assets/components';
+$pathToBootstrap:       '../assets/components/bootstrap-sass';
+$pathToFlexslider:      '../assets/components/flexslider-scss';
+$flex-slider-font-path: '../assets/components/flexslider-scss/fonts' !default;
+$fa-font-path:          '../assets/components/font-awesome/fonts';
+$fa-font-path:          '../assets/fonts/font-awesome/fonts';
+
+$mq-mobile-portrait		: 320px !default;
+$mq-mobile-landscape	: 480px !default;
+$mq-tablet-portrait		: 768px !default;
+$mq-screen-md         : 992px !default;
+$mq-tablet-landscape	: 1024px !default;
+$mq-desktop				: 1382px !default;
+$mq-iPhone-6-portrait   : 375px  !default;
+$mq-iPhone-6-landscape  : 667px  !default;
+$mq-iPhone-6p-portrait   : 414px  !default;
+$mq-iPhone-6p-landscape  : 736px  !default;
+$ipad-pro-portrait-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px)";
+$ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1366px) and (max-width: 1366px)";
+
+$ipad-pro-10-portrait-breakpoint: "(min-device-width : 1668px) and (max-device-width : 1668px) and (min-device-height : 2224px) and (max-device-height : 2224px) and (min-width: 1668px) and (max-width: 1668px)";
+$ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-width : 1668px) and (min-device-height : 2224px) and (max-device-height : 2224px) and (min-width: 2224px) and (max-width: 2224px)";

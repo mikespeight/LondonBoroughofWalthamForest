@@ -1,0 +1,9 @@
+{
+  "Site name": "Invest Waltham Forest",
+  "pages": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-usemin": "^0.3.28"
+  }
+}

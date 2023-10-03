@@ -1,0 +1,748 @@
+/****************************************
+*
+* Global stylesheet
+*
+*****************************************/
+.page-node-type-homepage {
+
+  .hero {
+
+    .hero-content {
+
+      h1 {
+        display: block;
+        position: absolute;
+        top: 20.833vw;
+        left:15px;
+        width:27vw;
+        height:16.729vw;
+        background: url("#{$pathToImages}/limelight-logo-wht.png") 6px 8px no-repeat;
+        background-size: 25.885vw 15.729vw;
+        text-indent: -10000px;
+
+
+        p {
+          text-align: center;
+          font-family: $Lato-font;
+          font-weight: $bold;
+          @include font-size(35);
+          letter-spacing: -1.5px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+}
+
+.hero {
+  background-color: $brandYellowBg;
+  position: relative;
+  min-height: 675px;
+  overflow: hidden;
+
+  .hero-image {
+    //object-fit: cover;
+    width: 96.875vw;
+    min-height: 35.156vw;
+
+    /*img {
+      object-fit: cover;
+      width: 100%;
+      min-height: 675px;
+    }*/
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 0 15px;
+    color: $white;
+
+    .social {
+      margin-top: 56px;
+      color: $white;
+
+      span {
+        //display: block;
+        color: $white;
+      }
+
+      a {
+        color: $white;
+        display: inline;
+
+        i {
+
+          &.fa {
+            color: $white;
+            font-size: 42px;
+          }
+        }
+      }
+    }
+
+    a {
+
+      &.btn {
+        position: absolute;
+        top:15.625vw;
+        left:8.3vw;
+        background-color: $brabdDkBlueBg;
+        color: $white;
+        border: 1px solid $brabdDkBlueBg;
+      }
+
+      &:hover {
+
+        &.btn {
+          background-color: $white;
+          color: $brabdDkBlueBg;
+          border: 1px solid $white;
+        }
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      width:191px;
+      position: absolute;
+      top: 290px;
+      right:20px;
+      font-family: $Oswald-font;
+      font-weight: $bold;
+      @include font-size(96);
+      text-align: center;
+      color: $text-color;
+
+      p {
+        margin-top: 12px;
+        @include font-size(19);
+        line-height: 22.5px;
+        letter-spacing: 1.5px;
+        //text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+
+  .notification {
+    display: none;
+  }
+
+  &.notify {
+
+    .notification {
+      display: block;
+      position: absolute;
+      height:40px;
+      background-color: $notification-bg;
+      font-family: $Lato-font;
+      @include font-size(18);
+      font-weight: $bold;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 40px;
+      color: $white;
+      transform: rotate(-40deg);
+      bottom: 30px;
+      right: -40px;
+      width: 239px;
+    }
+  }
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pos-content {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+}
+
+.the-scene {
+  background-color: $brandBlueBg;
+
+  .the-scene-content {
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+
+    .the-scene-bg-img {
+      width: 62.5vw;
+      //object-fit: cover;
+      min-height: 38.177vw;
+      margin-left:36%;
+    }
+
+    .inner {
+      padding: 12px 0 0;
+
+      h3 {
+        margin: 0 0 30px;
+        line-height:87px;
+      }
+    }
+  }
+}
+
+.character {
+  background-color: $brandGreenBg;
+
+  .character-content {
+
+    .character-bg-img {
+      width:100%;
+      object-fit: cover;
+      min-height: 674px;
+    }
+
+    h3 {
+      position: absolute;
+      top:4px;
+      right:15px;
+      width:208px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      text-align: right;
+      line-height: 80px;
+
+      span {
+
+        &:nth-child(2) {
+          letter-spacing: 3px;
+        }
+
+        &:nth-child(3) {
+          letter-spacing: 5.5px;
+        }
+      }
+    }
+
+    p {
+      position: absolute;
+      top:482px;
+      right:30px;
+      width:220px;
+      text-align: right;
+      line-height: 21px;
+      color: $black;
+
+    }
+  }
+}
+
+.shared-ownership {
+  background-color: $brandOrange;
+}
+
+.shared-ownership,
+.details {
+
+  .details-content,
+  .shared-ownership-content {
+    min-height: 600px;
+
+    .shared-ownership-bg-img {
+      width: 74vw;
+      min-height: 41.510vw;
+      margin-left:24%;
+    }
+
+    .heading {
+      width: 570px;
+      padding-top: 41px;
+      margin-bottom: 102px;
+
+      h3 {
+        margin-top: -4px;
+      }
+
+      p {
+        margin: 0;
+        text-align: center;
+        font-family: $Lato-font;
+        font-weight: $bold;
+        @include font-size(24);
+        text-transform: uppercase;
+
+      }
+    }
+
+    &.content {
+
+      .inner {
+
+        p {
+          padding-right: 50px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.details {
+  min-height: 977px;
+
+  .details-content {
+    min-height: inherit;
+
+    .heading {
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.properties {
+  min-height: 1466px;
+  //background-color: $ltGrey;
+
+
+  .properties-content{
+
+    .heading {
+      h3 {
+        margin: 40px 0 100px;
+      }
+    }
+
+    .property-grid {
+
+      .property {
+        margin: 0 0 167px;
+
+        .image-wrapper {
+          display: inline-block;
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .notification {
+          display: none;
+        }
+
+        &.notify {
+
+          .notification {
+            display: block;
+            position: absolute;
+            height:30px;
+            background-color: $notification-bg;
+            font-family: $Lato-font;
+            font-weight: $bold;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 30px;
+            color: $white;
+            transform: rotate(-35deg);
+            bottom: 23px;
+            right: -25px;
+            width: 200px;
+          }
+        }
+
+        h4 {
+          margin-top: 35px;
+        }
+
+
+
+        .brand-btn {
+          position: absolute;
+          bottom: -75px;
+        }
+      }
+    }
+  }
+}
+
+.connect {
+  background-color: $brandYellow;
+  min-height: 1027px;
+
+  .connect-content {
+
+    .heading {
+
+      h3 {
+        margin: 68px 0;
+      }
+    }
+  }
+
+  .journey-planner {
+    margin-left: 23px;
+  }
+
+  .map-wrapper {
+    padding:0;
+  }
+
+  #map {
+    width: 100%;
+    height:574px;
+    //margin: 0 -15px 0 -15px;
+  }
+
+  .directions {
+    margin-top: 39px;
+  }
+}
+
+.plan {
+  position: relative;
+  min-height: 794px;
+  height: 794px;
+  background-color: $ltGrey;
+
+  .plan-content {
+    height: inherit;
+
+    .row {
+      height: inherit;
+    }
+
+    .floor-plan {
+      height:100%;
+
+      h3 {
+        margin-top: 30px;
+        /*@extend .lato-bold-font;
+        @include font-size(24);*/
+        text-transform: uppercase;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        bottom:60px;
+      }
+    }
+
+    .speification {
+      margin-top: 58px;
+
+      .area {
+        border-bottom: 1px solid $nearBlack;
+        margin-bottom: 15px;
+
+        h4 {
+          margin-bottom: 4px;
+        }
+
+        &.total {
+
+          p {
+            font-weight: $bold;
+          }
+        }
+      }
+
+      .legend {
+
+        p {
+
+          span {
+            font-weight: $bold;
+          }
+
+          &.summary {
+
+          }
+        }
+
+      }
+
+      .site-plan {
+        position: absolute;
+        bottom: 60px;
+        right:0;
+      }
+    }
+  }
+}
+
+.photos {
+  height: 513px;
+  background-color: $ltGrey;
+
+  .photos-content {
+    height: inherit;
+
+    .heading {
+      h3 {
+        margin: 40px 0;
+      }
+    }
+
+    .flexslider-wrapper {
+
+      .flexslider {
+        background-color: transparent;
+
+        .slides {
+          background-color: transparent;
+
+          .slide {
+            width: 270px;
+            margin-right: 30px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+.priority {
+  height: 694px;
+
+  .priority-content {
+    height: inherit;
+
+    .heading {
+      width: 570px;
+      padding-top: 50px;
+      margin-bottom: 28px;
+
+      h3 {
+        margin-top: -4px;
+      }
+
+      p {
+        margin: 0;
+        text-align: left;
+        font-family: $Lato-font;
+        font-weight: $bold;
+        @include font-size(24);
+        text-transform: uppercase;
+
+      }
+    }
+  }
+}
+
+.subpage {
+
+  #view-more-properties {
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    z-index: 100;
+  }
+
+  .hero {
+    position: relative;
+    min-height: 675px;
+    overflow: hidden;
+
+    .hero-image {
+      object-fit: cover;
+      width: 100%;
+      min-height: 675px;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      padding: 0 15px;
+      color: $white;
+
+      a {
+
+        &.btn {
+          position: absolute;
+          top:530px;
+          left:160px;
+        }
+      }
+
+      h1 {
+        display: block;
+        position: absolute;
+        top: 43px;
+        left:15px;
+        width:417px;
+        height: 102px;
+        background: url("#{$pathToImages}/limelight-logo-wht-sml.png") 5px 8px no-repeat;
+        background-size: 417px 94px;
+        text-indent: -10000px;
+
+        p {
+          text-align: center;
+          font-family: $Lato-font;
+          font-weight: $bold;
+          @include font-size(35);
+          letter-spacing: -1.5px;
+          text-transform: uppercase;
+        }
+      }
+
+      h2 {
+        display: inline-block;
+        width:330px;
+        position: absolute;
+        top: 36px;
+        right:25px;
+        font-family: $Town-23-lines-bold-font;
+        @include font-size(78);
+        font-weight: normal;
+        text-align: left;
+        color: $nearBlack;
+
+        p {
+          margin-top: 4px;
+          font-family: $Lato-font;
+          @include font-size(20);
+          font-weight: $black;
+          line-height: 22.5px;
+          letter-spacing: 0;
+          text-transform: uppercase;
+          text-align: left;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    p {
+
+      &.strap-line {
+        position: absolute;
+        top:619px;
+        @include font-size(23);
+        font-weight: $bold;
+        letter-spacing: 5.5px;
+        text-transform: uppercase;
+      }
+    }
+
+    .notification {
+      display: none;
+    }
+
+    &.notify {
+
+      .notification {
+        display: block;
+        position: absolute;
+        height:40px;
+        background-color: $notification-bg;
+        font-family: $Lato-font;
+        @include font-size(18);
+        font-weight: $bold;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: $white;
+        transform: rotate(-40deg);
+        bottom: 30px;
+        right: -40px;
+        width: 239px;
+      }
+    }
+  }
+}
+
+footer {
+  min-height: 630px;
+  background-color: $brandDkBlue;
+  color: $white;
+
+  .footer-content {
+    min-height: inherit;
+
+    .heading {
+
+      h3 {
+        margin: 55px 0;
+      }
+    }
+
+    .contact-details {
+      margin-top: 43px;
+      margin-bottom: 155px;
+
+      p {
+        margin-bottom: 4px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+
+        &.info-line {
+          margin-top: 35px;
+          letter-spacing:1.5px;
+        }
+      }
+
+      a {
+        color: $white;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+      }
+    }
+
+    h4 {
+
+      &.bottom-strap-line {
+        margin-bottom: 90px;
+        width:144px;
+        @include font-size(23);
+        font-weight: $bold;
+        letter-spacing: 2px;
+        line-height: 22px;
+      }
+    }
+
+    .logos {
+      position: relative;
+
+      a {
+        position: absolute;
+        bottom:0;
+
+        &.redloft-logo {
+          right: 202px;
+
+          img {
+            width:132px;
+            height:35px;
+          }
+        }
+
+        &.waltham-forrest-logo {
+          right:45px;
+
+          img {
+            width:101px;
+            height: 56px;
+          }
+        }
+      }
+    }
+  }
+}

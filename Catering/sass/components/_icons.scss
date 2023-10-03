@@ -1,0 +1,65 @@
+
+
+
+.feature-tiles {
+
+  .tile-container {
+
+    .tile {
+
+      .tile-inner {
+
+        .tile-icon {
+          display: block;
+          @include centerH;
+          top: 70px;
+          width:140px;
+          height: 140px;
+          background: transparent url("#{$iconSprite}");
+          background-size: $sizeOfSprite;
+        }
+      }
+
+      &.food {
+
+        .tile-icon {
+          background-position: 0 0;
+          position: relative;
+          top: 118px;
+        }
+      }
+
+      &.services {
+
+        .tile-icon {
+          background-position: -140px 0;
+          position: relative;
+          top: 100px;
+        }
+      }
+
+      &.people {
+
+        .tile-icon {
+          background-position: -280px 0;
+          position: relative;
+          top: 105px;
+        }
+      }
+
+
+
+      &.secondaryBg {
+        background-color: $brandSecondary ;
+      }
+
+      &.primaryBg {
+        background-color: $brandPrimary;
+      }
+
+      &.quaternaryBg {
+        background-color: $brandQuaternary;
+      }
+    }
+  }
+}

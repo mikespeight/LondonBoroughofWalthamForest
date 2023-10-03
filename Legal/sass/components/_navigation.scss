@@ -1,0 +1,316 @@
+/****************************************
+*
+* Navigation stylesheet
+*
+*****************************************/
+
+nav {
+  margin-top: 35px;
+
+  &.navbar-default {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  &.navbar {
+
+    .navbar-nav {
+      display: inline-block;
+      float: none;
+
+      & > li {
+
+        & > a {
+          color: $white;
+          font-family: $Roboto-font;
+          @include font-size(16);
+          font-weight: $light;
+
+          &:visited {
+            color: $white;
+          }
+
+          &:hover,
+          &:active {
+            color: $brandTorquise;
+          }
+        }
+
+        // dropdown menu desktop
+        &.dropdown {
+
+
+          & > ul {
+
+            &.dropdown-menu {
+              background-color: $brandTorquise;
+              @include centerH;
+              top:49px;
+
+              &:before {
+                content: '';
+                //display: block;
+                width: 20px;
+                height: 20px;
+                background-color: $brandTorquise;
+                @include centerH;
+                top:-12px;
+                transform: rotate(45deg);
+                transform-origin: top left;
+              }
+
+              & > li {
+                margin: 10px 0;
+
+                &:first-child {
+                  padding-top: 10px;
+                }
+
+                & > a {
+                  color: $white;
+                  font-family: $Roboto-font;
+                  font-weight: $light;
+                  @include font-size(14);
+                  border-bottom: 1px solid transparent;
+                  padding: 3px 0;
+                  margin: 0 20px;
+
+                  &:hover,
+                  &:active {
+                    color: $menuHover;
+                    background-color: transparent;
+                    border-bottom: 1px solid $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+}
+
+
+// Mobile menu
+
+@media (max-width: 990px) {
+
+  nav {
+
+    &.navbar {
+
+      .navbar-nav {
+
+        & > li {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .page-node-type-homepage,
+  .subpage {
+
+    header {
+      position: relative;
+      z-index: 3;
+
+      .menu-container {
+        margin:0!important;
+        width: 100%!important;
+        padding:0;
+
+        nav {
+          width:100%;
+          position: relative;
+          z-index: 1;
+          //overflow: visible;
+
+          &.navbar-default {
+            //width:100%;
+            margin: 0;
+          }
+
+          & + .search-wrapper {
+            z-index: 1;
+          }
+
+          .content {
+            min-height: 0;
+            height: 68px;
+            overflow: visible!important;
+          }
+        }
+      }
+
+      .brand {
+
+        a {
+          z-index: 0!important;
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    float: none!important;
+    margin: -23px 16px 30px;
+    z-index: 50;
+  }
+
+  .navbar-default {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .navbar-toggle {
+      border:1px solid $white;
+
+      &:focus {
+        background-color: $brandTorquise;
+      }
+
+      .icon-bar {
+        background-color: $white;
+      }
+    }
+  }
+
+  #search {
+
+    form {
+      //top:61px!important;
+      //right:34px!important;
+
+      .form-item {
+
+        input[type="text"] {
+          position: absolute;
+          //top: -60px;
+          //right: 54px;
+          //background-color: rgba(0,0,0,0.2)!important;
+        }
+      }
+
+      .form-actions {
+        right: 0;
+        input {
+
+        }
+      }
+    }
+  }
+
+  header {
+
+    button {
+
+      &#search-btn {
+        top:37px;
+        right:20px;
+      }
+    }
+  }
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+
+    &.in {
+      display: block!important;
+    }
+  }
+  .navbar-nav {
+    float: left!important;
+    margin: 100px 0 20px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  nav {
+    margin-top: 0;
+    padding-top: 35px;
+    transition: all 0.75s;
+
+    &.navbar-default {
+      //background-color: $blueTxtBg;
+    }
+
+    &.navbar {
+
+      .navbar-collapse {
+        background-color: $brandTorquise;
+        margin-top: -111px;
+      }
+
+      .navbar-nav {
+
+        & > li {
+          margin:0!important;
+          text-align: left;
+
+          & > a {
+
+
+          }
+
+          &.dropdown {
+
+            & > ul {
+
+              &.dropdown-menu {
+                margin-left: 20px;
+                display: block!important;
+                background-color: $brandTorquise;
+                position: static;
+                left:0;
+                transform: none;
+                border-radius: 0;
+                box-shadow: none;
+                border: none;
+                margin-top:0;
+                padding-top: 0;
+
+                &:before {
+                  display: none;
+                }
+
+                & > li {
+
+                  &:first-child {
+                    padding: 0;
+                  }
+
+                  & > a {
+                    color: $white;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

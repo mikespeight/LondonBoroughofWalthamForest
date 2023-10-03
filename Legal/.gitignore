@@ -1,0 +1,6 @@
+/.idea/*
+/node_modules
+/_node_modules
+/package-lock.json
+
+/linters/sass-lint.html

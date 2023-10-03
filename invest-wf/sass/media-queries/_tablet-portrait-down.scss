@@ -1,0 +1,94 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for tablet portrait down i.e. < 768px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  /*&:before {// TODO: remove for test only
+    content: 'Tablet Portrait down < 768';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    @include font-size(24);
+    color: red;
+  }*/
+
+  .page-wrapper {
+
+    .content-wrapper {
+
+      .dynamic-tiles-section {
+
+        & > div {
+          width: 100%
+        }
+      }
+
+      .slider-section {
+
+        .slider-section-content {
+
+          .slider-wrapper {
+
+            .flexslider {
+
+              .slides {
+
+                .slide {
+                  width: 39.062vw;
+                  height:45.572vw;
+
+
+                  a {
+
+                    .slide-img {
+                      width: 32.552vw;
+                      height: 28.645vw;
+                      margin: 0 3.255vw;
+                    }
+
+                    .slide-info {
+                      width: 39.062vw;
+                      height: 16.276vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+
+      .footer-grid {
+
+        &.footer-content {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-areas: "logos"
+          "footer-nav"
+          "copyright";
+          height: inherit;
+
+          nav {
+
+            ul {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

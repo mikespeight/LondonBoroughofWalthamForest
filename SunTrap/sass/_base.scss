@@ -1,0 +1,145 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+/*html,
+body {
+  width:100%;
+  overflow-x: hidden;
+}*/
+
+body {
+  font-family: $Roboto-font;
+  font-weight: $regular;
+  color: $txtColour;
+  @include font-size(14);
+
+  & > section {
+    overflow: hidden;
+  }
+
+}
+
+#UserAgent {
+  display: none;
+}
+
+a,
+button {
+  display: block;
+  outline: none;
+
+  &.btn {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-radius: 8px!important;
+
+
+    &.link-btn {
+      height: 44px;
+      border: 2px solid $white;
+      margin:20px 0;
+      font-family: $Roboto-font;
+      font-weight: $regular;
+      @include font-size(18);
+      color: $white;
+      line-height: 38px;
+      text-align: center;
+      transition: all 0.5s ease-in-out;
+
+      &.inverse {
+        border-color: $black;
+        color: $black;
+      }
+
+      &.primary {
+        background-color: transparent;
+        border-color: $suntrapOrange;
+        color: $suntrapOrange;
+      }
+    }
+
+
+    &.brand-btn {
+      background-color: $suntrapYellow2;
+      border:1px solid $suntrapYellow2;;
+      color: $white;
+      font-family: $Montserrat-font;
+      font-weight: $regular;
+      letter-spacing: 0.0055rem;
+      @include font-size(18);
+      transition: all 0.5s ease-in-out;
+
+      &.brand-red {
+        background-color: $suntrapYellow2;
+        border-color: $suntrapYellow2;
+      }
+
+      &.brand-reverse {
+        background-color: transparent;
+        border-color: $suntrapOrange;
+        color: $suntrapOrange;
+      }
+    }
+
+    &.wide-btn {
+      padding: 0 100px;
+
+    }
+  }
+
+  &:hover {
+
+    &.btn {
+
+      &.brand-btn {
+        background-color: $white;
+        border:1px solid $white;
+        color: $suntrapOrange;
+
+        &.brand-red {
+          border-color: $suntrapYellow2;
+          background-color: $suntrapYellow2;
+          color: $white;
+        }
+
+        &.brand-reverse {
+          border-color: $white;
+          background-color: $suntrapOrange;
+          color: $white;
+        }
+      }
+
+      &.link-btn {
+        background-color: $white;
+        border:1px solid $white;
+        color: $suntrapOrange;
+
+        &.inverse {
+          background-color: $suntrapOrange;
+          border:1px solid $suntrapOrange;
+          color: $white;
+        }
+
+        &.primary {
+          background-color: $suntrapOrange;
+          border-color: $suntrapOrange;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+

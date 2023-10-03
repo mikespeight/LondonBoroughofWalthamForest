@@ -1,0 +1,43 @@
+/*********************************************************
+*
+* Primary input mechanism cannot hover
+* at all or cannot conveniently hover
+* (e.g., many mobile devices emulate hovering
+* when the user performs an inconvenient long tap),
+* or there is no primary pointing input mechanism
+*
+**********************************************************/
+
+body {
+
+  /*&:before {
+    content: 'No Hover';
+    @include font-size(36);
+    color: red;
+  }*/
+}
+
+@media only screen and (min-width: 991px) {
+
+  header {
+
+    .top-nav {
+
+      nav {
+
+        .navbar-collapse {
+        }
+
+        .burger-menu {
+
+          &.navbar-toggler {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@import "../components/mobile-menu";

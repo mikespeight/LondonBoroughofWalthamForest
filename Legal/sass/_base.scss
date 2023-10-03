@@ -1,0 +1,78 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+html,
+body {
+  width:100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $Roboto-font;
+  @extend .regular;
+  color: $txtColour;
+  @include font-size(12);
+
+}
+
+#UserAgent {
+  display: none;
+}
+
+a,
+button {
+  display: block;
+  outline: none;
+
+  &.btn {
+    @include border-radius(6px);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+
+
+    &.link-btn {
+      width:373px;
+      height: 53px;
+      border: 2px solid $brandDkBlue;
+      margin:20px 0;
+      font-family: $Roboto-font;
+      @include font-size(20);
+      font-weight: $regular;
+      line-height: 53px;
+      text-align: center;
+    }
+
+    &.brand-btn {
+      background-color: transparent;
+      border:1px solid $brandDkBlue;
+      color: $brandDkBlue;
+      font-weight: $regular;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  &:hover {
+
+    &.btn {
+
+      &.brand-btn {
+        background-color: $buttonTQHover;
+        border:1px solid $brandDkBlue;
+      }
+    }
+  }
+}
+
+

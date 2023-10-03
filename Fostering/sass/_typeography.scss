@@ -1,0 +1,69 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700');
+
+$Montserrat-font: 'Montserrat', sans-serif;
+.montserrat-font {font-family: $Montserrat-font};
+
+//font weights
+$extraLight:200;
+$light:     300;
+$regular:   400;
+$medium:    500;
+$semiBold:  600;
+$bold:      700;
+$black:     900;
+
+
+.extra-light      {font-weight: $extraLight;}
+.light            {font-weight: $light}
+.regular          {font-weight: $regular;}
+.semi-bold        {font-weight: $semiBold;}
+.medium           {font-weight: $medium;}
+.bold             {font-weight: $bold;}
+
+.centre {text-align: center}
+
+h1 {
+  margin: 70px 0 61px;
+  font-family: $Montserrat-font;
+  font-weight: $regular;
+  @include font-size(36);
+  text-align: center;
+  color: $brandBlue;
+}
+
+h2 {
+  margin: 80px 0;
+  font-family: $Montserrat-font;
+  font-weight: $regular;
+  @include font-size(36);
+  text-align: center;
+  color: $brandBlue;
+
+  &.heading-row {
+    margin:30px 0;
+  }
+}
+
+h3 {
+  font-family: $Montserrat-font;
+  font-weight: $regular;
+  @include font-size(97);
+  margin-left: -3px;
+  line-height: 80px;
+}
+
+
+h4 {
+  margin-bottom: 15px;
+  font-family: $Montserrat-font;
+  font-weight: $regular;
+  @include font-size(14);
+  text-transform: uppercase;
+}

@@ -1,0 +1,114 @@
+// jQuery UI Datepicker
+@import '../assets/components/jqueryui-datepicker/datepicker.css';
+
+.ui-widget-content {
+  //color: $brandBlue;
+}
+
+#ui-datepicker-div {
+  min-width: 250px;
+  border: 1px solid $borderGrey;
+  @include border-radius(4px);
+  padding:10px 15px;
+  font-family: "Montserrat", sans-serif;
+  @include font-size(16);
+  font-weight: $light;
+  background-color: $white;
+  @include box-shadow();
+
+  .ui-datepicker-calendar {
+
+    thead {
+
+      tr {
+
+        th {
+
+          span {
+            color: $brandBlue!important;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-widget-content {
+    //color: $brandDkBlue!important;
+  }
+
+  .ui-widget-header {
+    border-color: $brandBlue;
+    background-color: $brandBlue;
+  }
+
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
+    border-color: $greyBg;
+    background-color: $greyBg;
+  }
+
+  .ui-state-highlight,
+  .ui-widget-content .ui-state-highlight,
+  .ui-widget-header .ui-state-highlight {
+    border-color: $brandBlue;
+    background-color: $brandBlue;
+  }
+
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active {
+    border-color: $brandDkBlue;
+    background-color: $brandDkBlue;
+  }
+
+  .ui-widget-header {
+
+    a {
+
+      &.ui-state-hover {
+        background-color: transparent!important;
+      }
+    }
+  }
+
+  a {
+
+    &.ui-datepicker-prev,
+    &.ui-datepicker-next {
+      display: block;
+
+      span {
+        @include centerer;
+        display: block;
+        width: 16px;
+        height:16px;
+        border:8px solid $white;
+        transform: rotate(45deg);
+        cursor: pointer;
+      }
+    }
+
+    &.ui-datepicker-prev {
+
+      span {
+        border-top-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+
+    &.ui-datepicker-next {
+
+      span {
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+
+
+
+      
+
+}

@@ -1,0 +1,395 @@
+/****************************************
+*
+* Global stylesheet
+*
+*****************************************/
+body {
+
+  /*&:before {
+    content: '1280 and above';
+    position: fixed;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1000;
+  }*/
+
+  .page-wrapper {
+
+    h1 {
+      position: absolute;
+      z-index: 10;
+      width:135px;
+      height:248px;
+      top:0;
+      left: 76px;
+      text-indent: -10000px;
+      background: transparent url("#{$pathToImages}/60Bricks-logo-sml.jpg") 0 0 no-repeat;
+
+    }
+
+    .fixed-width-content {
+      margin: 0 auto;
+      max-width: 1280px;
+    }
+
+    header {
+      position: relative;
+
+      .hero {
+        position: relative;
+        height: 690px;
+        overflow: hidden;
+
+        .hero-slider {
+
+          .flexslider {
+
+            .slides {
+
+              .slide {
+
+                .slide-inner {
+
+                  img {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .hero-panel {
+          position: absolute;
+          z-index: 2;
+          @include centerer;
+          width: 700px;
+          height: 175px;
+          background-color: $white75;
+          padding:15px 57px;
+
+          h2 {
+            text-align: center;
+            color: $accentBlue;
+            @include font-size(34);
+            font-weight: $regular;
+            line-height: 45px;
+          }
+        }
+      }
+
+
+
+
+    }
+
+    .place-for-everyone,
+    .affordable-homes {
+      position: relative;
+
+      img {
+        width: 100%;
+        margin-bottom: -6px;
+      }
+
+      .place-for-everyone-panel,
+      .affordable-homes-panel {
+        width: 900px;
+        height: 660px;
+        padding: 60px 163px;
+        @include centerer;
+        background-color: $white;
+        text-align: center;
+
+        p {
+          @include font-size(20);
+          font-weight: $light;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .building-communities {
+      position: relative;
+
+      img {
+        width: 100%;
+        margin-bottom: -6px;
+      }
+
+      .building-communities-panel {
+        width: 900px;
+        height: 810px;
+        padding: 60px 163px;
+        @include centerer;
+        background-color: $accentBlue85;
+        text-align: center;
+
+        p {
+          @include font-size(20);
+          font-weight: $light;
+          margin-top: 20px;
+          color: $white;
+        }
+      }
+    }
+
+    .content-slider {
+      max-height: 810px;
+      min-height: 650px;
+
+      .fixed-width-content {
+
+        &.slider {
+          padding: 110px 0;
+
+          ul {
+
+            &.slides {
+              padding:0 83px;
+
+              .slide {
+
+                .slide-inner {
+                  @include flex-container(row, space-between);
+
+                  .slide-content {
+                    width: 33.333%;
+                    text-align: center;
+                    padding-top: 104px;
+
+                    .inner {
+                      padding: 0 26px;
+                    }
+
+                    h2 {
+                      @include font-size(26);
+                      font-weight: $semiBold;
+                    }
+
+                    p {
+                      padding-right: 0;
+                      @include font-size(20);
+                      font-weight: $light;
+                    }
+
+                    .btn-wrapper {
+                      margin-top: 50px;
+                      position: relative;
+
+                      a {
+                        &.btn {
+                          @include centerH
+                        }
+                      }
+                    }
+                  }
+
+                  .slide-image {
+                    width: 66.666%;
+                    max-width: 700px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .quotes {
+      position: relative;
+
+      img {
+        width: 100%;
+        filter: brightness(0.75);
+        margin:0;
+      }
+
+      .quotes-inner {
+        width: 1280px;
+        margin: 0 auto;
+        padding:0 130px;
+        @include centerer;
+
+        .inner {
+
+          p {
+            @include font-size(33);
+            padding: 0;
+            font-weight: $regular;
+            line-height: 50px;
+            letter-spacing: 1.75px;
+            color: $white;
+            text-align: center;
+
+            span {
+              position: relative;
+              margin: 0 50px;
+
+              &:before {
+                position: absolute;
+                content: '';
+                left:-51px;
+                top: -8;
+                display: block;
+                width: 44px;
+                height:35px;
+                background: transparent url("#{$pathToImages}/open-quote.png") 0 0 no-repeat;
+                background-size: 44px 35px;
+              }
+
+              &:after {
+                position: absolute;
+                content: '';
+                right:-47px;
+                bottom: -10px;
+                display: block;
+                width: 44px;
+                height:35px;
+                background: transparent url("#{$pathToImages}/close-quote.png") 0 0 no-repeat;
+                background-size: 44px 35px;
+              }
+            }
+          }
+        }
+
+        p {
+
+          &.credit {
+          @include font-size(20);
+            margin-top: 10px;
+          font-weight: $semiBold;
+          color: $white;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 1.75px;
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: $accentBlue;
+      color: $white;
+      min-height: 180px;
+      overflow: hidden;
+
+      a {
+        color: $white;
+        @include font-size(16);
+      }
+
+      .sticky-footer {
+        @include flex-container(row,space-between);
+        padding: 10px 55px;
+        margin-bottom: -65px;
+        height: 62px;
+
+        &.fixed {
+          position: fixed;
+          width:100%;
+          bottom: 62px;
+          z-index: 100;
+          background-color: $accentBlue;
+        }
+
+        .social {
+
+          .social-link {
+            @include font-size(28);
+            margin-right: 15px;
+          }
+        }
+
+        .register {
+
+          a {
+            text-decoration: none;
+            padding-right: 35px;
+            background: transparent url("#{$pathToImages}/small-arrow.png") 100% 50% no-repeat;
+            background-size: 22px 14px;
+            @include font-size(16);
+            font-weight: $regular;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .footer-footer {
+        margin:  110px 0 35px;
+        height: 70px;
+        padding: 10px 55px;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "navigation copyright logos";
+
+        a,p {
+          @include font-size(16);
+          font-weight: $light;
+        }
+
+        .footer-nav {
+          grid-area: navigation;
+
+          ul {
+            @include flex-container(row, flex-start);
+            margin-top: 40px;
+
+            li {
+
+              a {
+                padding:0 8px;
+                text-decoration: none;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+
+              }
+
+              &:nth-child(1) {
+
+                a {
+                  padding-left:0;
+                }
+              }
+
+              &:not(:last-child) {
+
+                a {
+                  border-right:1px solid $white;
+                }
+              }
+            }
+          }
+        }
+
+        .copyright {
+          grid-area: copyright;
+
+          p {
+            margin-top: 40px;
+          }
+        }
+
+        .logos {
+          grid-area: logos;
+          text-align: right;
+
+          a {
+            display: inline-block;
+            width: 106px;
+            height:59px;
+            background: transparent url("#{$pathToImages}/Waltham-Forest-logo.png") 0 0 no-repeat;
+            background-size: 106px 59px;
+          }
+        }
+      }
+    }
+  }
+}

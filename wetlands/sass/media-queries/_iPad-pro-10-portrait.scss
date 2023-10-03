@@ -1,0 +1,218 @@
+/******************************************************************************************
+
+   Styles for iPad pro 10.5" in portrait orentation
+
+*******************************************************************************************/
+
+html,
+body {
+  width:100%;
+  overflow-x: hidden;
+}
+
+.homepage {
+
+  header {
+
+    nav {
+
+      ul {
+
+        &.navbar-nav {
+          top:-36px;
+        }
+      }
+
+      .navbar-header {
+
+        button {
+
+          span {
+            background-color: $white!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.subpage {
+
+  .main-content {
+
+    .hero {
+
+      img {
+        width:100%;
+        object-fit: cover;
+      }
+
+      .inner {
+
+        h2 {
+
+          &:after {
+            //content: 'iPad pro 10.5" portrait';
+          }
+        }
+      }
+    }
+  }
+}
+
+.subpage,
+.homepage {
+
+  header {
+
+    nav {
+
+      &.navbar-default {
+
+        &.navbar {
+          position: static;
+
+          ul {
+
+            &.nav {
+
+              &> li {
+                height:auto;
+                min-height:48px;
+                overflow: hidden;
+                width:100%;
+
+                &> a {
+                  color: $white;
+
+                  &:hover,
+                  &:focus,
+                  &:active {
+                    background-color: $primaryBlueGrey;
+                    color: $primaryYellow;
+                  }
+                }
+
+                ul {
+                  left:0;
+                  width:100%;
+                  transform: none;
+                  padding: 20px 0 0 30px;
+                  background-color: $primaryBlueGrey;
+                  border: none;
+
+                  &.dropdown-menu {
+                    position: static;
+                    display: block;
+
+                    &:before {
+                      content: none;
+                    }
+
+                    &> li {
+
+                      &> a {
+                        color: $white;
+                        @include font-size(24);
+                        font-weight: $light;
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                          background-color: $primaryBlueGrey;
+                          color: $primaryYellow;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .navbar-header {
+        display: block;
+        //height: 40px;
+        width: 100%;
+
+        button {
+          display: block;
+          width: 46px;
+          height:40px;
+          //border:1px solid gold!important;
+
+          span {
+            background-color: $white;
+          }
+        }
+
+        button[aria-expanded="false"] {
+
+          &:hover,
+          &:focus,
+          &:active {
+
+            span {
+              background-color: $primaryBlueGrey;
+            }
+          }
+        }
+
+        button[aria-expanded="true"] {
+
+          span {
+            background-color: $white;
+          }
+        }
+
+        .navbar-toggle {
+          position: absolute;
+          top:10px;
+          right:10px;
+          z-index: 4;
+          background-color: transparent;
+          border:none;
+        }
+      }
+
+      .navbar-collapse {
+        background-color: $primaryBlueGrey;
+        overflow: hidden;
+
+        &.collapse {
+          display: none!important;
+
+          &.in {
+            display:block !important;
+          }
+        }
+      }
+
+      ul {
+
+        &.navbar-nav {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+          width: 100%;
+          min-height: 550px;
+          background-color: $primaryBlueGrey;
+          margin:0;
+          padding: 60px 0 0 0;
+
+          &> li{
+            height:40px;
+            border:none;
+
+            a {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

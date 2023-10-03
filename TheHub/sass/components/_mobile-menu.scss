@@ -1,0 +1,100 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for Mobile menu
+*
+*
+*
+*******************************************************************************************/
+
+@media only screen and (max-width : 991px) {
+
+  body {
+
+    .page-wrapper {
+
+      #main-nav {
+        position: absolute;
+        left: 0;
+        top: 125px;
+        min-height: 400px;
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+        z-index: 4;
+        background-color: $white;
+        -moz-box-shadow: 0px 5px 5px 0px rgba(153,153,153,0.5);
+        box-shadow: 0px 5px 5px 0px rgba(153,153,153,0.5);
+
+        .navbar {
+
+          ul {
+
+            li {
+              display: block;
+              margin-bottom: 15px;
+
+              a {
+                color: $brandDkBlue;
+                @include font-size(24);
+                font-weight: $bold;
+              }
+
+              &.dropdown {
+                height: auto;
+
+                &.open {
+
+                  a {
+                    background-color: $white;
+                  }
+
+                  div {
+
+                    &.dropdown-menu {
+                      background-color: $white;
+
+                    }
+                  }
+                }
+
+                div {
+
+                  &.dropdown-menu {
+                    display: block;
+                    position: static!important;
+                    padding: 0;
+
+                    ul {
+                      flex-direction: column;
+                      text-align: center;
+                      margin-top: 10px;
+
+                      li {
+                        margin-bottom: 0;
+
+                        a {
+                          @include font-size(18);
+                          font-weight: $regular;
+                          height: 40px;
+                          line-height: 40px;
+                        }
+
+                        ul {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,263 @@
+
+.homepage{
+
+  header {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: transparent;
+
+      nav {
+
+        .navbar-header {
+
+          a {
+            display: block;
+            width: 121px;
+            height:145px;
+            position: absolute;
+            font-weight:$light;
+            top:0;
+            left:42px;
+            background: transparent url("#{$pathToImages}/wetlands-logo.png");
+
+            &.navbar-brand {
+              text-indent: -10000px;
+            }
+
+            &:hover {
+              color: $primaryOrange;
+            }
+          }
+        }
+
+        &.navbar-default {
+          background-color: transparent;
+
+          &.navbar {
+            border: none;
+
+             ul.nav {
+              margin-right: 30px;
+              & > li {
+                color: $white;
+                //border-right: 2px solid $white;
+
+                &:after {
+                  content: ' ';
+                  position: absolute;
+                  display: block;
+                  height:30px;
+                  border-right: 2px solid $white;
+                  border-left: 2px solid transparent;
+                  right:0;
+                  top:0;
+                }
+
+                &:last-child {
+
+                  &:after {
+                    content: none;
+                  }
+                }
+
+               & > a {
+                 @include font-size(24);
+                 font-weight: $light;
+                 color: $white;
+                 padding:3px 10px;
+                 text-transform: lowercase;
+
+                 &:hover {
+                   color: $primaryOrange;
+                 }
+               }
+              }
+            }
+          }
+        }
+    }
+  }
+}
+
+.subpage {
+
+  header {
+    position: absolute;
+    height: 63px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 22px;
+    max-width: 1200px;
+    margin:0 auto;
+    @include centerH;
+
+    nav {
+
+      .navbar-header {
+
+        a {
+          display: block;
+          width: 158px;
+          height:158px;
+          position: absolute;
+          top:0;
+          left:70px;
+          background: transparent url("#{$pathToImages}/wetlands-logo-dk.png");
+
+          &.navbar-brand {
+            text-indent: -10000px;
+          }
+        }
+      }
+
+      &.navbar-default {
+        background-color: transparent;
+
+        &.navbar {
+          border: none;
+
+          ul.nav {
+            margin-right: 30px;
+            & > li {
+              color: $primaryBlueGrey;
+              position: relative;
+              //border-right: 2px solid $primaryBlueGrey;
+
+              &.item--active-trail {
+                //border-bottom: 2px solid $primaryOrange;
+
+                &> a {
+                  color: $primaryOrange;
+                }
+              }
+
+              &:after {
+                content: ' ';
+                position: absolute;
+                display: block;
+                height:30px;
+                border-right: 2px solid $primaryBlueGrey;
+                border-left: 2px solid transparent;
+                right:0;
+                top:0;
+              }
+
+              &:last-child {
+
+                &:after {
+                  content: none;
+                }
+              }
+
+              & > a {
+                @include font-size(24);
+                font-weight: $light;
+                color: $primaryBlueGrey;
+                padding:3px 10px;
+                text-transform: lowercase;
+
+                &:hover {
+                  color: $primaryOrange;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// drop-down navigation
+header {
+
+  nav {
+
+    ul {
+
+      &.nav {
+
+        &> li{
+          height:40px;
+          border:none;
+        }
+
+        li {
+
+          a {
+
+          }
+
+          &.dropdown {
+            position: relative;
+
+            ul {
+              padding: 30px;
+              @include centerH;
+              top: 40px;
+              @include card(3);
+
+              &:before {
+                content: ' ';
+                background: $white;
+                @include centerH;
+                top:-15px;
+                display: block;
+                width:20px;
+                height:20px;
+                //border: 1px solid $primaryOrange;
+                border: 1px solid $lightGrey;
+                border-right: none;
+                border-bottom: none;
+                transform: rotate(45deg);
+                transform-origin: top left;
+              }
+
+              &.dropdown-menu {
+                background: $white;
+                //border: 1px solid $primaryOrange;
+                border: 1px solid $lightGrey;
+                width:215px;
+
+                li {
+                  margin-bottom: 20px;
+                  border-right: none;
+                  border-bottom: 1px solid transparent;
+                  box-sizing: border-box;
+                  border-bottom: 2px solid transparent;
+
+                  &:hover {
+                    border-bottom: 2px solid $primaryOrange;
+                    a {
+                      background-color: $white;
+                      color: $primaryBlueGrey;
+                    }
+                  }
+
+                  &:last-child {
+
+                    &:hover {
+                      //margin-bottom: 18px;
+                    }
+                  }
+
+                  a {
+                    @include font-size(18);
+                    color: $primaryBlueGrey;
+                    white-space: normal;
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

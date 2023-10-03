@@ -1,0 +1,45 @@
+/*************************************************
+
+    = styles Tablet portrait only
+      Devices > mobile landscape < tablet portrait
+
+**************************************************/
+
+.subpage,
+.homepage {
+
+  header {
+
+    nav {
+
+      .navbar-header {
+        display: block;
+        //height: 40px;
+        width: 100%;
+
+        button {
+          display: block;
+          width: 46px;
+          height:40px;
+          //border:1px solid gold!important;
+
+          span {
+            background-color: $white;
+          }
+        }
+      }
+
+      .navbar-collapse {
+
+        &.collapse {
+          display: none!important;
+
+         &.in {
+           display:block !important;
+         }
+        }
+      }
+    }
+  }
+}
+

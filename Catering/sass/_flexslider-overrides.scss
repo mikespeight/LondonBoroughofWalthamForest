@@ -1,0 +1,139 @@
+/****************************************
+*
+*  override styles for flexslider
+*
+*****************************************/
+
+.flexslider {
+  margin: 0 0 40px;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+   box-shadow: none;
+  border:0;
+
+
+  .flex-control-nav {
+    display: none;
+  }
+
+  .flex-direction-nav {
+
+    a {
+      display: block;
+      background-color: $white;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      width: 72px;
+      height: 66px;
+      color: $white;
+    }
+
+    .flex-prev {
+      background-image: url("#{$pathToImages}/green-arrow-left.png");
+      background-size: 11px 18px;
+      left: 0;
+      text-indent: -10000px;
+      opacity: 1;
+
+      &:before {
+        content: none;
+      }
+    }
+
+    .flex-next {
+      background-image: url("#{$pathToImages}/green-arrow-right.png");
+      background-size: 11px 18px;
+      right:0;
+      text-indent: 10000px;
+      opacity: 1;
+      text-align: right;
+
+      &:before {
+        content: none;
+      }
+    }
+
+    .flex-direction-nav a.flex-prev:before  {
+      content: none;
+
+    }
+
+    .flex-direction-nav a.flex-next:before  {
+      content: none;
+    }
+  }
+}
+
+.case-studies {
+
+  .flexslider {
+
+    .flex-direction-nav {
+      a {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+
+      .flex-prev {
+        left: -50px;
+      }
+
+      .flex-next {
+        right: -50px;
+      }
+
+      &:hover {
+        .flex-prev {
+          left: -50px;
+        }
+
+        .flex-next {
+          right: -50px;
+        }
+      }
+    }
+
+    .flex-prev {
+      background-image: url("#{$pathToImages}/process-arrow.png");
+      background-size: 30px 30px;
+      text-indent: 10000px;
+      opacity: 1;
+      transform: rotate(180deg);
+    }
+
+    .flex-next {
+      background-image: url("#{$pathToImages}/process-arrow.png");
+      background-size: 30px 30px;
+      text-indent: 10000px;
+      opacity: 1;
+      text-align: right;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+
+  .slider {
+
+    .flexslider {
+
+      .flex-direction-nav {
+
+        a {
+          background-color: transparent;
+        }
+
+        .flex-prev {
+          background-image: url("#{$pathToImages}/white-arrow-left.png");
+          background-size: 2.923vw 5.443vw;
+        }
+
+        .flex-next {
+          background-image: url("#{$pathToImages}/white-arrow-right.png");
+          background-size: 2.923vw 5.443vw;
+        }
+      }
+    }
+  }
+}

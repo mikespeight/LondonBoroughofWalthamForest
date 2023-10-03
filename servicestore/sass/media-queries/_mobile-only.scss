@@ -1,0 +1,274 @@
+/****************************************
+*
+* Mobile only stylesheet
+*
+*****************************************/
+
+h3 {
+  //@include font-size(24);
+}
+
+header {
+
+  .brand {
+    height:79px;
+
+    .logo {
+      display: block;
+      width: 350px;
+      height: 69px;
+      margin:0 auto;
+
+      h1 {
+        width:100%;
+        height:100%;
+        background-size: contain;
+      }
+
+    }
+  }
+}
+
+.main-content {
+  margin-top:-50px;
+
+  .services {
+    height: 3880px;
+
+    h3 {
+      padding: 0 30px
+    }
+  }
+
+  .booking-process {
+    height:1500px;
+
+    .booking-process-inner {
+
+      .booking-process-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .process-inter {
+          height: 75px;
+          overflow-y: hidden;
+        }
+      }
+    }
+  }
+
+  .our-guarantee {
+    background-image: none;
+
+    .our-guarantee-inner {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+
+      .our-guarantee-item {
+        text-align: center;
+        padding: 0 60px;
+        margin:0;
+      }
+    }
+  }
+
+  .testimonials {
+
+    .section-bg-img-full {
+      background-color: $greyBg;
+
+      img {
+        display: none;
+      }
+    }
+
+    .testimonials-inner {
+      flex-direction: column;
+
+      .testimonials-container {
+      }
+    }
+  }
+
+  // service landing page
+  .our-teams {
+    background-color: $greyBg;
+    height:550px;
+
+    .our-teams-wrapper {
+
+      div {
+
+        &:first-child {
+          padding-top:50px;
+        }
+      }
+    }
+  }
+
+  .our-services {
+
+    .our-services-wrapper {
+
+      .our-services-grid {
+        justify-content: center;
+      }
+    }
+  }
+
+  .contact-us {
+
+    .contact-us-wrapper {
+
+      div {
+
+        img {
+          width:314px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  // Product page
+
+  .product-page-introduction {
+
+    .product-page-introduction-wrapper {
+
+      div {
+
+        img {
+          //width:314px;
+          //margin: 30px 0;
+        }
+      }
+    }
+  }
+
+  .product-page-detail {
+    background-color: $greyBg;
+    height:980px;
+
+    .product-page-detail-wrapper {
+
+      div {
+
+        &.section-icon {
+          float: none;
+          width:131px;
+          margin: 40px auto 0;
+        }
+      }
+
+      h3 {
+        margin: 30px 0;
+      }
+    }
+  }
+
+  .product-page-pricing-and-servises {
+
+    .product-page-pricing-and-servises-wrapper {
+
+      .product-page-pricing {
+
+        .booking-panel-wrapper {
+          flex-direction: column;
+          justify-content: center;
+
+          div {
+            margin:20px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .product-page-summary   {
+    background-color: $greyBg;
+    height:1040px;
+  }
+
+  .servicestore-form {
+
+    .form-wrapper {
+
+      &.fixed-width-content {
+
+        .form-inner {
+          margin:0;
+          min-width: 0;
+          padding: 23px 10px 50px;
+
+          form {
+
+            .booking-process-info {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.section-bg-img,
+.section-bg-grad {
+  display: none;
+}
+
+footer {
+
+  .footer-inner {
+
+    .footer-nav {
+      flex-wrap: wrap;
+
+      ul {
+
+        li {
+          margin:0 0 15px 0!important;
+
+          &.expanded {
+            padding:0;
+          }
+
+          span {
+            margin-bottom: 15px;
+          }
+
+          ul {
+
+            li {
+              margin:0!important;
+            }
+          }
+        }
+      }
+
+      div {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.other-services-carousel {
+
+  .other-services-carousel-wrapper  {
+
+    div {
+
+      &.flexslider {
+        width: 200px;
+
+      }
+    }
+  }
+}
+

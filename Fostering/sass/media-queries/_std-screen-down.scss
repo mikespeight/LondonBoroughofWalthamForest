@@ -1,0 +1,50 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles that cover the transition from 1200px to 992px i.e. between desktop and tablet
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  /*&:before {
+    content: 'std screen down i.e. 1200 to 992';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
+  section {
+
+    &.hero {
+
+      .hero-content {
+        width: 51.083vw;
+        height: 75%;
+
+        h1 {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+
+.the-process {
+
+  .the-process-content {
+
+    &.fixed-width-content {
+      width: 100%;
+
+      .the-process-grid {
+        grid-template-columns: 14.96% 14.96% 6.07% 10.94% 6.07% 10.94% 6.07% 14.96% 14.96%;
+      }
+    }
+  }
+}

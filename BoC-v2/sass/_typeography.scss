@@ -1,0 +1,165 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-thin-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-light-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-medium-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-semibold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+$Archia-font: 'Archia', sans-serif;
+.archia-font {font-family: $Archia-font};
+
+
+//font weights
+$thin:      200;
+$light:     300;
+$regular:   400;
+$medium:    500;
+$semiBold:  600;
+$bold:      700;
+
+
+.thin             {font-weight: $thin}
+
+.light            {font-weight: $light}
+//.light-italic     {font-weight: $light;font-style: italic;}
+.regular          {font-weight: $regular;}
+//.regular-italic   {font-weight: $regular;font-style: italic;}
+.semi-bold        {font-weight: $semiBold;}
+//.semi-bold-italic {font-weight: $semiBold;font-style: italic;}
+.medium           {font-weight: $medium;}
+.bold             {font-weight: $bold;}
+
+.centre {text-align: center}
+
+h1{
+  font-family: $Archia-font;
+  font-weight: $thin;
+  @include font-size(80);
+}
+
+
+.form-block {
+
+  .heading-panel {
+
+    h2 {
+
+      &.heading {
+        color: $black;
+      }
+    }
+  }
+}
+
+.heading-panel {
+
+  h1,
+  h2,
+  h3 {
+    font-family: $Archia-font;
+    font-weight: $semiBold;
+    @include font-size(60);
+
+    &.sml-heading {
+      text-align: center;
+      color: $brandPrimary;
+      @include font-size(26);
+      font-weight: $semiBold;
+      line-height: 34px;
+    }
+
+    &.heading {
+      text-align: center;
+      color: $brandPrimary;
+      @include font-size(26);
+      font-weight: $semiBold;
+      line-height: 100px;
+
+      &.pink-heading {
+        color: $brandQuaternary;
+      }
+
+      &.purple-heading {
+        color: $brandTertiary;
+      }
+
+      &.white-heading {
+        color: $white;
+      }
+    }
+  }
+
+  h1 {
+
+    &.heading {
+      @include font-size(32);
+    }
+  }
+
+  &.persian-green-bg,
+  &.dark-pink-bg,
+  &.dark-purple-bg {
+
+    h1,
+    h2 {
+
+      &.heading {
+        color: $white;
+        text-align: center;
+      }
+    }
+  }
+
+  &.light-persian-green-bg {
+
+    h2 {
+      color: $brandPrimary;
+    }
+  }
+}
+
+
+
+

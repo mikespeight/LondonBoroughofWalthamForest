@@ -1,0 +1,99 @@
+/****************************************
+*
+* Navigation stylesheet
+*
+* Styles for Bootstrap 4 Navigation
+*
+* Property declaration order
+*
+* position
+* display
+* box model
+* color
+* text
+* other
+*
+*****************************************/
+
+
+header  {
+  position: relative;
+  z-index: 3;
+
+  .top-nav {
+    margin:0 auto;
+    overflow: visible;
+
+    .navbar {
+      padding: 0;
+      display: block;
+    }
+
+    ul {
+
+      &.navbar-nav {
+
+        & > li {
+
+          &:hover {
+            background-color: $brandRed;
+
+            a {
+              color: $white;
+              border-color: $brandRed;
+              text-decoration: none;
+            }
+          }
+
+          // dropdown menu desktop
+          &.dropdown {
+            display: block!important;//TO DO remove
+
+            & > ul {
+
+              &.dropdown-menu {
+                background-color: $white;
+                @include centerH;
+                top:110%;
+                padding: 10px 30px;
+
+                &:before {
+                  content: '';
+                  width: 20px;
+                  height: 20px;
+                  background-color: $white;
+                  @include centerH;
+                  top:-12px;
+                  transform: rotate(45deg);
+                  transform-origin: top left;
+                }
+
+                & > li {
+                  margin: 25px 0;
+
+                  & > a {
+                    color: $brandRed;
+                    font-family: $Montserrat-font;
+                    font-weight: $regular;
+                    @include font-size(20);
+                    border-bottom: 1px solid transparent;
+                    border-right: none;
+                    padding: 3px 0;
+                    white-space: nowrap;
+
+                    &:hover,
+                    &:active {
+                      color: $brandRed;
+                      background-color: transparent;
+                      border-bottom: 1px solid $brandRed;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

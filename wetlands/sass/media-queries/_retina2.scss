@@ -1,0 +1,18 @@
+.subpage {
+
+  .main-content {
+
+    .hero {
+
+      .inner {
+
+        h2 {
+
+          &:after {
+            //content: 'Retina display x 2';
+          }
+        }
+      }
+    }
+  }
+}

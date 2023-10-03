@@ -1,0 +1,33 @@
+/****************************************
+*
+* Main stylesheet
+*
+* Property declaration order
+*
+* position
+* display
+* box model
+* color
+* text
+* other
+*
+*****************************************/
+
+
+//import bootstrap
+@import "bootstrap";
+
+@import "variables";
+@import "palette";
+@import "mixins";
+@import "reset";
+@import "fontawesome";
+@import "typeography";
+
+@import "admin";
+@import "base";
+@import "components";
+@import "global";
+
+/* Media queries */
+@import "media";

@@ -1,0 +1,86 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+
+$brandFont: Arial, Helvetica, sans-serif;
+
+
+//font weights
+$extraLight:200;
+$light:     300;
+$regular:   400;
+$medium:    500;
+$semiBold:  600;
+$bold:      700;
+
+
+.extra-light      {font-weight: $extraLight;}
+
+.light            {font-weight: $light}
+//.light-italic     {font-weight: $light;font-style: italic;}
+.regular          {font-weight: $regular;}
+//.regular-italic   {font-weight: $regular;font-style: italic;}
+.semi-bold        {font-weight: $semiBold;}
+//.semi-bold-italic {font-weight: $semiBold;font-style: italic;}
+.medium           {font-weight: $medium;}
+.bold             {font-weight: $bold;}
+
+.centre {text-align: center}
+
+h1{
+  font-family: $brandFont;
+  font-weight: $regular;
+  @include font-size(65);
+}
+
+h2 {
+  font-family: $brandFont;
+  font-weight: $regular;
+  @include font-size(45);
+
+  &.panel-brand-heading {
+    @include font-size(30);
+    padding: 118px 0 40px;
+    font-weight: $bold;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 66px;
+      height: 188px;
+      top:0;
+      left:50%;
+      transform: translateX(-50%);
+      background: transparent url("#{$pathToImages}/brand-heading-bg-.png") 0 0 no-repeat;
+      background-size: 66px 188px;
+    }
+  }
+
+  &.short-underline {
+    position: relative;
+    @include font-size(26);
+    font-weight: $bold;
+    letter-spacing: 4.5px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 3px;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+      background-color: $white;
+    }
+  }
+}
+

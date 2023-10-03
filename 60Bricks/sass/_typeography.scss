@@ -1,0 +1,123 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// TODO: following font files to be removed when licence obtained to use Adobe fonts CDN
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Myriad Pro Light'), local('Myriad-Pro-Light'), url('#{$pathToFonts}/MyriadPro-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Myriad Pro Regular'), local('Myriad-Pro-Regular'), url('#{$pathToFonts}/MyriadPro-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Myriad Pro Semibold'), local('Myriad-Pro-Semibold'), url('#{$pathToFonts}/MyriadPro-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Myriad Pro Bold'), local('Myriad-Pro-Bold'), url('#{$pathToFonts}/MyriadPro-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Myriad Pro Black'), local('Myriad-Pro-Black'), url('#{$pathToFonts}/MyriadPro-Black.woff2') format('woff2');
+}
+
+
+$Myriad-Pro-font: 'Myriad Pro', sans-serif;
+.myriad-pro-font {font-family: $Myriad-Pro-font};
+
+
+
+$sourceSansPro: 'sans-serif';
+
+//font weights
+$light:     300;
+$regular:   400;
+$semiBold:  600;
+$bold:      700;
+$black:     900;
+
+
+.light            {font-weight: $light}
+.regular          {font-weight: $regular;}
+.semi-bold        {font-weight: $semiBold;}
+.bold             {font-weight: $bold;}
+.black            {font-weight: $black;}
+
+.centre {text-align: center}
+
+h1{
+  font-family: $Myriad-Pro-font;
+  font-weight: $regular;
+  @include font-size(65);
+}
+
+h2 {
+  font-family: $Myriad-Pro-font;
+  font-weight: $regular;
+  @include font-size(45);
+
+  &.panel-brand-heading {
+    @include font-size(30);
+    padding: 118px 0 40px;
+    font-weight: $semiBold;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 66px;
+      height: 188px;
+      top:0;
+      left:50%;
+      transform: translateX(-50%);
+      background: transparent url("#{$pathToImages}/brand-heading-bg-.png") 0 0 no-repeat;
+      background-size: 66px 188px;
+    }
+  }
+
+  &.short-underline {
+    position: relative;
+    @include font-size(26);
+    font-weight: $semiBold;
+    letter-spacing: 4.5px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 3px;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+      background-color: $coreGold;
+    }
+  }
+}
+

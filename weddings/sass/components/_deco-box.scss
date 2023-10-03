@@ -1,0 +1,202 @@
+/****************************************
+*
+* Deco Box stylesheet
+*
+*****************************************/
+
+
+.deco-box {
+
+  &.inset {
+    margin: 30px;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    z-index: 2;
+
+    &.ro {
+      margin:0;
+    }
+
+    &.sml {
+
+      span {
+
+        &.deco-top-left {top:15px; left:15px; width:21px; height: 21px; border-right: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-top {top:15px; left:36px; right: 36px; height:10px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-top-right {top:15px; right:15px; width:21px; height: 21px;; border-left: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-right {top:36px; bottom: 36px; right:15px; width:10px; border-right: 1px solid $white; border-left: 1px solid $white}
+        &.deco-bottom-right {bottom:15px; right:15px; width:21px; height: 21px;; border-left: 1px solid $white; border-top: 1px solid $white}
+        &.deco-bottom {bottom: 15px; left:36px; right:36px; height:10px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-bottom-left {bottom:15px; left:15px; width:21px; height: 21px; border-right: 1px solid $white; border-top: 1px solid $white}
+        &.deco-left {top:36px; bottom: 36px; left:15px; width:10px; border-right: 1px solid $white; border-left: 1px solid $white}
+      }
+    }
+
+    &.med {
+
+      span {
+
+        &.deco-top-left {top:30px; left:30px; width:21px; height: 21px; border-right: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-top {top:30px; left:51px; right: 51px; height:10px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-top-right {top:30px; right:30px; width:21px; height: 21px;; border-left: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-right {top:51px; bottom: 51px; right:30px; width:10px; border-right: 1px solid $white; border-left: 1px solid $white}
+        &.deco-bottom-right {bottom:30px; right:30px; width:21px; height: 21px;; border-left: 1px solid $white; border-top: 1px solid $white}
+        &.deco-bottom {bottom: 30px; left:51px; right:51px; height:10px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-bottom-left {bottom:30px; left:30px; width:21px; height: 21px; border-right: 1px solid $white; border-top: 1px solid $white}
+        &.deco-left {top:51px; bottom: 51px; left:30px; width:10px; border-right: 1px solid $white; border-left: 1px solid $white}
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    display: block;
+
+    &.search-term {
+      position: static;
+      display: inline;
+    }
+  }
+
+  &.btn-box {
+    padding:13px!important;
+
+    &.cut-out {
+
+
+
+      &.sml {
+
+        span {
+
+          &.co-top {background-color: $white; height: 8px; top:13px; left:21px; right:21px;}
+          &.co-right {background-color: $white; width: 8px; top:21px; bottom:21px; right:13px;}
+          &.co-bottom {background-color: $white; height: 8px; bottom:13px; left:21px; right:21px;}
+          &.co-left {background-color: $white; width: 8px; top:21px; left:13px; bottom:21px;}
+        }
+
+        a {
+          border-radius: 0!important;
+
+          span {
+
+            &.co-top {background-color: $white; height: 7px; top:13px; left:26px; right:26px;}
+            &.co-right {background-color: $white; width: 9px; top:21px; bottom:21px; right:18px;}
+            &.co-bottom {background-color: $white; height: 7px; bottom:13px; left:26px; right:26px;}
+            &.co-left {background-color: $white; width: 9px; top:21px; left:18px; bottom:21px;}
+
+            @media screen and (max-width: 1024px) {
+              &.co-top {top:14px;}
+              &.co-bottom {bottom:14px;}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.white {
+    border-color: $white;
+  }
+
+  &.slide-box {
+
+    &.med {
+      padding:21px;
+
+      span {
+
+        &.deco-top-left {top:0; left:0; width:21px; height: 21px; border-right: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-top {top:0; left:21px; right: 21px; height:10px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-top-right {top:0; right:0; width:21px; height: 21px;; border-left: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-right {top:21px; bottom: 21px; right:0; width:10px; border-right: 1px solid $white; border-left: 1px solid $white}
+        &.deco-bottom-right {bottom:0; right:0; width:21px; height: 21px;; border-left: 1px solid $white; border-top: 1px solid $white}
+        &.deco-bottom {bottom: 0; left:21px; right:21px; height:10px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+        &.deco-bottom-left {bottom:0; left:0; width:21px; height: 21px; border-right: 1px solid $white; border-top: 1px solid $white}
+        &.deco-left {top:21px; bottom: 21px; left:0; width:10px; border-right: 1px solid $white; border-left: 1px solid $white}
+      }
+    }
+
+    &.img-cut-out {
+
+      span {
+
+        &.co-top {background-color: $white; height: 12px; width: 12px; top:21px; left:21px;}
+        &.co-right {background-color: $white; height: 12px; width: 12px; top:21px; right:21px;}
+        &.co-bottom {background-color: $white; height: 12px; width: 12px; bottom:21px; right:21px;}
+        &.co-left {background-color: $white; height: 12px; width: 12px; bottom:21px; left:21px;}
+      }
+    }
+  }
+
+  &.sml {
+    padding:21px;
+
+    span {
+
+      &.deco-top-left {top:0; left:0; width:13px; height: 13px; border-right: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-top {top:0; left:13px; right: 13px; height:6px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-top-right {top:0; right:0; width:13px; height: 13px;; border-left: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-right {top:13px; bottom: 13px; right:0; width:6px; border-right: 1px solid $white; border-left: 1px solid $white}
+      &.deco-bottom-right {bottom:0; right:0; width:13px; height: 13px;; border-left: 1px solid $white; border-top: 1px solid $white}
+      &.deco-bottom {bottom: 0; left:13px; right:13px; height:6px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-bottom-left {bottom:0; left:0; width:13px; height: 13px; border-right: 1px solid $white; border-top: 1px solid $white}
+      &.deco-left {top:13px; bottom: 13px; left:0; width:6px; border-right: 1px solid $white; border-left: 1px solid $white}
+    }
+
+
+
+    &.img-cut-out {
+
+      span {
+
+        &.co-top {background-color: $white; height: 12px; width: 12px; top:21px; left:21px;}
+        &.co-right {background-color: $white; height: 12px; width: 12px; top:21px; right:21px;}
+        &.co-bottom {background-color: $white; height: 12px; width: 12px; bottom:21px; right:21px;}
+        &.co-left {background-color: $white; height: 12px; width: 12px; bottom:21px; left:21px;}
+      }
+    }
+  }
+
+  &.med {
+
+    span {
+
+      &.deco-top-left {top:0; left:0; width:13px; height: 13px; border-right: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-top {top:0; left:13px; right: 13px; height:6px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-top-right {top:0; right:0; width:13px; height: 13px;; border-left: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-right {top:13px; bottom: 13px; right:0; width:6px; border-right: 1px solid $white; border-left: 1px solid $white}
+      &.deco-bottom-right {bottom:0; right:0; width:13px; height: 13px;; border-left: 1px solid $white; border-top: 1px solid $white}
+      &.deco-bottom {bottom: 0; left:13px; right:13px; height:6px; border-top: 1px solid $white; border-bottom: 1px solid $white}
+      &.deco-bottom-left {bottom:0; left:0; width:13px; height: 13px; border-right: 1px solid $white; border-top: 1px solid $white}
+      &.deco-left {top:13px; bottom: 13px; left:0; width:6px; border-right: 1px solid $white; border-left: 1px solid $white}
+
+    }
+  }
+}
+
+
+
+.cut-out-btn {
+  position: absolute;
+
+  span {
+    position: absolute;
+    z-index: 2;
+    background-color: $vLightGrey;
+
+    &.top-left {top:0; left:0; width:4px; height: 4px;}
+    &.top-right {top:0; right:0; width:4px; height: 4px;;}
+    &.bottom-right {bottom:0; right:0; width:4px; height: 4px;;}
+    &.bottom-left {bottom:0; left:0; width:4px; height: 4px;}
+  }
+
+  a {
+
+  &.brand-btn {
+    background-color: $brandGold;
+    color: $white;
+    border-radius: 0!important;
+  }
+  }
+}

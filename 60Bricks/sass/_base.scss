@@ -1,0 +1,60 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+}
+
+html,
+body {
+  width:100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: $Myriad-Pro-font;
+  font-weight: $regular;
+  color: $txtColour;
+  @include font-size(14);
+
+  & > section {
+    overflow: hidden;
+  }
+
+}
+
+a,
+button,
+input[type=submit] {
+
+  &.btn {
+
+    &.btn-primary {
+      display: inline-block;
+      height: 50px;
+      border: 2px solid $accentBlue;
+      @include border-radius(5px);
+      @include font-size(18);
+      font-weight: $regular;
+      text-decoration: none;
+      color: $accentBlue;
+      line-height: 48px;
+      padding:0 28px;
+      transition: all, 0.33s ease-in-out;
+
+      &:hover {
+        color: $white;
+        background-color: $accentBlue;
+      }
+    }
+  }
+}
+
+
+

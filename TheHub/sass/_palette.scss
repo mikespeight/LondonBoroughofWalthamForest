@@ -1,0 +1,189 @@
+/****************************************
+*
+*  colour palette styles
+*
+*****************************************/
+
+$white: #fff;
+.white {color: $white}
+
+$black: #000;
+.black {color: $black}
+
+//Brand colours
+$brandDkBlue: #273667; //RGB 129, 181, 194 243968
+$brandPrimary: $brandDkBlue;
+.brandDkBlue {  color: $brandDkBlue;}
+
+$brandLtBlue: #00abbd; //RGB 186, 114, 51
+$brandSecondary: $brandLtBlue;
+.brandLtBlue { color: $brandLtBlue}
+
+$brandGreen: #50c0af; //RGB 78, 116, 139
+$brandTertiary: $brandGreen;
+.brandGreen {color: $brandGreen}
+
+$brandNeonPink: #fd7673; //RGB 253, 118, 115
+$brandQuaternary: $brandNeonPink;
+.brandPink {color: $brandNeonPink;};
+
+$brandMustard: #fdbd73;
+$brandQuinary:  $brandMustard;
+.brandMustard {color: $brandMustard;}
+
+$accentGrey: #30333f; //RGB 41, 40, 42
+.accentGrey {color: $accentGrey}
+
+$accentSilver: #c0c0c0; //RGB 192, 192, 192
+.accentSilver {color: $accentSilver}
+
+$ltGrey: #f4f4f4; // RGB 244, 244, 244
+.ltGrey {color: $ltGrey;}
+
+
+//backgrounds
+$white75: rgba(255,255,255,0.75);
+$accentBlue85: rgba(78, 116, 139, 0.85);
+
+.brandDkBlueBg {
+  background-color: $brandDkBlue;
+}
+
+.brandDkBlueBgTrans {
+  background-color: rgba(36, 57, 104, 0.85);
+}
+
+.brandLtBlueBg {
+  background-color: $brandLtBlue;
+}
+
+.brandLtBlueBgTrans {
+  background-color: rgba(19, 172, 189, 0.85);
+}
+
+.brandGreenBg {
+  background-color: $brandGreen;
+}
+
+.brandGreenBgTrans {
+  background-color: rgba(75, 193, 176, 0.85);
+}
+
+.brandPinkBg {
+  background-color: $brandNeonPink;
+}
+
+.brandPinkBgTrans {
+  background-color: rgba(253, 118, 115,0.85);
+}
+
+.brandMustardBg {
+  background-color: $brandMustard;
+}
+
+.brandMustardBgTrans {
+  background-color: rgba(253, 189, 115,0.85);
+}
+
+.whiteBg {
+  background-color: $white;
+}
+
+.tableBg {
+  background-color: $ltGrey;
+}
+
+.noBgColor,
+.transparentBg {
+  background-color: transparent;
+}
+
+/**
+ * Social Media Brand Colors
+ */
+
+
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$instagrammagenta: #c32aa3;
+$instagramblue: #4c5fd7;
+$instagrampurple: #7232bd;
+$instagramorange: #f46f30;
+$instagramyellow: #ffdc7d;
+$googleblue: #4285f4;
+$googlered: #ea4335;
+$googleyellow: #fbbc05;
+$googlegreen: #34a853;
+$pinterest: #bd081c;
+$googleplus: #db4437;
+$linkedin: #007bb5;
+$vimeoblue: #1ab7ea;
+$tumblr: #2c4762;
+$snapchat: #fffc00;
+$whatsappgreen: #25d366;
+$whatsappteal1: #075e54;
+$whatsappteal2: #128c7e;
+$mastodon: #2b90d9;
+$apple: #a6b1b7;
+$amazon: #ff9900;
+$microsoftred: #f35022;
+$microsoftgreen: #80bb03;
+$microsoftblue: #03a5f0;
+$microsoftyellow: #ffb903;
+$periscope: #40a4c4;
+$foursquarepink: #f94877;
+$foursquarenavy: #073282;
+$foursquareblue: #2d5be3;
+$swarm: #ffa633;
+$medium: #02b875;
+$skypeblue: #00aff0;
+$skypedkblue: #0078d7;
+$android: #a4c639;
+$stumbleupon: #e94826;
+$flickrpink: #f40083;
+$flickrblue: #006add;
+$yahoo: #430297;
+$twitch: #6441a4;
+$soundcloud: #ff5500;
+$spotifygreen: #1ed760;
+$spotifydarkgreen: #1db954;
+$dribbble: #ea4c89;
+$slackpurple: #4a154b;
+$slackblue: #36c5f0;
+$slackgreen: #2eb67d;
+$slackred: #e01e5a;
+$slackyellow: #ecb22e;
+$reddit: #ff5700;
+$deviantart: #05cc47;
+$pocket: #ee4056;
+$quora: #aa2200;
+$quorablue: #2b6dad;
+$slideshareorange: #e68523;
+$slideshareblue: #00a0dc;
+$fivehundredpx: #0099e5;
+$vk: #4a76a8;
+$listlyorange: #df6d46;
+$listlyblue: #52b1b3;
+$vine: #00b489;
+$steam: #171a21;
+$discord: #7289da;
+$telegram: #0088cc;
+
+// non brand colours i.e. Rob's
+$dk-grey: #44444f;
+$grey:  #808080;
+$mid-grey: #dbdbdb;
+$lt-grey:  #f1f1f1;
+$lt-grey-bg:  #eeeeee;
+
+// text colours
+$txtColour: $brandDkBlue;
+$text-color: $txtColour;
+
+// pager colours
+
+$pager-bg: $white;
+$pager-border: #ddd;
+$pager-hover-bg: #eee;
+$pager-disabled-color: #777;

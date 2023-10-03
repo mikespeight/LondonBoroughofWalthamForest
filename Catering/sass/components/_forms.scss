@@ -1,0 +1,87 @@
+
+// How can we help form
+.contact-us-form {
+  height:770px;
+  background: $brandSecondary;
+  margin-bottom: 0;
+
+  h2 {
+    text-align: center;
+    @include font-size(40);
+    font-weight: $regular;
+    color: $white;
+    margin: -11px 0 -13px 0;
+    padding: 30px 0;
+  }
+
+  .form-item {
+    min-height: 87px;
+
+    label {
+      color: $white;
+      @include font-size(21);
+      font-weight: $regular;
+
+      &.form-required {
+
+        &:after {
+          content: '*';
+        }
+      }
+    }
+
+    input {
+      display: block;
+      width:100%;
+      height:34px;
+    }
+
+    input,
+    textarea {
+      border: none;
+      padding: 0 10px;
+    }
+
+    textarea {
+      min-height: 220px;
+      width:100%;
+      padding:10px;
+    }
+
+    input[type=checkbox] {
+      margin: 10px;
+      background-color: $white;
+
+      & + label {
+        display: inline-block;
+        width: 421px;
+        line-height: 20px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .form-actions {
+    margin-top: 30px;
+
+    input[type="submit"]{
+      color: $white;
+      background: $brandSecondary;
+      display: inline-block;
+      height:38px;
+      @include font-size(21);
+      font-weight: $regular;
+      padding:0 40px;
+      line-height:38px;
+      @include border-radius(4px);
+      border: none;
+      outline: none;
+      margin: -20px 0 0 0;
+
+    }
+  }
+}
+

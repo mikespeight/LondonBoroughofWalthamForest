@@ -1,0 +1,19 @@
+
+.subpage {
+
+  .main-content {
+
+    .hero {
+
+      .inner {
+
+        h2 {
+
+          &:after {
+            content: 'Gotcha!';
+          }
+        }
+      }
+    }
+  }
+}

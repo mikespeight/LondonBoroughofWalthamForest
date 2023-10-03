@@ -1,0 +1,113 @@
+/****************************************
+*
+* experimental overides stylesheet
+*
+*****************************************/
+
+body {
+
+  &.exp1 {
+
+    header {
+
+      #search-btn {
+        top: 20px;
+      }
+
+      .brand {
+        @include centerH;
+        flex-direction: column;
+
+        a {
+          text-indent: -10000px;
+          display: block;
+          width: 219px;
+          height:150px;
+
+          h1 {
+            width:100%;
+            height:100%;
+            background: transparent url("#{$pathToImages}/logo-only.png") center top no-repeat;
+          }
+
+          &.marry-me-logo-txt {
+            height: 74px;
+            width:219px;
+            margin-top: 40px;
+            background: transparent url("#{$pathToImages}/logo-txt.png") center top no-repeat;
+          }
+        }
+
+
+      }
+
+      nav {
+
+        &.navbar-default {
+          margin-top: 120px;
+        }
+
+        &.navbar {
+
+          .navbar-nav {
+
+            & > li {
+
+              &:nth-child(3) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    #search {
+
+      form {
+        position: absolute;
+        top:74px;
+        right:83px;
+
+
+        .form-item {
+
+          input[type="text"] {
+            margin-top: 25px;
+
+            position: absolute;
+            top: -83px;
+            right: 54px;
+            width: 220px;
+            height:22px;
+          }
+        }
+
+        .form-actions {
+          input[type="submit"] {
+            position: absolute;
+            top:-54px;
+            right: 4px;
+            width: 22px;
+            height:22px;
+            background: transparent url("#{$pathToImages}/mag_glass_44px.png") 0 0 no-repeat;
+            background-size: 22px 22px;
+            text-indent: -10000px;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+
+
+      .search-box {
+
+      }
+    }
+  }
+
+  &.exp2 {
+
+  }
+}

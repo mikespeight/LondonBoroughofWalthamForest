@@ -1,0 +1,18 @@
+$lightboxImagePath: '../assets/components/lightbox2-dev/dist/images';
+
+.lb-cancel {
+  background: url('#{$lightboxImagePath}/loading.gif') no-repeat;
+}
+
+.lb-nav a.lb-prev {
+  background: url('#{$lightboxImagePath}/prev.png') left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {
+  background: url('#{$lightboxImagePath}/next.png') right 48% no-repeat;
+
+}
+
+.lb-data .lb-close {
+  background: url('#{$lightboxImagePath}/close.png') top right no-repeat;
+}

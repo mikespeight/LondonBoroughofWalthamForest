@@ -1,0 +1,177 @@
+/****************************************
+*
+* Mobile landscape down <480px stylesheet
+*
+*****************************************/
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  height:165px;
+
+  .brand-bar {
+
+    div {
+
+      &:first-child {
+        height: 75px;
+      }
+
+      .strap-line {
+        @include font-size(16);
+        margin:40px 24px 0 0;
+      }
+    }
+  }
+}
+
+.main-content {
+
+  section {
+
+    &.hero {
+      //height: 480px;
+      min-height: 430px;
+
+      .hero-content {
+        margin-top: 17%;
+      }
+    }
+  }
+
+  .services {
+
+    .services-inner {
+      flex-direction: column;
+
+      .service {
+        margin: 20px auto;
+        width: 75%;
+
+        .service-img {
+          margin:0 auto;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    height: 700px;
+
+    header {
+      height:190px;
+
+      h3 {
+        margin-top: 86px;
+      }
+    }
+
+    .about-us-content {
+      margin-bottom: 13px;
+      padding:0 15px;
+    }
+  }
+
+  .meet-the-team {
+
+    .meet-the-team-inner {
+
+      flex-direction: column;
+
+      .team {
+        margin: 20px auto;
+        width: 75%;
+
+        .service-img {
+          display: block;
+          width: 188px;
+          height:188px;
+          margin:0 auto;
+        }
+      }
+    }
+  }
+
+  .past-projects {
+    height:1255px;
+    .project {
+
+      div {
+
+        &.project-image {
+
+          img {
+            width:75%
+          }
+        }
+
+        &.project-description {
+          padding:50px 60px 30px;
+        }
+      }
+    }
+  }
+
+  .contact-us {
+
+    .contact-us-inner {
+
+      .contact-us-form {
+
+        form {
+
+          div.form-item {
+
+            input[type=text],
+            select {
+              width: 35.5%;
+
+            }
+          }
+        }
+      }
+
+      .contact-us-details {
+
+        div {
+          p  {
+            @include font-size(18);
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+footer {
+
+  .ps-procure-logo {
+
+    .ps-procure-footer-logo {
+      width:150px;
+    }
+  }
+
+  div {
+
+    p {
+
+      &.strap-line {
+        @include font-size(16);
+      }
+    }
+  }
+
+  .lbwf-logo {
+
+    .lbwf-footer-logo {
+      top:-138px;
+    }
+  }
+}

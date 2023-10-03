@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Allways add this line to enable Google device emulator to work! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>The Hub - Waltham Forest Education Hub</title>
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <script src="assets/js/modernizr/modernizr.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/components/jquery/dist/jquery.min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/components/flexslider-scss/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/js/the-hub.js" type="text/javascript" language="JavaScript"></script>
+
+
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <header>
+
+        <a href="../" id="logo" class="logo">
+            <h1>The Hub</h1>
+        </a>
+
+        <nav class="user-nav hidden-md-down">
+            <ul>
+                <li><a href="">Login</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Training and Events</a></li>
+            </ul>
+        </nav>
+
+        <div id="search-trigger" class="search-trigger hidden-lg-up">
+            <button id="search-btn" class="mag-glass"></button>
+        </div>
+
+        <div id="search-wrapper" class="page-search-wrapper hidden-md-down">
+            <div id="search" class="page-search">
+                <form class="page-search-form" action="/search/node">
+                    <div class="form-item">
+                        <label for="search-box">Search
+                        </label>
+                        <input id="search-box" class="search-box" placeholder="Search" name="keys" type="text">
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div id="menu-trigger" class="hamburger">
+            <span></span>
+        </div>
+
+    </header>
+
+    <div id="main-nav" class="main-navigation">
+
+        <nav class="main-nav navbar">
+
+            <ul>
+                <li class="dropdown">
+                    <a href="">Early Years and childcare</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="">Leadership & management support </a>
+                                <ul>
+                                    <li><a href="">Business Services</a></li>
+                                    <li><a href="">Curriculum Support</a></li>
+                                    <li><a href="">Governance</a></li>
+                                    <li><a href="">Human Resources</a></li>
+                                    <li><a href="">Schools Finance</a></li>
+                                    <li><a href="">Safeguarding Support</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Borough-wide strategies</a>
+                                <ul>
+                                    <li><a href="">Business Services</a></li>
+                                    <li><a href="">Curriculum Support</a></li>
+                                    <li><a href="">Governance</a></li>
+                                    <li><a href="">Human Resources</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Safeguarding support</a>
+                                <ul>
+                                    <li><a href="">LBusiness Services</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">School Finances</a>
+                            </li>
+                            <li>
+                                <a href="">Premises, Health & Safety</a>
+                            </li>
+                            <li>
+                                <a href="">Strategic Calendar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Governors</a></li>
+                <li><a href="">Leaders</a></li>
+                <li><a href="">Teaching Staff</a></li>
+                <li><a href="">Support Staff</a></li>
+                <li class="hidden-lg-up user-menu">
+                    <ul>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Training and Events</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="content-wrapper ">
+
+        <section class="page-title">
+            <h1>Search results</h1>
+        </section>
+
+        <section class="search-page-form ">
+            <div class="search-page-form-content content">
+                <h2>You searched for: <span class="search-term quotes">forest</span></h2>
+            </div>
+        </section>
+
+        <section class="search-page-results">
+
+            <div class="search-page-results-content content">
+
+                <ol>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/becoming-a-childcare-provider-in-waltham-forest">Becoming a childcare provider in Waltham Forest</a></h3>
+                        <p>…  guide on becoming a childcare provider in Waltham <strong>Forest</strong></p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/useful-links-leadership-management-schools">Useful Links - Leadership &amp; Management </a></h3>
+                        <p>
+                            Useful links for education professionals
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/useful-links-teaching-schools">Useful Links - Schools </a></h3>
+                        <p>
+
+                            Useful links for teaching, learning and assessment for professionals working in schools and colleges.
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/about-us">About us</a></h3>
+                        <p>
+                            early years and 16-19 education provision in Waltham <strong>Forest</strong>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/connecting-communities">Connecting Communities </a></h3>
+                        <p>
+                            Information about Waltham <strong>Forest</strong> Connecting Communities strategy
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/march">Key dates in March</a></h3>
+                        <p>
+                            Find out about education events and meetings taking place in March
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/childcare-providers">Childcare Providers</a></h3>
+                        <p>
+                            Guidance and support for all providers of childcare, including childminders, private, voluntary and independent nurseries and schools.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/teaching">Teaching </a></h3>
+                        <p>
+                            Information and guidance on teaching staff on areas including local strategies, curriculum, inclusion, safeguarding.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/think-family">Think Family </a></h3>
+                        <p>
+                            Information about London Borough of Waltham <strong>Forest</strong> Think Family Strategy - More information to come
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3><a href="https://theeducationhubtursbjhwgc.devcloud.acquia-sites.com/non-teaching">Non - Teaching </a></h3>
+                        <p>
+                            Information and guidance for non-teaching staff, including finance, premises and support staff.
+                        </p>
+                    </li>
+
+                </ol>
+
+                <div class="search-results-footer">
+                    <nav class="pager paging-control" role="navigation" aria-labelledby="pagination-heading">
+                        <ul class="pager__items js-pager__items">
+
+                            <li class="pager__item is-active">
+                                <a href="?keys=forest&amp;page=0" title="Current page">
+                                    <span class="visually-hidden">
+                                      Current page
+                                    </span>1
+                                </a>
+                            </li>
+
+                            <li class="pager__item">
+                                <a href="?keys=forest&amp;page=1" title="Go to page 2">
+                                    <span class="visually-hidden">
+                                      Page
+                                    </span>2
+                                </a>
+                            </li>
+
+                            <li class="pager__item">
+                                <a href="?keys=forest&amp;page=2" title="Go to page 3">
+                                    <span class="visually-hidden">
+                                      Page
+                                    </span>3
+                                </a>
+                            </li>
+
+                            <li class="pager__item">
+                                <a href="?keys=forest&amp;page=3" title="Go to page 4">
+                                    <span class="visually-hidden">
+                                      Page
+                                    </span>4
+                                </a>
+                            </li>
+
+                            <li class="pager__item">
+                                <a href="?keys=forest&amp;page=4" title="Go to page 5">
+                                    <span class="visually-hidden">
+                                      Page
+                                    </span>5
+                                </a>
+                            </li>
+
+                            <li class="pager__item pager__item--next">
+                                <a href="?keys=forest&amp;page=1" title="Go to next page" rel="next">
+                                    <span class="visually-hidden">Next page</span>
+                                    <span aria-hidden="true">Next ›</span>
+                                </a>
+                            </li>
+
+                            <li class="pager__item pager__item--last">
+                                <a href="?keys=forest&amp;page=4" title="Go to last page">
+                                    <span class="visually-hidden">Last page</span>
+                                    <span aria-hidden="true">Last »</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="sign-up-social">
+
+                <form action="" class="sign-up-form">
+                    <div class="form-item">
+                        <input type="text" placeholder="Sign up to Newsletter">
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit">
+                    </div>
+                </form>
+
+                <div class="social">
+                    <a href="">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-nav">
+
+                <nav>
+                    <ul>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Accessibility </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="copy">
+                <p>
+                    &copy; 2019 Waltham Forest Council. All rights reserved.
+                </p>
+            </div>
+
+            <div class="partner-logo">
+                <div class="logo">
+                    <a href="#" class="traded-services-logo"></a>
+                </div>
+            </div>
+
+            <div class="wf-logo">
+                <div class="logo">
+                    <a href="#" class="wf-logo"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</div>
+
+
+
+</body>
+</html>

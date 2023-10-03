@@ -1,0 +1,87 @@
+
+
+$transparent: rgba(255,255,255,0);
+
+$footerTransBG: rgba(51,51,51,0.75);
+
+$overlay: rgba(0,49,60,.61);
+
+/* Brand colours from style guide*/
+
+/* Primary */
+$primaryBlueGrey:  #00313C;
+$primaryOrange: #DC6B2F;
+$primaryYellow:  #F6BE00;
+
+
+/* Secondary */
+$secondaryBlueGrey:  #526065;
+$secondaryOrange:  #E48664;
+$secondaryYellow:  #F9C45B;
+
+/* Tertiary */
+$tertiaryBlueGrey: #93999B;
+$tertiaryOrange: #EBAC9B;
+$tertiaryYellow: #FAD397;
+
+/* Brand greyscale */
+$black: #000;
+
+$darkGrey:  #575757;
+
+$mediumGrey:  #6f6f6f;
+
+$lightGrey: #BCBCBC;
+
+$white: #fff;
+
+/* End of style guide colours */
+
+// special text colours
+$lightGreyText: #9B9B9B;
+
+// backgrounds
+$lightGreyBg: #e8e8e8;
+$offWhiteBg:  #f4f4f4;
+
+$dkGrey: #333;
+
+$midGrey: #666;
+
+$bodyBGColor: $white;
+$baseFontColor: #333;
+
+$linkColor: #ff6260;
+$linkColorHover: #ea504e;
+
+/*Header*/
+
+$headerBGColor: #000;
+$headerTextColor: #000;
+
+/*Menu Color*/
+
+$menuTextColor: #eee;
+$menuTextActiveColor: $linkColor;
+
+$mobileBodyBG: #ee6d05;
+$mobileMenuBg: #e44627;
+
+$desktopMenuTextColor: #000;
+$desktopMenuDropDownBg: rgba(255, 255, 255, 0.74);
+
+$servicesBg: #333;
+$servicesTextColor: #e4e4e4;
+
+$addressBg: #dcdcdc;
+
+$lt-blue: #abffff;
+$lt-grey: #E3E3E3;
+
+.primary-col {
+  color: $primaryOrange;
+}
+
+.secondary-col {
+  color: $primaryYellow;
+}

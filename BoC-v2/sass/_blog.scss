@@ -1,0 +1,214 @@
+/****************************************
+*
+* Blog stylesheet
+*
+* Property declaration order
+*
+* position
+* display
+* box model
+* color
+* text
+* other
+*
+*****************************************/
+
+body {
+
+  .page-wrapper {
+
+    .content-wrapper {
+
+      .blog-heading {
+        height: 200px;
+        padding:36px;
+        color: $brandPrimary;
+        position: relative;
+
+        h1 {
+          @include font-size(55);
+          font-weight: $semiBold;
+        }
+
+        p {
+          @include font-size(18);
+          font-weight: $semiBold;
+        }
+
+        .share-block {
+          display: inline-block;
+          position: absolute;
+          z-index: 3;
+          bottom:-30px;
+          left: 36px;
+          padding: 0 20px;
+          height: 60px;
+          @include border-radius(30px);
+          background-color: white;
+
+          & > span {
+            @include flex-container(row, flex-start);
+          }
+
+          .share {
+            @include  font-size(14);
+            font-weight: $semiBold;
+            text-transform: uppercase;
+            line-height: 60px;
+            color: $black;
+          }
+
+          a {
+            margin-left: 20px;
+
+            .fa {
+              @include font-size(32);
+              line-height: 60px;
+            }
+          }
+
+          .fa-twitter {
+            color: $twitterBlue;
+            @include font-size(35);
+          }
+
+          .fa-facebook-square {
+            color: $facebookBlue;
+          }
+
+          .fa-linkedin-square {
+            color: $linkedinBlue;
+          }
+        }
+      }
+
+      .blog-content {
+        margin-bottom: -60px;
+
+        .slider {
+
+          .flexslider {
+
+            .slides {
+
+              img {
+                margin: 0;
+              }
+            }
+
+            .flex-control-nav {
+            }
+          }
+        }
+
+        @include flex-container(row, flex-start);
+
+        article {
+          width: 66.666%;
+          margin-right: 20px;
+
+          &.blog-article {
+
+            .content {
+
+              .special-image-block {
+                margin: 0 36px;
+                width: 100%;
+
+                img {
+                  width: calc(100% - 36px);
+                  margin:0;
+                }
+              }
+
+              .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px; height: 0; overflow: hidden;
+                margin:0 0 50px 36px;
+              }
+
+              .video-container iframe,
+              .video-container object,
+              .video-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+
+              .button-block {
+                @include flex-container(row, space-between);
+                padding-right: 36px;
+              }
+            }
+          }
+        }
+
+        aside {
+          width: 33.333%;
+          background-color: $brandPrimaryLight;
+
+          .related-news {
+            padding: 0 36px;
+
+            .related-news-item {
+              padding: 36px 0;
+              border-bottom: 1px solid $brandPrimary;
+
+              a {
+                @include font-size(19);
+                font-weight: $semiBold;
+                color: $black;
+                text-decoration: none;
+
+                &:hover {
+                  color: $brandPrimary;
+                }
+              }
+            }
+          }
+
+          .related-tags {
+            position: relative;
+            padding: 72px 36px 36px;
+
+            h3 {
+              position: absolute;
+              left: 36px;
+              top: 20px;
+              @include font-size(19);
+              font-weight: $semiBold;
+              color: $brandPrimary;
+            }
+
+            a {
+
+              &.tag {
+                height: 50px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                background-color: $white;
+                @include font-size(18);
+                font-weight: $semiBold;
+                line-height: 50px;
+                padding:0 25px;
+                @include border-radius(25px);
+                text-decoration: none;
+                color: $brandPrimary;
+                transition: all, 0.5s ease-in-out;
+
+                &:hover {
+                  color: $white;
+                  background: $brandQuaternary;
+                  border-color: $brandQuaternary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

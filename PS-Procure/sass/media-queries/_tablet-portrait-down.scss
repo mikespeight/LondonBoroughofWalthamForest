@@ -1,0 +1,115 @@
+/****************************************
+*
+* Tablet portrait down <768px stylesheet
+*
+*****************************************/
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.main-content {
+
+  .hero {
+    background-image: url("#{$pathToImages}/ps-procure-hero-bg-mob.jpg");
+    background-size: cover;
+    overflow: hidden;
+
+    .hero-content {
+      width:75%;
+      float: none;
+      overflow: hidden;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 28%;
+
+      h2 {
+
+        &+ .cta-btn {
+          color: $white;
+          background-color: $primaryBrand;
+        }
+      }
+    }
+  }
+
+  .past-projects {
+    min-height: 1075px;
+    background-size: cover;
+
+    .project {
+
+      .project-image {
+
+        img {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+
+      .project-description {
+        padding: 50px 100px 30px;
+      }
+    }
+  }
+
+  .contact-us {
+    min-height: 960px;
+    background-size: cover;
+    background-position: right;
+
+    .contact-us-inner {
+
+      .contact-us-details {
+
+        div {
+
+          padding-left: 0;
+        }
+      }
+
+      .contact-us-form {
+
+        form {
+
+          .form-item {
+
+            input[type=text],
+            select {
+              width: 76.5%;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+
+  .ps-procure-logo {
+    position: relative;
+    top:-10px;
+
+    img {
+      width:176px;
+    }
+  }
+
+  .strap-line {
+    @include font-size(20);
+  }
+
+  .lbwf-footer-logo {
+    position: absolute;
+    top:-142px;
+    right:30px;
+  }
+
+  .copyright {
+    margin-top:20px;
+  }
+}

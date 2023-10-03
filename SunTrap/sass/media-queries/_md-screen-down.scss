@@ -1,0 +1,155 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for medium screen down i.e. < 992px
+*
+*
+*
+*******************************************************************************************/
+
+@import "../components/mobile-menu";
+
+body {
+
+  /*&:before {
+    content: '992 to 768';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
+  &.homepage {
+
+    .hero {
+
+      & + section {
+        margin-top: 702px;
+      }
+    }
+  }
+
+  &.subpage {
+
+    .hero {
+
+      & + section {
+        margin-top: 297px;
+      }
+    }
+  }
+
+  .feature-tiles {
+
+    .tile-container {
+      //border:1px solid red;
+
+      & > div {
+
+        &.tile {
+          width: 50%;
+          height: 600px;
+          cursor: pointer;
+
+          &:hover {
+            .tile-inner {
+
+              .content {
+                opacity:1;
+                height:300px;
+                z-index: 1;
+
+                h2 {
+                  bottom: auto;
+                  top: 230px;
+                }
+              }
+
+              .content-over {
+                z-index: 100;
+                opacity: 1;
+                height: 369px;
+                top: 230px;
+
+                .find-out-more {
+                  cursor: pointer;
+                  //bottom: auto!important;
+                }
+              }
+            }
+          }
+
+          .tile-inner {
+
+            .content {
+              height:300px;
+              z-index: 1;
+
+              h2 {
+                bottom: auto;
+                top: 230px;
+              }
+            }
+
+            .content-over {
+              z-index: 100;
+              opacity: 1;
+              height: 369px;
+              top: 230px;
+
+              .find-out-more {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .footer-grid {
+
+      &.footer-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 167px 1fr 100px;
+        grid-template-areas: "sign-up logos"
+        "social ."
+        "footer-nav copyright";
+        height: inherit;
+      }
+    }
+
+    .social {
+
+      a {
+        display: inline-block;
+        color: $white;
+        margin-right: 16px;
+
+        .fa {
+          @include font-size(30);
+        }
+
+        &:nth-child(4){
+          margin-right: 0;
+        }
+      }
+    }
+
+    .copyright {
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    .logos {
+
+      a {
+        bottom:70px!important;
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for std screen down i.e. < 1200px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  /*&:before {
+    content: '1280 to 992';
+    position: fixed;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1000;
+  }*/
+
+  .page-wrapper {
+
+    h1 {
+      width:10.546vw;
+      height: 19.375vw;
+      background-size: 10.546vw 19.375vw                                                                                                                       ;
+    }
+
+    header {
+
+      .hero {
+        height:53.906vw;
+
+        .hero-panel {
+          width: 54.687vw;
+          height: 13.671vw;
+
+          h2 {
+            font-size: 2.656vw;
+            line-height: 3.515vw;
+          }
+        }
+      }
+    }
+
+    .place-for-everyone,
+    .affordable-homes {
+
+      .place-for-everyone-panel,
+      .affordable-homes-panel {
+        width:70.312vw;
+        height:46.875vw;
+        padding:4.687vw 12.734vw;
+
+        h2 {
+
+          &.panel-brand-heading {
+            font-size: 2.343vw;
+            padding: 9.218vw 0 3.125vw;
+
+            &:after {
+              width:5.156vw;
+              height: 14.687vw;
+              background-size: 5.156vw 14.687vw;
+            }
+          }
+        }
+
+        p {
+          font-size: 1.562vw;
+          padding:0;
+          line-height: 2.187vw;
+          margin: 1.562vw 0 1.953vw;
+        }
+      }
+    }
+
+    .building-communities {
+
+      .building-communities-panel {
+        width: 70.312vw;
+        height: 63.281vw;
+        padding:4.687vw 12.734vw;
+
+        h2 {
+
+          &.panel-brand-heading {
+            font-size: 2.343vw;
+            padding: 9.218vw 0 3.125vw;
+
+            &:after {
+              width:5.156vw;
+              height: 14.687vw;
+              background-size: 5.156vw 14.687vw;
+            }
+          }
+        }
+
+        p {
+          font-size: 1.562vw;
+          padding:0;
+          line-height: 2.187vw;
+          margin: 1.562vw 0 1.953vw;
+        }
+      }
+    }
+
+    .content-slider {
+      max-height: 63.281vw;
+
+      .fixed-width-content {
+
+        &.slider {
+          padding: 8.593vw 0;
+
+          .flexslider {
+            margin: 0 0 4.296vw;
+
+            .flex-prev {
+              left:1.390vw;
+            }
+
+            .flex-next {
+              right: 1.390vw;
+            }
+
+            .flex-direction-nav {
+
+              a {
+                width: 5.703vw;
+                height: 5.156vw;
+                margin: -1.562vw;
+
+                &.flex-next, &.flex-prev {
+                  background-size: 3.437vw 3.437vw;
+                  background-position: 0.859vw 1.484vw;
+                }
+              }
+            }
+          }
+
+          ul {
+
+            &.slides {
+              padding: 0 6.484vw;
+
+              .slide {
+
+                .slide-inner {
+
+                  .slide-content {
+                    padding-top: 8.125vw;
+
+                    .inner {
+                      padding: 0 2.031vw;
+
+                      p {
+                        font-size: 1.562vw;
+                        margin: 0.390vw 0 1.953vw;
+                        line-height: 2.187vw;
+                      }
+                    }
+
+                    .btn-wrapper {
+                      margin-top: 3.906vw;
+
+                      a {
+
+                        &.btn {
+
+                          &.btn-primary {
+                            height: 3.906vw;
+                            @include border-radius(0.39vw);
+                            font-size: 1.406vw;
+                            line-height: 3.75vw;
+                            padding: 0 2.187vw;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .slide-image {
+                    max-width: 54.687vw;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .quotes {
+
+      .quotes-inner {
+        width: 100vw;
+        padding: 0 10.156vw;
+
+        .inner {
+
+          p {
+            font-size: 2.578vw;
+            line-height: 3.906vw;
+            letter-spacing: 0.136vw;
+
+            span {
+
+            }
+          }
+        }
+
+        p {
+
+          &.credit {
+            font-size: 1.562vw;
+            margin-top: 0.781vw;
+            letter-spacing: 0.136vw;
+          }
+        }
+      }
+    }
+
+    footer {
+
+      .footer-footer {
+
+        .footer-nav {
+
+          ul {
+            margin-top: 3.125vw;
+          }
+        }
+
+        .copyright {
+
+          p {
+            margin-top: 3.125vw;
+          }
+        }
+      }
+    }
+  }
+}

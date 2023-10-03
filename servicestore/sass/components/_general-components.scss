@@ -1,0 +1,16 @@
+.teardrop {
+  position: absolute;
+  width:100%;
+  height:88px;
+  z-index: 2;
+
+  &.top {
+    background: transparent url("#{$pathToImages}/teardrop-top.png") center top no-repeat;
+    top:0;
+  }
+
+  &.bottom {
+    background: transparent url("#{$pathToImages}/teardrop-bottom.png") center top no-repeat;
+    bottom: -2px;
+  }
+}

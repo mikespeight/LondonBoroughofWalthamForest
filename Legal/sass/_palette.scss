@@ -1,0 +1,58 @@
+/****************************************
+*
+* Colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+$offWhite: #fafbfb;
+
+//Brand colours
+$brandDkBlue: #0c1932;
+$brandTorquise:  #2d7987;
+$brandLtBlue: #42bacc;
+
+
+// Base opacity 75%
+$opacityBase: #053954;
+$baseForOverlay: $opacityBase;
+
+// text colours
+$txtColour: #4e4e4e;
+$headingColour: $brandDkBlue;
+
+//Text background colours
+$blueTxtBg: #497183;
+
+// filter background
+$filterBg:  #053954;
+//$filterBg:  $brandDkBlue;
+
+
+//greys
+$vLightGrey: #f7f7f7;
+$tblBgLtGrey: #eee;
+$greyBg: #e3e3e3;
+$helpTextBg: #d0d0d0;
+$borderGrey: #bbb;
+$tblBgDkGrey: #999;
+$midGrey: #737373;
+
+$dkGrey:  #6f6f6f;
+$dkGreenGrey:#3b5b59;
+
+//gradient colours
+$gradStartDkBlue: #0a596c;
+$gradEndOrange: #c99000;
+
+// backgrounds
+$formBg:  $vLightGrey;
+
+//transparency
+$heroCaptionBg: rgba(255,255,255,0.85);
+$buttonHover: rgba(12,25,50,0.2);
+$buttonTQHover: rgba(45,121,135,0.5);
+$brandDkBlueTrans: rgba(12,25,50,0.85);
+$menuHover: rgba(255,255,255,0.5);

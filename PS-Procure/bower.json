@@ -1,0 +1,24 @@
+{
+  "name": "ps-procure",
+  "description": "PS Procure website",
+  "main": "index.html",
+  "authors": [
+    "Mike Speight"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "flexslider-scss": "^1.0.0"
+  }
+}

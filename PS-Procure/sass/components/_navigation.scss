@@ -1,0 +1,51 @@
+
+
+nav {
+  padding-right: 17px;
+
+  &.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+
+    .navbar-collapse {
+      border-color: transparent;
+    }
+
+    .navbar-nav {
+      position: relative;
+
+      &> li {
+
+        &> a {
+          color: $white;
+          //border-right: 1px solid $white;
+
+          &:hover {
+            color: $tertiaryBrand;
+            text-decoration: none;
+          }
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          height:16px;
+          width: 1px;
+          border-right: 1px solid $white;
+          position: absolute;
+          top:16px;
+          right:0;
+        }
+
+        &:last-child {
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+
+}

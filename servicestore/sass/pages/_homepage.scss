@@ -1,0 +1,190 @@
+/****************************************
+*
+* Homepage stylesheet
+*
+*****************************************/
+
+
+.main-content {
+  min-height: 600px;
+
+  .services {
+    padding-bottom: 20px;
+
+    h3 {
+      @extend .centre;
+      @include font-size(36);
+    }
+
+    .services-wrapper {
+      padding: 0 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .services-grid {
+        @extend .side-by-side;
+        flex-wrap: wrap;
+
+        .grid-item {
+          border: 3px solid #e3e3e3;
+          border-radius: 10px;
+          padding: 8px;
+          height: 294px;
+          margin: 10px;
+          width:30%;
+          min-width: 321px;
+
+          a {
+            color: $linkColor;
+
+            .service-img {
+              transition: all .5s ease-in-out;
+            }
+
+            &:hover {
+              color: $linkColorHover;
+
+              .service-img {
+                transform: scale(1.1);
+              }
+            }
+
+            .image-wrap {
+              overflow: hidden;
+            }
+          }
+
+          .service-img {
+            width: 100%;
+            height:180px;
+            object-fit: cover;
+            display: block;
+          }
+
+          .service-icon {
+            display: block;
+            float: left;
+            width:95px;
+            margin: 5px 0 10px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          h4{
+
+            &.service-title {
+              //float: right;
+              text-align: right;
+              margin: 20px 0 20px 100px;
+              @include font-size(20);
+              @extend .regular;
+              width: 200px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .booking-process {
+    min-height: 600px;
+    background: url("#{$pathToImages}/teardrop-bottom.png") bottom center no-repeat, url("#{$pathToImages}/teardrop-top.png") top center no-repeat, $greyBg;
+    width: 100%;
+    background-size: auto,auto;
+    padding-top: 77px;
+
+
+    h3 {
+      @extend .centre;
+      @include font-size(36);
+    }
+
+    .booking-process-inner {
+      padding: 0 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .booking-process-wrapper {
+        margin-top: 35px;
+        @extend .side-by-side;
+        justify-content: center;
+
+        .process-block {
+          width:150px;
+          text-align: center;
+
+          p {
+            text-align: center;
+            @extend .regular;
+            @include font-size(20);
+            color: $brandGreen;
+          }
+        }
+
+        .process-inter {
+          text-align: center;
+          width:167px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+
+          .process-block {
+            margin-top: 20px;
+          }
+
+          .process-inter {
+
+
+            img {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.our-guarantee {
+  background: $white url("#{$pathToImages}/our-guarantee-bg.jpg") center top no-repeat;
+  background-size: cover;
+  min-height: 715px;
+
+  h3 {
+    @extend .centre;
+    @include font-size(36);
+  }
+
+  .our-guarantee-inner {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    @extend .side-by-side;
+    justify-content: space-around;
+
+    .our-guarantee-item {
+      width: 267px;
+      padding: 30px;
+      margin-top: 45px;
+      min-width: 321px;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      p {
+        @extend .bold;
+        @extend .centre;
+        @include font-size(24);
+        margin-top: 25px;
+      }
+    }
+
+  }
+}

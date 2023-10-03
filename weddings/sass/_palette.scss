@@ -1,0 +1,47 @@
+/****************************************
+*
+* Service store colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+$offWhite: #fafbfb;
+
+$brandGold: #d29d5e;
+$BrandLtGold: #f5d18a;
+$brandBlueGrey: #58acc5; //may need to be darker
+$brandBlue: #4498b1; //not AA accessible with white text
+$brandBlueAccess: #397F94;
+$brandDkBlue: #1d4c5c;
+
+$baseForOverlay: #476f87;
+
+
+// text colours
+$txtColour: #4e4e4e;
+$textGold:  #b09245;
+
+//Text background colours
+$blueTxtBg: #497183;
+
+
+//greys
+$vLightGrey: #f7f7f7;
+$tblBgLtGrey: #eee;
+$greyBg: #e3e3e3;
+$helpTextBg: #d0d0d0;
+$borderGrey: #bbb;
+$tblBgDkGrey: #999;
+
+$dkGrey:  #6f6f6f;
+$dkGreenGrey:#3b5b59;
+
+//gradient colours
+$gradStartDkBlue: #0a596c;
+$gradEndOrange: #c99000;
+
+// backgrounds
+$formBg:  $vLightGrey;
+$heroCaptionBg: rgba(255,255,255,0.85);
