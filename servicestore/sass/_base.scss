@@ -1,0 +1,135 @@
+/****************************************
+*
+* Base stylesheet
+*
+*****************************************/
+
+html {
+  font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+html,
+body {
+  width:100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $sourceSansPro;
+  @extend .regular;
+  color: $brandGreen;
+  @include font-size(16);
+}
+
+#UserAgent {
+  display: none;
+}
+
+.btn-row {
+  margin:30px 0;
+
+  &.centre {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+button,
+a {
+
+  &.btn {
+    display: inline-block;
+    height: 53px;
+    @include font-size(24);
+    @extend .regular;
+    line-height: 53px;
+    padding: 0 36px;
+    font-weight: 600;
+
+    &.cta-btn {
+      color: $white;
+      background-color: $brandGreen;
+      border:lighten($brandGreen, 10%);
+      @include border-radius(10px);
+
+      &:hover {
+        color: $brandGreen;
+        background-color: $brandLimeGreen;
+      }
+
+      &.brand-btn {
+        color: $brandGreen;
+        background-color: $brandLimeGreen;
+
+        &:hover {
+          color: $white;
+          background-color: $brandGreen;
+          opacity: 1.0;
+        }
+      }
+    }
+
+    &.form-btn {
+      color: $white;
+      width: 237px;
+      @include font-size(20);
+
+      &.centre-txt {
+        text-align: center;
+        width: auto;
+      }
+
+      &.primary {
+        background-color: $brandBlue;
+
+      }
+
+      &.secondary {
+        background-color: $white;
+        color: $brandBlue;
+        border: 1px solid $brandBlue;
+      }
+
+      &.btn-sml {
+        height: 33px;
+        @include font-size(16);
+        line-height: 32px;
+        width:auto;
+        padding:0 18px;
+        position: relative;
+        top: -4px;
+        margin-left: 31px;
+
+      }
+
+      &.delete {
+        color: $white;
+        background: $brandDanger url("#{$pathToImages}/dustbin-icon.png") 12px 7px no-repeat;
+        background-size: 14px 19px;
+        padding-left: 40px;
+      }
+
+      & + .form-btn,
+      & + input[type=submit]{
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.fixed-width-content {
+  padding: 0 15px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// clearfix
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

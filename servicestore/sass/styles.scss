@@ -1,0 +1,30 @@
+/****************************************
+*
+* Main stylesheet
+*
+*****************************************/
+
+//import bootstrap
+@import "bootstrap-styles";
+
+@import "variables";
+@import "palette";
+@import "mixins";
+@import "font-awesome";
+@import "typeography";
+
+
+@import "base";
+@import "components";
+@import "forms";
+@import "tables";
+@import "pages";
+
+
+@import "global";
+
+/* Media queries */
+@import "media";
+
+
+

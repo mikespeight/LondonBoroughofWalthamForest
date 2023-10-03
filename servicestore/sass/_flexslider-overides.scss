@@ -1,0 +1,74 @@
+
+
+.flexslider {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.flex-direction-nav a  {
+  text-decoration:none;
+  text-indent: -10000px;
+  display: block;
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 42px 42px;
+  width: 42px;
+  height: 42px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 43%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.flex-direction-nav .flex-prev {
+  background-image: url("#{$pathToImages}/arrow-left.png");
+  left: -50px;
+
+  &:hover {
+    background-image: url("#{$pathToImages}/arrow-left-lg.png");
+  }
+}
+
+.flex-direction-nav .flex-next {
+  background-image: url("#{$pathToImages}/arrow-right.png");
+  text-indent: 10000px;
+  right: -50px;
+  text-align: right;
+
+  &:hover {
+    background-image: url("#{$pathToImages}/arrow-right-lg.png");
+  }
+}
+
+.flex-direction-nav a:before  {
+  content: none;
+
+}
+
+.flex-direction-nav a.flex-next:before  {
+  content: none;
+}
+
+.flex-direction-nav a:hover {
+  opacity: 0.7;
+}
+
+.flexslider:hover .flex-prev { opacity: 1; left: -50px; }
+.flexslider:hover .flex-next { opacity: 1; right: -50px; }
+/*
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; text-align: right; }
+.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }*/

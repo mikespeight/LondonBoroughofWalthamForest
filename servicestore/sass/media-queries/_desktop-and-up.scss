@@ -1,0 +1,81 @@
+/****************************************
+*
+* Styles for desktop and up >1024px
+*
+*****************************************/
+
+.our-services {
+
+  .our-services-wrapper {
+
+    .our-services-grid {
+
+      .flip-container {
+        perspective: 1000px;
+
+        &:hover {
+
+          a {
+
+            &.flipper {
+              transform: rotateY(180deg);
+
+              p {
+                transform: rotateY(180deg);
+                display: block;
+                line-height: 185px;
+                font-weight: $semiBold;
+                color: $white;
+
+                &.orange {background-color: $brandOrange }
+                &.lt-green {background-color: $brandLimeGreen }
+                &.purple {background-color: $brandPurple }
+                &.dk-green {background-color: $brandGreen }
+                &.blue {background-color: $brandBlue }
+              }
+
+              img {
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+
+              }
+            }
+          }
+        }
+
+        a {
+
+          &.flipper {
+            position: relative;
+            transition: all 0.75s ease-in-out;
+            transform-style: preserve-3d;
+
+            img {
+              position: absolute;
+              top:0;
+              left:0;
+              width:200px;
+              height:185px;
+            }
+
+            p {
+              display: none;
+              position: absolute;
+              top:0;
+              left:0;
+              width:200px;
+              height:185px;
+            }
+
+            &:hover {
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
